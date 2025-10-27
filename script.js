@@ -2,31 +2,48 @@ fetch('movies.json')
   .then(response => response.json())
   .then(movies => {
     const searchBar = document.getElementById("search-bar");
-    const resultsDiv = document.getElementById("results");
+    const tableBody = document.querySelector("#movie-table tbody");
+    let currentData = [...movies];
 
-    function renderResults(filtered) {
-      resultsDiv.innerHTML = filtered.map(movie => `
-        <div class="movie-card">
-          <h3><a href="${movie.link}" target="_blank">${movie.title}</a></h3>
-          <p><strong>Genre:</strong> ${movie.genre}</p>
-          <p><strong>Rating:</strong> ${movie.rating}</p>
-          <p>${movie.review}</p>
-          <p><strong>Tags:</strong> ${movie.tags.join(", ")}</p>
-        </div>
+    function renderTable(data) {
+      tableBody.innerHTML = data.map(movie => `
+        <tr>
+          <td><a href="${movie.link}" target="_blank">${movie.title}</a></td>
+          <td>${movie.genre}</td>
+          <td>${movie.rating}</td>
+          <td>${movie.platform}</td>
+          <td>${movie.rewatch ? "Yes" : "No"}</td>
+        </tr>
       `).join("");
     }
 
+    function sortBy(key) {
+      const isNumeric = typeof currentData[0][key] === "number";
+      currentData.sort((a, b) => {
+        if (isNumeric) return a[key] - b[key];
+        return String(a[key]).localeCompare(String(b[key]));
+      });
+      renderTable(currentData);
+    }
+
+    document.querySelectorAll("th").forEach(th => {
+      th.addEventListener("click", () => {
+        const key = th.getAttribute("data-key");
+        sortBy(key);
+      });
+    });
+
     searchBar.addEventListener("input", () => {
       const query = searchBar.value.toLowerCase();
-      const filtered = movies.filter(movie =>
+      currentData = movies.filter(movie =>
         Object.values(movie).some(value =>
           Array.isArray(value)
             ? value.join(" ").toLowerCase().includes(query)
             : String(value).toLowerCase().includes(query)
         )
       );
-      renderResults(filtered);
+      renderTable(currentData);
     });
 
-    renderResults(movies); // initial render
+    renderTable(currentData);
   });
