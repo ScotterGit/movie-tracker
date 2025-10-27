@@ -11,6 +11,12 @@ body {
   margin-bottom: 20px;
 }
 
+#rows-select {
+  margin-left: 10px;
+  padding: 6px;
+  font-size: 14px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -39,4 +45,15 @@ th:hover {
   color: #333;
   display: inline-block;
   width: 16px;
+}
+
+#pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pagination button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  font-size: 14px;
 }

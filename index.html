@@ -7,7 +7,16 @@
 </head>
 <body>
   <h1>🎬 Bear Hands Movie Tracker</h1>
+
   <input type="text" id="search-bar" placeholder="Search movies..." />
+
+  <label for="rows-select">Movies per page:</label>
+  <select id="rows-select">
+    <option value="100">100</option>
+    <option value="200">200</option>
+    <option value="300">300</option>
+  </select>
+
   <table id="movie-table">
     <thead>
       <tr>
@@ -16,10 +25,14 @@
         <th data-key="rating">Rating <span class="arrow"></span></th>
         <th data-key="platform">Platform <span class="arrow"></span></th>
         <th data-key="rewatch">Rewatch <span class="arrow"></span></th>
+        <th data-key="dateWatched">Date Watched <span class="arrow"></span></th>
       </tr>
     </thead>
     <tbody></tbody>
   </table>
+
+  <div id="pagination"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
