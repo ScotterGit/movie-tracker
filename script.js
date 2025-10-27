@@ -3,10 +3,10 @@ fetch('movies.json')
   .then(movies => {
     const searchBar = document.getElementById("search-bar");
     const tableBody = document.querySelector("#movie-table tbody");
-    const sortState = {}; // Tracks sort direction per column
-    let currentData = [...movies]; // Holds filtered/sorted data
+    const headers = document.querySelectorAll("th");
+    const sortState = {};
+    let currentData = [...movies];
 
-    // Renders the table rows
     function renderTable(data) {
       tableBody.innerHTML = data.map(movie => `
         <tr>
@@ -19,7 +19,6 @@ fetch('movies.json')
       `).join("");
     }
 
-    // Sorts by a given key and toggles direction
     function sortBy(key) {
       const direction = sortState[key] === "asc" ? "desc" : "asc";
       sortState[key] = direction;
@@ -35,18 +34,29 @@ fetch('movies.json')
         }
       });
 
+      updateArrows(key, direction);
       renderTable(currentData);
     }
 
-    // Adds click listeners to each header
-    document.querySelectorAll("th").forEach(th => {
+    function updateArrows(activeKey, direction) {
+      headers.forEach(th => {
+        const key = th.getAttribute("data-key");
+        const arrow = th.querySelector(".arrow");
+        if (key === activeKey) {
+          arrow.textContent = direction === "asc" ? "▲" : "▼";
+        } else {
+          arrow.textContent = "";
+        }
+      });
+    }
+
+    headers.forEach(th => {
       th.addEventListener("click", () => {
         const key = th.getAttribute("data-key");
         sortBy(key);
       });
     });
 
-    // Filters data based on search input
     searchBar.addEventListener("input", () => {
       const query = searchBar.value.toLowerCase();
       currentData = movies.filter(movie =>
@@ -59,6 +69,5 @@ fetch('movies.json')
       renderTable(currentData);
     });
 
-    // Initial render
     renderTable(currentData);
   });
