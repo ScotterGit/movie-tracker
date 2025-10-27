@@ -42,10 +42,10 @@ fetch('movies.json')
       headers.forEach(th => {
         const key = th.getAttribute("data-key");
         const arrow = th.querySelector(".arrow");
-        if (key === activeKey) {
-          arrow.textContent = direction === "asc" ? "▲" : "▼";
-        } else {
-          arrow.textContent = "";
+        if (arrow) {
+          arrow.textContent = key === activeKey
+            ? (direction === "asc" ? "▲" : "▼")
+            : "";
         }
       });
     }
