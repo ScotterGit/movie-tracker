@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Squash Soup Saga",
+    "year": 2025,
+    "genre": "Comedy",
+    "rating": 8.5,
+    "review": "Whimsical bear-themed satire.",
+    "platform": "Netflix",
+    "rewatch": true,
+    "tags": ["bear", "food", "parody"],
+    "link": "https://bearhands.blog/squash-soup-saga"
+  },
+  {
+    "title": "The Grid Repeat",
+    "year": 2024,
+    "genre": "Sci-Fi",
+    "rating": 7.0,
+    "review": "Illustrator-themed dystopia.",
+    "platform": "Amazon Prime",
+    "rewatch": false,
+    "tags": ["design", "AI", "workflow"],
+    "link": "https://bearhands.blog/grid-repeat"
+  }
+]
