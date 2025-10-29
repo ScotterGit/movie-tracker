@@ -35,7 +35,7 @@ fetch('movies.json')
           <td>${Array.isArray(movie.actors) ? movie.actors.join(", ") : movie.actors}</td>
           <td>${movie.director}</td>
           <td>${movie.dateWatched}</td>
-          <td>${Array.isArray(movie.keywords) ? movie.keywords.join(", ") : movie.keywords}</td>
+          <td>${Array.isArray(movie.themesKeywords) ? movie.themesKeywords.join(", ") : movie.themesKeywords}</td>
         </tr>
       `).join("");
 

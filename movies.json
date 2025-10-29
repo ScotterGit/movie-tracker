@@ -9,7 +9,7 @@
     "actors": ["Oscar Bear", "Honey Wilde"],
     "director": "Bearington Wells",
     "dateWatched": "2025-10-25",
-    "keywords": ["cozy", "forest", "revenge"]
+    "themesKeywords": ["cozy", "forest", "revenge"]
   },
   {
     "title": "The Grid Repeat",
@@ -19,4 +19,8 @@
     "hubbyBearRating": 6.8,
     "combinedRating": 7.15,
     "actors": ["Grizz Lee", "Maple Noir"],
-    "director": "Cinnamon
+    "director": "Cinnamon Byte",
+    "dateWatched": "2025-10-20",
+    "themesKeywords": ["design", "AI", "workflow"]
+  }
+]
