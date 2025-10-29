@@ -26,12 +26,16 @@ fetch('movies.json')
 
       tableBody.innerHTML = pageData.map(movie => `
         <tr>
-          <td><a href="${movie.link}" target="_blank">${movie.title}</a></td>
-          <td>${movie.genre}</td>
-          <td>${movie.rating}</td>
-          <td>${movie.platform}</td>
-          <td>${movie.rewatch ? "Yes" : "No"}</td>
+          <td>${movie.title}</td>
+          <td>${movie.year}</td>
+          <td>${Array.isArray(movie.genre) ? movie.genre.join(", ") : movie.genre}</td>
+          <td>${movie.bearHandsRating}</td>
+          <td>${movie.hubbyBearRating}</td>
+          <td>${movie.combinedRating}</td>
+          <td>${Array.isArray(movie.actors) ? movie.actors.join(", ") : movie.actors}</td>
+          <td>${movie.director}</td>
           <td>${movie.dateWatched}</td>
+          <td>${Array.isArray(movie.keywords) ? movie.keywords.join(", ") : movie.keywords}</td>
         </tr>
       `).join("");
 
@@ -111,11 +115,12 @@ fetch('movies.json')
     searchBar.addEventListener("input", () => {
       const query = searchBar.value.toLowerCase();
       currentData = movies.filter(movie =>
-        Object.values(movie).some(value =>
-          Array.isArray(value)
-            ? value.join(" ").toLowerCase().includes(query)
-            : String(value).toLowerCase().includes(query)
-        )
+        Object.values(movie).some(value => {
+          if (Array.isArray(value)) {
+            return value.some(item => item.toLowerCase().includes(query));
+          }
+          return String(value).toLowerCase().includes(query);
+        })
       );
       currentPage = 1;
       renderTable(currentData);
