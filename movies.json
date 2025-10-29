@@ -1,26 +1,26 @@
 [
   {
-    "title": "Squash Soup Saga",
-    "year": 2025,
-    "genre": ["Comedy", "Satire"],
-    "bearHandsRating": 9.2,
-    "hubbyBearRating": 8.5,
-    "combinedRating": 8.85,
-    "actors": ["Oscar Bear", "Honey Wilde"],
-    "director": "Bearington Wells",
+    "title": "The Toxic Avenger",
+    "year": 2023,
+    "genre": ["Action", "Comedy", "Superhero", "Troma", "Dark Comedy"],
+    "bearHandsRating": 9,
+    "hubbyBearRating": 9,
+    "combinedRating": 9,
+    "actors": ["Peter Dinklage", "Jacob Tremblay", "Kevin Bacon", "Taylour Paige", "Elijah Wood"],
+    "director": "Macon Blair",
     "dateWatched": "2025-10-25",
-    "themesKeywords": ["cozy", "forest", "revenge"]
+    "themesKeywords": ["Corruption and Greed", "Environmental"]
   },
   {
-    "title": "The Grid Repeat",
-    "year": 2024,
-    "genre": ["Sci-Fi", "Thriller"],
-    "bearHandsRating": 7.5,
-    "hubbyBearRating": 6.8,
-    "combinedRating": 7.15,
-    "actors": ["Grizz Lee", "Maple Noir"],
-    "director": "Cinnamon Byte",
-    "dateWatched": "2025-10-20",
-    "themesKeywords": ["design", "AI", "workflow"]
+    "title": "Bad Shabbos",
+    "year": 2023,
+    "genre": ["Comedy"],
+    "bearHandsRating": 8,
+    "hubbyBearRating": 7,
+    "combinedRating": 7.5,
+    "actors": ["David Krumholtz", "Ilana Glazer", "Fred Melamed"],
+    "director": "Daniel Goldfarb",
+    "dateWatched": "2025-10-25",
+    "themesKeywords": ["Jewish culture", "awkward family"]
   }
 ]
