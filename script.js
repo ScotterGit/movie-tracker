@@ -214,6 +214,8 @@ fetch('movies.json')
       actorFilter.value = "";
       themeFilter.value = "";
       searchBar.value = "";
+      startDateInput.value = "";
+      endDateInput.value = "";
 
       Object.keys(sortState).forEach(key => delete sortState[key]);
       currentPage = 1;
