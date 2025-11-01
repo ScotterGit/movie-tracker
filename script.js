@@ -8,48 +8,44 @@ fetch('movies.json')
     const yearSelect = document.getElementById("year-select");
     const directorSelect = document.getElementById("director-select");
     const writerSelect = document.getElementById("writer-select");
-    const bearMin = document.getElementById("bear-rating-min");
-    const hubbyMin = document.getElementById("hubby-rating-min");
+    const bearRatingSelect = document.getElementById("bear-rating-select");
+    const hubbyRatingSelect = document.getElementById("hubby-rating-select");
     const actorFilter = document.getElementById("actor-filter");
     const themeFilter = document.getElementById("theme-filter");
     const searchBar = document.getElementById("search-bar");
+    const resetButton = document.getElementById("reset-filters");
 
     const sortState = {};
     let currentData = [...movies];
     let currentPage = 1;
     let rowsPerPage = parseInt(rowsSelect.value);
 
-    // Populate dropdowns
     function populateDropdown(select, values) {
+      const currentValue = select.value;
+      select.innerHTML = '<option value="">All</option>';
       [...new Set(values)].sort().forEach(val => {
         const option = document.createElement("option");
         option.value = val;
         option.textContent = val;
         select.appendChild(option);
       });
+      select.value = currentValue;
     }
 
-    populateDropdown(genreSelect, movies.flatMap(m => m.genre));
-    populateDropdown(yearSelect, movies.map(m => m.year));
-    populateDropdown(directorSelect, movies.flatMap(m => m.directors));
-    populateDropdown(writerSelect, movies.flatMap(m => m.writers));
-
-    // Default sort
-    currentData.sort((a, b) => new Date(b.dateWatched) - new Date(a.dateWatched));
-
-    // Event listeners
-    [rowsSelect, genreSelect, yearSelect, directorSelect, writerSelect, bearMin, hubbyMin, actorFilter, themeFilter, searchBar].forEach(el => {
-      el.addEventListener("input", applyFilters);
-      el.addEventListener("change", applyFilters);
-    });
+    function updateDropdowns(data) {
+      populateDropdown(genreSelect, data.flatMap(m => m.genre));
+      populateDropdown(yearSelect, data.map(m => m.year));
+      populateDropdown(directorSelect, data.flatMap(m => m.directors));
+      populateDropdown(writerSelect, data.flatMap(m => m.writers));
+    }
 
     function applyFilters() {
       const genre = genreSelect.value.toLowerCase();
       const year = yearSelect.value;
       const director = directorSelect.value.toLowerCase();
       const writer = writerSelect.value.toLowerCase();
-      const bearRating = parseFloat(bearMin.value);
-      const hubbyRating = parseFloat(hubbyMin.value);
+      const bearRating = parseInt(bearRatingSelect.value);
+      const hubbyRating = parseInt(hubbyRatingSelect.value);
       const actorQuery = actorFilter.value.toLowerCase();
       const themeQuery = themeFilter.value.toLowerCase();
       const searchQuery = searchBar.value.toLowerCase();
@@ -59,8 +55,8 @@ fetch('movies.json')
         const matchYear = year ? movie.year == year : true;
         const matchDirector = director ? movie.directors.some(d => d.toLowerCase() === director) : true;
         const matchWriter = writer ? movie.writers.some(w => w.toLowerCase() === writer) : true;
-        const matchBear = !isNaN(bearRating) ? movie.bearHandsRating >= bearRating : true;
-        const matchHubby = !isNaN(hubbyRating) ? movie.hubbyBearRating >= hubbyRating : true;
+        const matchBear = bearRating ? movie.bearHandsRating === bearRating : true;
+        const matchHubby = hubbyRating ? movie.hubbyBearRating === hubbyRating : true;
         const matchActor = actorQuery ? movie.actors.some(a => a.toLowerCase().includes(actorQuery)) : true;
         const matchTheme = themeQuery ? movie.themesKeywords.some(t => t.toLowerCase().includes(themeQuery)) : true;
         const matchSearch = searchQuery
@@ -73,6 +69,7 @@ fetch('movies.json')
         return matchGenre && matchYear && matchDirector && matchWriter && matchBear && matchHubby && matchActor && matchTheme && matchSearch;
       });
 
+      updateDropdowns(currentData);
       currentPage = 1;
       renderTable(currentData);
     }
@@ -176,5 +173,28 @@ fetch('movies.json')
       });
     });
 
+    resetButton.addEventListener("click", () => {
+      genreSelect.value = "";
+      yearSelect.value = "";
+      directorSelect.value = "";
+      writerSelect.value = "";
+      bearRatingSelect.value = "";
+      hubbyRatingSelect.value = "";
+      actorFilter.value = "";
+      themeFilter.value = "";
+      searchBar.value = "";
+
+      Object.keys(sortState).forEach(key => delete sortState[key]);
+      currentPage = 1;
+      currentData = [...movies];
+
+      updateDropdowns(movies);
+      renderTable(currentData);
+      updateArrows("", "");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      searchBar.focus();
+    });
+
+    updateDropdowns(movies);
     renderTable(currentData);
   });

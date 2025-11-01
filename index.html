@@ -30,17 +30,25 @@
     <label for="writer-select">Writer:</label>
     <select id="writer-select"><option value="">All</option></select>
 
-    <label for="bear-rating-min">Bear Hands ⭐ Min:</label>
-    <input type="number" id="bear-rating-min" min="0" max="10" />
+    <label for="bear-rating-select">Bear Hands ⭐:</label>
+    <select id="bear-rating-select">
+      <option value="">All</option>
+      ${[...Array(10)].map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join("")}
+    </select>
 
-    <label for="hubby-rating-min">Hubby Bear ⭐ Min:</label>
-    <input type="number" id="hubby-rating-min" min="0" max="10" />
+    <label for="hubby-rating-select">Hubby Bear ⭐:</label>
+    <select id="hubby-rating-select">
+      <option value="">All</option>
+      ${[...Array(10)].map((_, i) => `<option value="${i + 1}">${i + 1}</option>`).join("")}
+    </select>
 
     <label for="actor-filter">Actor:</label>
     <input type="text" id="actor-filter" placeholder="Name..." />
 
     <label for="theme-filter">Theme/Keyword:</label>
     <input type="text" id="theme-filter" placeholder="Keyword..." />
+
+    <button id="reset-filters">Reset Filters</button>
   </section>
 
   <table id="movie-table">
