@@ -123,8 +123,12 @@ fetch('movies.json')
             : new Date(bVal) - new Date(aVal);
         }
 
-        if (typeof aVal === "number" && typeof bVal === "number") {
-          return direction === "asc" ? aVal - bVal : bVal - aVal;
+        const aNum = Number(aVal);
+        const bNum = Number(bVal);
+        const isNumeric = !isNaN(aNum) && !isNaN(bNum);
+
+        if (isNumeric) {
+          return direction === "asc" ? aNum - bNum : bNum - aNum;
         }
 
         return direction === "asc"
