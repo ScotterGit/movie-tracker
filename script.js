@@ -1,60 +1,76 @@
 fetch('movies.json')
   .then(response => response.json())
   .then(movies => {
-    const searchBar = document.getElementById("search-bar");
-    const genreSelect = document.getElementById("genre-select");
     const tableBody = document.querySelector("#movie-table tbody");
     const headers = document.querySelectorAll("th");
     const rowsSelect = document.getElementById("rows-select");
+    const genreSelect = document.getElementById("genre-select");
+    const yearSelect = document.getElementById("year-select");
+    const directorSelect = document.getElementById("director-select");
+    const writerSelect = document.getElementById("writer-select");
+    const bearMin = document.getElementById("bear-rating-min");
+    const hubbyMin = document.getElementById("hubby-rating-min");
+    const actorFilter = document.getElementById("actor-filter");
+    const themeFilter = document.getElementById("theme-filter");
+    const searchBar = document.getElementById("search-bar");
+
     const sortState = {};
     let currentData = [...movies];
     let currentPage = 1;
     let rowsPerPage = parseInt(rowsSelect.value);
-    let activeGenre = "";
 
-    // Default sort by dateWatched descending
+    // Populate dropdowns
+    function populateDropdown(select, values) {
+      [...new Set(values)].sort().forEach(val => {
+        const option = document.createElement("option");
+        option.value = val;
+        option.textContent = val;
+        select.appendChild(option);
+      });
+    }
+
+    populateDropdown(genreSelect, movies.flatMap(m => m.genre));
+    populateDropdown(yearSelect, movies.map(m => m.year));
+    populateDropdown(directorSelect, movies.flatMap(m => m.directors));
+    populateDropdown(writerSelect, movies.flatMap(m => m.writers));
+
+    // Default sort
     currentData.sort((a, b) => new Date(b.dateWatched) - new Date(a.dateWatched));
 
-    // Populate genre dropdown
-    const allGenres = [...new Set(movies.flatMap(movie => movie.genre))].sort();
-    allGenres.forEach(genre => {
-      const option = document.createElement("option");
-      option.value = genre;
-      option.textContent = genre;
-      genreSelect.appendChild(option);
-    });
-
-    rowsSelect.addEventListener("change", () => {
-      rowsPerPage = parseInt(rowsSelect.value);
-      currentPage = 1;
-      renderTable(currentData);
-    });
-
-    genreSelect.addEventListener("change", () => {
-      activeGenre = genreSelect.value.toLowerCase();
-      applyFilters();
-    });
-
-    searchBar.addEventListener("input", () => {
-      applyFilters();
+    // Event listeners
+    [rowsSelect, genreSelect, yearSelect, directorSelect, writerSelect, bearMin, hubbyMin, actorFilter, themeFilter, searchBar].forEach(el => {
+      el.addEventListener("input", applyFilters);
+      el.addEventListener("change", applyFilters);
     });
 
     function applyFilters() {
-      const query = searchBar.value.toLowerCase();
+      const genre = genreSelect.value.toLowerCase();
+      const year = yearSelect.value;
+      const director = directorSelect.value.toLowerCase();
+      const writer = writerSelect.value.toLowerCase();
+      const bearRating = parseFloat(bearMin.value);
+      const hubbyRating = parseFloat(hubbyMin.value);
+      const actorQuery = actorFilter.value.toLowerCase();
+      const themeQuery = themeFilter.value.toLowerCase();
+      const searchQuery = searchBar.value.toLowerCase();
 
       currentData = movies.filter(movie => {
-        const matchesGenre = activeGenre
-          ? Array.isArray(movie.genre) && movie.genre.some(g => g.toLowerCase() === activeGenre)
+        const matchGenre = genre ? movie.genre.some(g => g.toLowerCase() === genre) : true;
+        const matchYear = year ? movie.year == year : true;
+        const matchDirector = director ? movie.directors.some(d => d.toLowerCase() === director) : true;
+        const matchWriter = writer ? movie.writers.some(w => w.toLowerCase() === writer) : true;
+        const matchBear = !isNaN(bearRating) ? movie.bearHandsRating >= bearRating : true;
+        const matchHubby = !isNaN(hubbyRating) ? movie.hubbyBearRating >= hubbyRating : true;
+        const matchActor = actorQuery ? movie.actors.some(a => a.toLowerCase().includes(actorQuery)) : true;
+        const matchTheme = themeQuery ? movie.themesKeywords.some(t => t.toLowerCase().includes(themeQuery)) : true;
+        const matchSearch = searchQuery
+          ? Object.values(movie).some(val => {
+              if (Array.isArray(val)) return val.some(v => v.toLowerCase().includes(searchQuery));
+              return String(val).toLowerCase().includes(searchQuery);
+            })
           : true;
 
-        const matchesSearch = Object.values(movie).some(value => {
-          if (Array.isArray(value)) {
-            return value.some(item => item.toLowerCase().includes(query));
-          }
-          return String(value).toLowerCase().includes(query);
-        });
-
-        return matchesGenre && matchesSearch;
+        return matchGenre && matchYear && matchDirector && matchWriter && matchBear && matchHubby && matchActor && matchTheme && matchSearch;
       });
 
       currentPage = 1;
@@ -70,14 +86,14 @@ fetch('movies.json')
         <tr>
           <td>${movie.title}</td>
           <td>${movie.year}</td>
-          <td>${Array.isArray(movie.genre) ? movie.genre.join(", ") : movie.genre || ""}</td>
+          <td>${movie.genre.join(", ")}</td>
           <td>${movie.bearHandsRating ?? ""}</td>
           <td>${movie.hubbyBearRating ?? ""}</td>
-          <td>${Array.isArray(movie.actors) ? movie.actors.join(", ") : movie.actors || ""}</td>
-          <td>${Array.isArray(movie.directors) ? movie.directors.join(", ") : movie.directors || ""}</td>
-          <td>${Array.isArray(movie.writers) ? movie.writers.join(", ") : movie.writers || ""}</td>
+          <td>${movie.actors.join(", ")}</td>
+          <td>${movie.directors.join(", ")}</td>
+          <td>${movie.writers.join(", ")}</td>
           <td>${movie.dateWatched}</td>
-          <td>${Array.isArray(movie.themesKeywords) ? movie.themesKeywords.join(", ") : movie.themesKeywords || ""}</td>
+          <td>${movie.themesKeywords.join(", ")}</td>
         </tr>
       `).join("");
 
