@@ -53,6 +53,8 @@ fetch('movies.json')
       populateDropdown(yearSelect, data.map(m => m.year));
       populateDropdown(directorSelect, data.flatMap(m => m.directors));
       populateDropdown(writerSelect, data.flatMap(m => m.writers));
+      populateDropdown(bearRatingSelect, data.map(m => m.bearHandsRating).filter(r => r != null));
+      populateDropdown(hubbyRatingSelect, data.map(m => m.hubbyBearRating).filter(r => r != null));
     }
 
     function applyFilters() {
