@@ -57,3 +57,22 @@ th:hover {
   margin: 0 5px;
   font-size: 14px;
 }
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+#controls label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+#controls select,
+#controls input {
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 150px;
+}
