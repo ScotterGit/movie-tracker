@@ -14,6 +14,8 @@ fetch('movies.json')
     const themeFilter = document.getElementById("theme-filter");
     const searchBar = document.getElementById("search-bar");
     const resetButton = document.getElementById("reset-filters");
+    const startDateInput = document.getElementById("start-date");
+    const endDateInput = document.getElementById("end-date");
 
     const sortState = {};
     let currentData = [...movies];
@@ -30,7 +32,9 @@ fetch('movies.json')
   actorFilter,
   themeFilter,
   searchBar,
-  rowsSelect
+  rowsSelect,
+  startDateInput,
+  endDateInput
 ].forEach(el => {
   el.addEventListener("input", applyFilters);
   el.addEventListener("change", applyFilters);
@@ -67,6 +71,8 @@ fetch('movies.json')
       const actorQuery = actorFilter.value.toLowerCase();
       const themeQuery = themeFilter.value.toLowerCase();
       const searchQuery = searchBar.value.toLowerCase();
+      const startDate = startDateInput.value ? new Date(startDateInput.value) : null;
+      const endDate = endDateInput.value ? new Date(endDateInput.value) : null;
 
       currentData = movies.filter(movie => {
         const matchGenre = genre ? movie.genre.some(g => g.toLowerCase() === genre) : true;
@@ -77,6 +83,13 @@ fetch('movies.json')
         const matchHubby = hubbyRating ? movie.hubbyBearRating === hubbyRating : true;
         const matchActor = actorQuery ? movie.actors.some(a => a.toLowerCase().includes(actorQuery)) : true;
         const matchTheme = themeQuery ? movie.themesKeywords.some(t => t.toLowerCase().includes(themeQuery)) : true;
+        const matchDate = (() => {
+          if (!startDate && !endDate) return true;
+          const watchedDate = new Date(movie.dateWatched);
+          if (startDate && watchedDate < startDate) return false;
+          if (endDate && watchedDate > endDate) return false;
+          return true;
+        })();
         const matchSearch = searchQuery
           ? Object.values(movie).some(val => {
               if (Array.isArray(val)) return val.some(v => v.toLowerCase().includes(searchQuery));
@@ -84,7 +97,7 @@ fetch('movies.json')
             })
           : true;
 
-        return matchGenre && matchYear && matchDirector && matchWriter && matchBear && matchHubby && matchActor && matchTheme && matchSearch;
+        return matchGenre && matchYear && matchDirector && matchWriter && matchBear && matchHubby && matchActor && matchTheme && matchSearch &&matchDate;
       });
 
       updateDropdowns(currentData);
