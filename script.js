@@ -2,6 +2,7 @@ fetch('movies.json')
   .then(response => response.json())
   .then(movies => {
     const searchBar = document.getElementById("search-bar");
+    const genreSelect = document.getElementById("genre-select");
     const tableBody = document.querySelector("#movie-table tbody");
     const headers = document.querySelectorAll("th");
     const rowsSelect = document.getElementById("rows-select");
@@ -9,15 +10,56 @@ fetch('movies.json')
     let currentData = [...movies];
     let currentPage = 1;
     let rowsPerPage = parseInt(rowsSelect.value);
+    let activeGenre = "";
 
     // Default sort by dateWatched descending
     currentData.sort((a, b) => new Date(b.dateWatched) - new Date(a.dateWatched));
+
+    // Populate genre dropdown
+    const allGenres = [...new Set(movies.flatMap(movie => movie.genre))].sort();
+    allGenres.forEach(genre => {
+      const option = document.createElement("option");
+      option.value = genre;
+      option.textContent = genre;
+      genreSelect.appendChild(option);
+    });
 
     rowsSelect.addEventListener("change", () => {
       rowsPerPage = parseInt(rowsSelect.value);
       currentPage = 1;
       renderTable(currentData);
     });
+
+    genreSelect.addEventListener("change", () => {
+      activeGenre = genreSelect.value.toLowerCase();
+      applyFilters();
+    });
+
+    searchBar.addEventListener("input", () => {
+      applyFilters();
+    });
+
+    function applyFilters() {
+      const query = searchBar.value.toLowerCase();
+
+      currentData = movies.filter(movie => {
+        const matchesGenre = activeGenre
+          ? Array.isArray(movie.genre) && movie.genre.some(g => g.toLowerCase() === activeGenre)
+          : true;
+
+        const matchesSearch = Object.values(movie).some(value => {
+          if (Array.isArray(value)) {
+            return value.some(item => item.toLowerCase().includes(query));
+          }
+          return String(value).toLowerCase().includes(query);
+        });
+
+        return matchesGenre && matchesSearch;
+      });
+
+      currentPage = 1;
+      renderTable(currentData);
+    }
 
     function renderTable(data) {
       const start = (currentPage - 1) * rowsPerPage;
@@ -112,20 +154,6 @@ fetch('movies.json')
         const key = th.getAttribute("data-key");
         sortBy(key);
       });
-    });
-
-    searchBar.addEventListener("input", () => {
-      const query = searchBar.value.toLowerCase();
-      currentData = movies.filter(movie =>
-        Object.values(movie).some(value => {
-          if (Array.isArray(value)) {
-            return value.some(item => item.toLowerCase().includes(query));
-          }
-          return String(value).toLowerCase().includes(query);
-        })
-      );
-      currentPage = 1;
-      renderTable(currentData);
     });
 
     renderTable(currentData);
