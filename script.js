@@ -40,6 +40,29 @@ fetch('movies.json')
   el.addEventListener("change", applyFilters);
 });
 
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  if (isNaN(date)) return ""; // fallback for invalid dates
+
+  const options = { year: "numeric", month: "short", day: "numeric" };
+  const parts = date.toLocaleDateString("en-US", options).split(" ");
+  const [month, day, year] = parts;
+
+  // Add ordinal suffix to day
+  const dayNum = parseInt(day);
+  const suffix = (n) => {
+    if (n >= 11 && n <= 13) return "th";
+    switch (n % 10) {
+      case 1: return "st";
+      case 2: return "nd";
+      case 3: return "rd";
+      default: return "th";
+    }
+  };
+
+  return `${year}, ${month} ${dayNum}${suffix(dayNum)}`;
+}
+
     function populateDropdown(select, values) {
       const currentValue = select.value;
       select.innerHTML = '<option value="">All</option>';
@@ -120,7 +143,7 @@ fetch('movies.json')
           <td>${movie.actors.join(", ")}</td>
           <td>${movie.directors.join(", ")}</td>
           <td>${movie.writers.join(", ")}</td>
-          <td>${movie.dateWatched}</td>
+          <td>${formatDate(movie.dateWatched)}</td>
           <td>${movie.themesKeywords.join(", ")}</td>
         </tr>
       `).join("");
