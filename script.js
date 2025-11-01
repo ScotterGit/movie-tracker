@@ -20,6 +20,22 @@ fetch('movies.json')
     let currentPage = 1;
     let rowsPerPage = parseInt(rowsSelect.value);
 
+[
+  genreSelect,
+  yearSelect,
+  directorSelect,
+  writerSelect,
+  bearRatingSelect,
+  hubbyRatingSelect,
+  actorFilter,
+  themeFilter,
+  searchBar,
+  rowsSelect
+].forEach(el => {
+  el.addEventListener("input", applyFilters);
+  el.addEventListener("change", applyFilters);
+});
+
     function populateDropdown(select, values) {
       const currentValue = select.value;
       select.innerHTML = '<option value="">All</option>';
