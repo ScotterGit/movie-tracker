@@ -5,11 +5,10 @@
     "genre": ["Comedy", "Action", "Superhero", "Troma"],
     "bearHandsRating": 9,
     "hubbyBearRating": 9,
-    "combinedRating": 9,
     "actors": ["Peter Dinklage", "Jacob Tremblay", "Kevin Bacon", "Taylour Paige", "Elijah Wood"],
     "director": "Macon Blair",
     "dateWatched": "2025-10-25",
-    "themesKeywords": ["Corruption and Greed", "Environmental"]
+    "themesKeywords": ["corruption and greed", "environmental"]
   },
   {
     "title": "Bad Shabbos",
@@ -18,7 +17,7 @@
     "bearHandsRating": 8,
     "hubbyBearRating": 7,
     "combinedRating": 7.5,
-    "actors": ["David Krumholtz", "Ilana Glazer", "Fred Melamed"],
+    "actors": ["Jon Bass", "Kyra Sedgwick", "David Payer", "Meghan Leathers", "Method Mad"],
     "director": "Daniel Goldfarb",
     "dateWatched": "2025-10-25",
     "themesKeywords": ["Jewish culture", "awkward family"]
@@ -33,7 +32,7 @@
     "actors": ["James Sweeney", "Dylan O'Brien", "Lauren Graham"],
     "director": "James Sweeney",
     "dateWatched": "2025-10-23",
-    "themesKeywords": ["plot twiest", "stalking", "grief", "LGBTQ"]
+    "themesKeywords": ["plot twist", "stalking", "grief", "LGBTQ"]
   },  
   {
     "title": "Devil in Disguise: John Wayne Gacy",
