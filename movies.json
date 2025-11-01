@@ -6,7 +6,8 @@
     "bearHandsRating": 9,
     "hubbyBearRating": 9,
     "actors": ["Peter Dinklage", "Jacob Tremblay", "Kevin Bacon", "Taylour Paige", "Elijah Wood"],
-    "director": "Macon Blair",
+    "directors": ["Macon Blair"],
+    "writers": ["someone"],
     "dateWatched": "2025-10-25",
     "themesKeywords": ["corruption", "greed", "environmental"]
   },
@@ -17,7 +18,8 @@
     "bearHandsRating": 8,
     "hubbyBearRating": 7,
     "actors": ["Jon Bass", "Kyra Sedgwick", "David Payer", "Meghan Leathers", "Method Mad"],
-    "director": "Daniel Goldfarb",
+    "directors": ["Daniel Goldfarb"],
+    "writers": [],
     "dateWatched": "2025-10-25",
     "themesKeywords": ["Jewish culture", "awkward family"]
   },
@@ -28,10 +30,11 @@
     "bearHandsRating": 10,
     "hubbyBearRating": 9,
     "actors": ["James Sweeney", "Dylan O'Brien", "Lauren Graham"],
-    "director": "James Sweeney",
+    "directors": ["James Sweeney"],
+    "writers": [],
     "dateWatched": "2025-10-23",
     "themesKeywords": ["plot twist", "stalking", "grief", "LGBTQ"]
-  },  
+  },
   {
     "title": "Devil in Disguise: John Wayne Gacy",
     "year": 2021,
@@ -39,7 +42,8 @@
     "bearHandsRating": 8.5,
     "hubbyBearRating": null,
     "actors": ["John Wayne Gacy (archive footage)", "Terry Sullivan", "Philip J. Cline"],
-    "director": "Alexa Danner",
+    "directors": ["Alexa Danner"],
+    "writers": [],
     "dateWatched": "2025-10-20",
     "themesKeywords": ["serial killer", "Chicago", "investigation"]
   },
@@ -50,7 +54,8 @@
     "bearHandsRating": 7,
     "hubbyBearRating": 7,
     "actors": ["Théodore Pellerin", "Archie Madekwe", "Havana Rose Liu"],
-    "director": "Alex Russell",
+    "directors": ["Alex Russell"],
+    "writers": [],
     "dateWatched": "2025-10-20",
     "themesKeywords": ["obsession", "slasher", "film student", "stalking", "meta horror"]
   }
