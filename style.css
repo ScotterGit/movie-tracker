@@ -2,6 +2,8 @@ body {
   font-family: sans-serif;
   padding: 20px;
   background: #fffbe6;
+  /*background: #fffbe6;*/
+
 }
 
 #search-bar {
@@ -24,6 +26,7 @@ th, td {
 }
 
 th {
+  vertical-align: middle;
   background-color: #f0f0f0;
   cursor: pointer;
   user-select: none;
