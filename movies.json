@@ -2,14 +2,14 @@
   {
     "title": "The Toxic Avenger",
     "year": 2023,
-    "genre": ["Comedy", "Action", "Superhero", "Troma"],
+    "genre": ["Comedy", "Action/Adventure", "Superhero"],
     "bearHandsRating": 9,
     "hubbyBearRating": 9,
     "actors": ["Peter Dinklage", "Jacob Tremblay", "Kevin Bacon", "Taylour Paige", "Elijah Wood"],
     "directors": ["Macon Blair"],
-    "writers": ["someone"],
+    "writers": ["Macon Blair"],
     "dateWatched": "2025-10-25",
-    "themesKeywords": ["corruption", "greed", "environmental"]
+    "themesKeywords": ["corruption", "greed", "environmental", "Troma"]
   },
   {
     "title": "Bad Shabbos",
@@ -18,8 +18,8 @@
     "bearHandsRating": 8,
     "hubbyBearRating": 7,
     "actors": ["Jon Bass", "Kyra Sedgwick", "David Payer", "Meghan Leathers", "Method Mad"],
-    "directors": ["Daniel Goldfarb"],
-    "writers": [],
+    "directors": ["Daniel Robbins"],
+    "writers": ["Daniel Robbins", "Zack Weiner"],
     "dateWatched": "2025-10-25",
     "themesKeywords": ["Jewish culture", "awkward family"]
   },
@@ -31,7 +31,7 @@
     "hubbyBearRating": 9,
     "actors": ["James Sweeney", "Dylan O'Brien", "Lauren Graham"],
     "directors": ["James Sweeney"],
-    "writers": [],
+    "writers": ["James Sweeney"],
     "dateWatched": "2025-10-23",
     "themesKeywords": ["plot twist", "stalking", "grief", "LGBTQ"]
   },
@@ -39,11 +39,11 @@
     "title": "Devil in Disguise: John Wayne Gacy",
     "year": 2021,
     "genre": ["Drama", "True Crime"],
-    "bearHandsRating": 8.5,
-    "hubbyBearRating": null,
-    "actors": ["John Wayne Gacy (archive footage)", "Terry Sullivan", "Philip J. Cline"],
-    "directors": ["Alexa Danner"],
-    "writers": [],
+    "bearHandsRating": 8,
+    "hubbyBearRating": 8,
+    "actors": ["Michael Chernus", "Gabriel Luna", "Michael Angarano", "Chris Sullivan", "Marin Ireland"],
+    "directors": ["Larysa Kondracki", "Ashley Michael Hoban"],
+    "writers": ["Patrick Macmanus", "Gregory Locklear"],
     "dateWatched": "2025-10-20",
     "themesKeywords": ["serial killer", "Chicago", "investigation"]
   },
@@ -55,7 +55,7 @@
     "hubbyBearRating": 7,
     "actors": ["Théodore Pellerin", "Archie Madekwe", "Havana Rose Liu"],
     "directors": ["Alex Russell"],
-    "writers": [],
+    "writers": ["Alex Russell"],
     "dateWatched": "2025-10-20",
     "themesKeywords": ["obsession", "slasher", "film student", "stalking", "meta horror"]
   }
