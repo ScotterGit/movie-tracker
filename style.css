@@ -17,6 +17,10 @@ table {
   margin-top: 20px;
 }
 
+tr {
+  vertical-align: middle;
+}
+
 th, td {
   vertical-align: middle;
   border: 1px solid #ccc;
