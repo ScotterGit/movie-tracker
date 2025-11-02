@@ -93,3 +93,10 @@ th:hover {
   border: 1px solid #ccc;
   min-width: 150px;
 }
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 150px;
+}
