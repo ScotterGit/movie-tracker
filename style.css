@@ -11,12 +11,6 @@ body {
   margin-bottom: 20px;
 }
 
-#rows-select {
-  margin-left: 10px;
-  padding: 6px;
-  font-size: 14px;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -47,15 +41,36 @@ th:hover {
   width: 16px;
 }
 
-#pagination {
-  margin-top: 20px;
-  text-align: center;
+#pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-#pagination button {
+#pagination-buttons,
+#rows-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#pagination-buttons button {
   padding: 6px 12px;
-  margin: 0 5px;
   font-size: 14px;
+}
+
+#rows-selector label {
+  font-weight: bold;
+}
+
+#rows-selector select {
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
 #controls {
@@ -65,10 +80,12 @@ th:hover {
   align-items: center;
   margin-bottom: 1.5rem;
 }
+
 #controls label {
   font-weight: bold;
   margin-right: 0.5rem;
 }
+
 #controls select,
 #controls input {
   padding: 0.4rem 0.6rem;
