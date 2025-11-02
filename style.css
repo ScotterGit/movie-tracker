@@ -18,13 +18,13 @@ table {
 }
 
 th, td {
+  vertical-align: middle;
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  vertical-align: middle;
   background-color: #f0f0f0;
   cursor: pointer;
   user-select: none;
