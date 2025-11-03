@@ -172,7 +172,7 @@ function formatDate(dateString) {
 
     function renderPagination(totalRows) {
       const totalPages = Math.ceil(totalRows / rowsPerPage);
-      const paginationDiv = document.getElementById("pagination");
+      const paginationDiv = document.getElementById("pagination-buttons");
 
       paginationDiv.innerHTML = `
         <button ${currentPage === 1 ? "disabled" : ""} id="prev">Prev</button>
