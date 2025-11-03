@@ -295,11 +295,14 @@ function formatDate(dateString) {
   document.addEventListener("click", function(e) {
   if (e.target.classList.contains("expand-link") || e.target.classList.contains("collapse-link")) {
     const td = e.target.closest("td");
-    const preview = td.querySelector(".actor-preview");
-    const full = td.querySelector(".actor-full");
+
+    const preview = td.querySelector(".actor-preview, .director-preview, .writer-preview");
+    const full = td.querySelector(".actor-full, .director-full, .writer-full");
 
     const isExpanding = e.target.classList.contains("expand-link");
-    preview.style.display = isExpanding ? "none" : "block";
-    full.style.display = isExpanding ? "block" : "none";
+    if (preview && full) {
+      preview.style.display = isExpanding ? "none" : "block";
+      full.style.display = isExpanding ? "block" : "none";
+    }
   }
 });
