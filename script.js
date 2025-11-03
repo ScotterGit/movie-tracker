@@ -161,12 +161,13 @@ function formatDate(dateString) {
     }
 
     function toggleActor(el) {
-      const preview = el.closest("td").querySelector(".actor-preview");
-      const full = el.closest("td").querySelector(".actor-full");
+      const td = el.closest("td");
+      const preview = td.querySelector(".actor-preview");
+      const full = td.querySelector(".actor-full");
 
       const isExpanding = preview.style.display !== "none";
-      preview.style.display = isExpanding ? "none" : "inline";
-      full.style.display = isExpanding ? "inline" : "none";
+      preview.style.display = isExpanding ? "none" : "block";
+      full.style.display = isExpanding ? "block" : "none";
     }
 
     function renderPagination(totalRows) {

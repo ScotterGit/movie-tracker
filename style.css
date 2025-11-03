@@ -103,6 +103,12 @@ th:hover {
   min-width: 150px;
 }
 
+.actor-preview,
+.actor-full {
+  display: block;
+  line-height: 1.4;
+}
+
 .expand-link,
 .collapse-link {
   color: #0077cc;
