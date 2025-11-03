@@ -150,8 +150,26 @@ function formatDate(dateString) {
               <span class="collapse-link"> Show less</span>
             </span>
           </td>
-          <td>${movie.directors.join(", ")}</td>
-          <td>${movie.writers.join(", ")}</td>
+          <td>
+            <span class="director-preview">
+              ${movie.directors.slice(0, 2).join(", ")}
+              ${movie.directors.length > 2 ? `<span class="expand-link"> +${movie.directors.length - 2} more</span>` : ""}
+            </span>
+            <span class="director-full" style="display:none;">
+              ${movie.directors.join(", ")}
+              <span class="collapse-link"> Show less</span>
+            </span>
+          </td>
+          <td>
+            <span class="writer-preview">
+              ${movie.writers.slice(0, 2).join(", ")}
+              ${movie.writers.length > 2 ? `<span class="expand-link"> +${movie.writers.length - 2} more</span>` : ""}
+            </span>
+            <span class="writer-full" style="display:none;">
+              ${movie.writers.join(", ")}
+              <span class="collapse-link"> Show less</span>
+            </span>
+          </td>
           <td>${formatDate(movie.dateWatched)}</td>
           <td>${movie.themesKeywords.join(", ")}</td>
         </tr>
