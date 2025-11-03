@@ -273,3 +273,15 @@ function formatDate(dateString) {
     updateDropdowns(movies);
     renderTable(currentData);
   });
+
+  document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("expand-link") || e.target.classList.contains("collapse-link")) {
+    const td = e.target.closest("td");
+    const preview = td.querySelector(".actor-preview");
+    const full = td.querySelector(".actor-full");
+
+    const isExpanding = e.target.classList.contains("expand-link");
+    preview.style.display = isExpanding ? "none" : "block";
+    full.style.display = isExpanding ? "block" : "none";
+  }
+});
