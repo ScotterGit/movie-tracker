@@ -143,11 +143,11 @@ function formatDate(dateString) {
           <td>
             <span class="actor-preview">
               ${movie.actors.slice(0, 3).join(", ")}
-              ${movie.actors.length > 3 ? `<span class="expand-link" onclick="toggleActor(this)"> +${movie.actors.length - 3} more</span>` : ""}
+              ${movie.actors.length > 3 ? `<span class="expand-link"> +${movie.actors.length - 3} more</span>` : ""}
             </span>
             <span class="actor-full" style="display:none;">
               ${movie.actors.join(", ")}
-              <span class="collapse-link" onclick="toggleActor(this)"> Show less</span>
+              <span class="collapse-link"> Show less</span>
             </span>
           </td>
           <td>${movie.directors.join(", ")}</td>
