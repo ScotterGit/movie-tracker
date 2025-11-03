@@ -6,8 +6,8 @@ fetch('movies.json')
     const rowsSelect = document.getElementById("rows-select");
     const genreSelect = document.getElementById("genre-select");
     const yearSelect = document.getElementById("year-select");
-    const directorSelect = document.getElementById("director-select");
-    const writerSelect = document.getElementById("writer-select");
+    const directorFilter = document.getElementById("director-filter");
+    const writerFilter = document.getElementById("writer-filter");
     const bearRatingSelect = document.getElementById("bear-rating-select");
     const hubbyRatingSelect = document.getElementById("hubby-rating-select");
     const actorFilter = document.getElementById("actor-filter");
@@ -25,8 +25,8 @@ fetch('movies.json')
 [
   genreSelect,
   yearSelect,
-  directorSelect,
-  writerSelect,
+  directorFilter,
+  writerFilter,
   bearRatingSelect,
   hubbyRatingSelect,
   actorFilter,
@@ -78,8 +78,8 @@ function formatDate(dateString) {
     function updateDropdowns(data) {
       populateDropdown(genreSelect, data.flatMap(m => m.genre));
       populateDropdown(yearSelect, data.map(m => m.year));
-      populateDropdown(directorSelect, data.flatMap(m => m.directors));
-      populateDropdown(writerSelect, data.flatMap(m => m.writers));
+      //populateDropdown(directorSelect, data.flatMap(m => m.directors));
+      //populateDropdown(writerSelect, data.flatMap(m => m.writers));
       populateDropdown(bearRatingSelect, data.map(m => m.bearHandsRating).filter(r => r != null));
       populateDropdown(hubbyRatingSelect, data.map(m => m.hubbyBearRating).filter(r => r != null));
     }
@@ -87,8 +87,8 @@ function formatDate(dateString) {
     function applyFilters() {
       const genre = genreSelect.value.toLowerCase();
       const year = yearSelect.value;
-      const director = directorSelect.value.toLowerCase();
-      const writer = writerSelect.value.toLowerCase();
+      const directorQuery = directorFilter.value.toLowerCase();
+      const writerQuery = writerFilter.value.toLowerCase();
       const bearRating = parseInt(bearRatingSelect.value);
       const hubbyRating = parseInt(hubbyRatingSelect.value);
       const actorQuery = actorFilter.value.toLowerCase();
@@ -100,8 +100,8 @@ function formatDate(dateString) {
       currentData = movies.filter(movie => {
         const matchGenre = genre ? movie.genre.some(g => g.toLowerCase() === genre) : true;
         const matchYear = year ? movie.year == year : true;
-        const matchDirector = director ? movie.directors.some(d => d.toLowerCase() === director) : true;
-        const matchWriter = writer ? movie.writers.some(w => w.toLowerCase() === writer) : true;
+        const matchDirector = directorQuery ? movie.directors.some(d => d.toLowerCase().includes(directorQuery)) : true;
+        const matchWriter = writerQuery ? movie.writers.some(w => w.toLowerCase().includes(writerQuery)) : true;
         const matchBear = bearRating ? movie.bearHandsRating === bearRating : true;
         const matchHubby = hubbyRating ? movie.hubbyBearRating === hubbyRating : true;
         const matchActor = actorQuery ? movie.actors.some(a => a.toLowerCase().includes(actorQuery)) : true;
@@ -267,8 +267,8 @@ function formatDate(dateString) {
     resetButton.addEventListener("click", () => {
       genreSelect.value = "";
       yearSelect.value = "";
-      directorSelect.value = "";
-      writerSelect.value = "";
+      directorFilter.value = "";
+      writerFilter.value = "";
       bearRatingSelect.value = "";
       hubbyRatingSelect.value = "";
       actorFilter.value = "";
