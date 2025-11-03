@@ -140,7 +140,16 @@ function formatDate(dateString) {
           <td>${movie.genre.join(", ")}</td>
           <td>${movie.bearHandsRating ?? ""}</td>
           <td>${movie.hubbyBearRating ?? ""}</td>
-          <td>${movie.actors.join(", ")}</td>
+          <td>
+            <span class="actor-preview">
+              ${movie.actors.slice(0, 3).join(", ")}
+              ${movie.actors.length > 3 ? `<span class="expand-link" onclick="toggleActor(this)"> +${movie.actors.length - 3} more</span>` : ""}
+            </span>
+            <span class="actor-full" style="display:none;">
+              ${movie.actors.join(", ")}
+              <span class="collapse-link" onclick="toggleActor(this)"> Show less</span>
+            </span>
+          </td>
           <td>${movie.directors.join(", ")}</td>
           <td>${movie.writers.join(", ")}</td>
           <td>${formatDate(movie.dateWatched)}</td>
@@ -149,6 +158,15 @@ function formatDate(dateString) {
       `).join("");
 
       renderPagination(data.length);
+    }
+
+    function toggleActor(el) {
+      const preview = el.closest("td").querySelector(".actor-preview");
+      const full = el.closest("td").querySelector(".actor-full");
+
+      const isExpanding = preview.style.display !== "none";
+      preview.style.display = isExpanding ? "none" : "inline";
+      full.style.display = isExpanding ? "inline" : "none";
     }
 
     function renderPagination(totalRows) {

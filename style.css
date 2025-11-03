@@ -102,3 +102,18 @@ th:hover {
   gap: 0.05rem;
   min-width: 150px;
 }
+
+.expand-link,
+.collapse-link {
+  color: #0077cc;
+  cursor: pointer;
+  margin-left: 6px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.expand-link:hover,
+.collapse-link:hover {
+  text-decoration: underline;
+}
+
