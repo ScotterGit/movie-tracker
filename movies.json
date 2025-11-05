@@ -1,4 +1,16 @@
 [
+    {
+    "title": "The Black Phone 2",
+    "year": 2025,
+    "genre": ["Drams", "Dystopian"],
+    "bearHandsRating": 10,
+    "hubbyBearRating": 8,
+    "actors": ["Mason Thames", "Madeleine McGraw", "Ethan Hawke", "Demián Bichir", "Jeremy Davies", "Miguel Mora", "Arianna Rivas", "Anna Lore", "Graham Abbey", "Maev Beaty", "James Ransone"],
+    "directors": ["Scott Derrickson"],
+    "writers": ["Scott Derrickson", "C. Robert Cargill"],
+    "dateWatched": "2025-11-4",
+    "themesKeywords": ["psychic", "haunted camp", "serial killer", "child abuse"]
+  },
   {
     "title": "The Long Walk",
     "year": 2025,
@@ -8,7 +20,7 @@
     "actors": ["Cooper Hoffman", "David Jonsson", "Garrett Wareing", "Tut Nyuot", "Charlie Plummer", "Ben Wang", "Jordan Gonzalez", "Joshua Odjick", "Mark Hamill", "Roman Griffin Davis", "Judy Greer", "Josh Hamilton", "Noah de Mel", "Daymon Wrightly", "Jack Giffin", "Thamela Mpumlwana", "Keenan Lehmann", "Dale Neri", "Teagan Stark", "Sam Clark", "Emmanuel Oderemi"],
     "directors": ["Francis Lawrence"],
     "writers": ["JT Mollner", "Stephen King"],
-    "dateWatched": "2025-11-3",
+    "dateWatched": "2025-11-03",
     "themesKeywords": ["coming of age", "authoritarian", "state-sponsored violence as entertainment"]
   },
   {
