@@ -2,7 +2,7 @@
 {
   "title": "Queen of Bones",
   "year": 2023,
-  "genre": ["Horror", "Thriller", "Folk Horror", "Period"],
+  "genre": ["Horror"],
   "bearHandsRating": 7,
   "hubbyBearRating": 5,
   "actors": ["Julia Butters", "Jacob Tremblay", "Taylor Schilling", "Martin Freeman"],
@@ -26,7 +26,7 @@
 {
   "title": "The Black Phone 2",
   "year": 2025,
-  "genre": [""],
+  "genre": ["Horror", "Slasher"],
   "bearHandsRating": 10,
   "hubbyBearRating": 8,
   "actors": ["Mason Thames", "Madeleine McGraw", "Ethan Hawke", "Demián Bichir", "Jeremy Davies", "Miguel Mora", "Arianna Rivas", "Anna Lore", "Graham Abbey", "Maev Beaty", "James Ransone"],
@@ -62,7 +62,7 @@
 {
   "title": "Bad Shabbos",
   "year": 2023,
-  "genre": ["Comedy", "Murder Mystery"],
+  "genre": ["Comedy", "Dark Comedy", "Family"],
   "bearHandsRating": 8,
   "hubbyBearRating": 7,
   "actors": ["Kyra Sedgwick", "Method Man", "Jon Bass", "Milana Vayntrub", "Ashley Zukerman", "David Paymer", "Meghan Leathers", "Catherine Curtin", "Theo Taplitz", "John Bedford Lloyd", "Josh Mostel"],
@@ -74,7 +74,7 @@
 {
   "title": "Twinless",
   "year": 2025,
-  "genre": ["Dark Comedy", "Mystery", "Psychological"],
+  "genre": ["Dark Comedy", "Mystery", "Drama"],
   "bearHandsRating": 10,
   "hubbyBearRating": 9,
   "actors": ["Dylan O'Brien", "James Sweeney", "Aisling Franciosi", "Lauren Graham", "Tasha Smith", "Chris Perfetti", "François Arnaud", "Susan Park", "Cree Cicchino", "Katie Findlay"],
@@ -86,7 +86,7 @@
 {
   "title": "Devil in Disguise: John Wayne Gacy",
   "year": 2025,
-  "genre": ["Drama", "True Crime"],
+  "genre": ["Drama", "True Crime", "Horror"],
   "bearHandsRating": 8,
   "hubbyBearRating": 8,
   "actors": ["Michael Chernus", "Gabriel Luna", "James Badge Dale", "Michael Angarano", "Chris Sullivan", "Marin Ireland", "Augustus Prew", "Brandon McEwan", "Cricket Brown", "Thom Nyhuus"],
@@ -105,6 +105,6 @@
   "directors": ["Alex Russell"],
   "writers": ["Alex Russell"],
   "dateWatched": "2025-10-20",
-  "themesKeywords": ["obsession", "slasher", "film student", "stalking", "meta horror"]
+  "themesKeywords": ["obsession", "pop star", "stalking", "meta horror"]
 }
 ]
