@@ -22,23 +22,39 @@ th, td {
   text-align: left;
 }
 
-th {
+/* Sortable headers */
+th[data-key] {
   vertical-align: middle;
   background-color: #f0f0f0;
   cursor: pointer;
   user-select: none;
 }
-  
-th:hover {
+
+/* Unsortable headers */
+th:not([data-key]) {
+  vertical-align: middle;
+  background-color: #f0f0f0;
+  cursor: default;
+  user-select: none;
+}
+
+/* Hover only on sortable headers */
+th[data-key]:hover {
   background-color: #e0e0e0;
 }
 
+/* Sort arrow */
 .arrow {
   margin-left: 6px;
   font-size: 14px;
   color: #333;
   display: inline-block;
   width: 16px;
+}
+
+/* Hide arrows unless actively sorted */
+th:not(.sorted) .arrow {
+  visibility: hidden;
 }
 
 #pagination-controls {
@@ -120,4 +136,3 @@ th:hover {
 .collapse-link:hover {
   text-decoration: underline;
 }
-
