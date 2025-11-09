@@ -136,3 +136,12 @@ th:not(.sorted) .arrow {
 .collapse-link:hover {
   text-decoration: underline;
 }
+
+#sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
