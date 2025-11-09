@@ -38,9 +38,9 @@
 {
   "title": "The Long Walk",
   "year": 2025,
-  "genre": ["Drama", "Dystopian"],
+  "genre": ["Drama", "Dystopian", "Coming-of-age"],
   "bearHandsRating": 4,
-  "hubbyBearRating": 2,
+  "hubbyBearRating": 3,
   "actors": ["Cooper Hoffman", "David Jonsson", "Garrett Wareing", "Tut Nyuot", "Charlie Plummer", "Ben Wang", "Jordan Gonzalez", "Joshua Odjick", "Mark Hamill", "Roman Griffin Davis", "Judy Greer", "Josh Hamilton", "Noah de Mel", "Daymon Wrightly", "Jack Giffin", "Thamela Mpumlwana", "Keenan Lehmann", "Dale Neri", "Teagan Stark", "Sam Clark", "Emmanuel Oderemi"],
   "directors": ["Francis Lawrence"],
   "writers": ["JT Mollner", "Stephen King"],
