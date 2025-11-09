@@ -171,7 +171,16 @@ function formatDate(dateString) {
             </span>
           </td>
           <td>${formatDate(movie.dateWatched)}</td>
-          <td>${movie.themesKeywords.join(", ")}</td>
+          <td>
+            <span class="theme-preview">
+              ${movie.themesKeywords.slice(0, 3).join(", ")}
+              ${movie.themesKeywords.length > 3 ? `<span class="expand-link" onclick="toggleTheme(this)"> +${movie.themesKeywords.length - 3} more</span>` : ""}
+            </span>
+            <span class="theme-full" style="display:none;">
+              ${movie.themesKeywords.join(", ")}
+              <span class="collapse-link" onclick="toggleTheme(this)"> Show less</span>
+            </span>
+          </td>
         </tr>
       `).join("");
 
@@ -186,6 +195,16 @@ function formatDate(dateString) {
       const isExpanding = preview.style.display !== "none";
       preview.style.display = isExpanding ? "none" : "block";
       full.style.display = isExpanding ? "block" : "none";
+    }
+
+    function toggleTheme(el) {
+      const td = el.closest("td");
+      const preview = td.querySelector(".theme-preview");
+      const full = td.querySelector(".theme-full");
+
+      const isExpanding = preview.style.display !== "none";
+      preview.style.display = isExpanding ? "none" : "inline";
+      full.style.display = isExpanding ? "inline" : "none";
     }
 
     function renderPagination(totalRows) {

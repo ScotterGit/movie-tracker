@@ -1,5 +1,17 @@
 [
 {
+  "title": "Queen of Bones",
+  "year": 2023,
+  "genre": ["Horror", "Thriller", "Folk Horror", "Period"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 5,
+  "actors": ["Julia Butters", "Jacob Tremblay", "Taylor Schilling", "Martin Freeman"],
+  "directors": ["Robert Budreau"],
+  "writers": ["Michael Burgner"],
+  "dateWatched": "2025-11-08",
+  "themesKeywords": ["witch", "Great Depression", "family secrets", "rural isolation"]
+},
+{
   "title": "Shoplifters",
   "year": 2018,
   "genre": ["Drama", "Family"],
@@ -9,7 +21,7 @@
   "directors": ["Hirokazu Kore-eda"],
   "writers": ["Hirokazu Kore-eda"],
   "dateWatched": "2025-11-04",
-  "themesKeywords": ["family", "poverty", "chosen family", "shoplifting", "social invisibility", "japanese"]
+  "themesKeywords": ["family", "poverty", "chosen family", "shoplifting", "social invisibility", "japanese", "Magnolia Pictures"]
 },
 {
   "title": "The Black Phone 2",
