@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   document.querySelectorAll("th").forEach(th => {
+    const key = th.dataset.key;
+    if (!key) return; // Skip unsortable headers
+
     th.addEventListener("click", () => {
-      const key = th.dataset.key;
       if (currentSortKey === key) {
         currentSortOrder = currentSortOrder === "asc" ? "desc" : "asc";
       } else {
