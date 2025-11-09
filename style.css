@@ -52,10 +52,10 @@ th[data-key]:hover {
   width: 16px;
 }
 
-/* Hide arrows unless actively sorted */
+/* Hide arrows unless actively sorted 
 th:not(.sorted) .arrow {
   visibility: hidden;
-}
+}*/
 
 #pagination-controls {
   display: flex;
