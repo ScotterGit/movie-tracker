@@ -170,7 +170,7 @@ function renderTable() {
       <td>${renderExpandableCell(movie.directors)}</td>
       <td>${renderExpandableCell(movie.writers)}</td>
       <td>${formatDate(movie.dateWatched)}</td>
-      <td>${movie.themesKeywords}</td>
+      <td>${movie.themesKeywords.join(", ")}</td>
     `;
     tbody.appendChild(row);
   });
