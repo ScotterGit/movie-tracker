@@ -76,15 +76,27 @@ function populateFilters(data) {
     hubbySet.add(movie.hubbyBearRating);
   });
 
-  populateSelect("genre-select", genreSet);
-  populateSelect("year-select", yearSet);
-  populateSelect("bear-rating-select", bearSet);
-  populateSelect("hubby-rating-select", hubbySet);
+  populateSelect("genre-select", [...genreSet], "alpha");
+  populateSelect("year-select", [...yearSet], "numeric");
+  populateSelect("bear-rating-select", [...bearSet], "numeric");
+  populateSelect("hubby-rating-select", [...hubbySet], "numeric");
 }
 
-function populateSelect(id, values) {
+function populateSelect(id, values, sortType = "numeric") {
   const select = document.getElementById(id);
-  [...values].sort((a, b) => a - b).forEach(val => {
+
+  // Clear existing options
+  select.innerHTML = '<option value="">All</option>';
+
+  // Sort values
+  if (sortType === "alpha") {
+    values.sort((a, b) => a.localeCompare(b));
+  } else {
+    values.sort((a, b) => a - b);
+  }
+
+  // Populate options
+  values.forEach(val => {
     const option = document.createElement("option");
     option.value = val;
     option.textContent = val;
