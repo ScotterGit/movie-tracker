@@ -1,327 +1,191 @@
-fetch('movies.json')
-  .then(response => response.json())
-  .then(movies => {
-    const tableBody = document.querySelector("#movie-table tbody");
-    const headers = document.querySelectorAll("th");
-    const rowsSelect = document.getElementById("rows-select");
-    const genreSelect = document.getElementById("genre-select");
-    const yearSelect = document.getElementById("year-select");
-    const directorFilter = document.getElementById("director-filter");
-    const writerFilter = document.getElementById("writer-filter");
-    const bearRatingSelect = document.getElementById("bear-rating-select");
-    const hubbyRatingSelect = document.getElementById("hubby-rating-select");
-    const actorFilter = document.getElementById("actor-filter");
-    const themeFilter = document.getElementById("theme-filter");
-    const searchBar = document.getElementById("search-bar");
-    const resetButton = document.getElementById("reset-filters");
-    const startDateInput = document.getElementById("start-date");
-    const endDateInput = document.getElementById("end-date");
+let movies = [];
+let currentPage = 1;
+let rowsPerPage = 100;
+let currentSortKey = null;
+let currentSortOrder = "asc";
 
-    const sortState = {};
-    let currentData = [...movies];
-    let currentPage = 1;
-    let rowsPerPage = parseInt(rowsSelect.value);
-
-[
-  genreSelect,
-  yearSelect,
-  directorFilter,
-  writerFilter,
-  bearRatingSelect,
-  hubbyRatingSelect,
-  actorFilter,
-  themeFilter,
-  searchBar,
-  rowsSelect,
-  startDateInput,
-  endDateInput
-].forEach(el => {
-  el.addEventListener("input", applyFilters);
-  el.addEventListener("change", applyFilters);
-});
-
-function formatDate(dateString) {
-  const date = new Date(dateString);
-  if (isNaN(date)) return ""; // fallback for invalid dates
-
-  const options = { year: "numeric", month: "short", day: "numeric" };
-  const parts = date.toLocaleDateString("en-US", options).split(" ");
-  const [month, day, year] = parts;
-
-  // Add ordinal suffix to day
-  const dayNum = parseInt(day);
-  const suffix = (n) => {
-    if (n >= 11 && n <= 13) return "th";
-    switch (n % 10) {
-      case 1: return "st";
-      case 2: return "nd";
-      case 3: return "rd";
-      default: return "th";
-    }
-  };
-
-  return `${year}, ${month} ${dayNum}${suffix(dayNum)}`;
-}
-
-    function populateDropdown(select, values) {
-      const currentValue = select.value;
-      select.innerHTML = '<option value="">All</option>';
-      [...new Set(values)].sort().forEach(val => {
-        const option = document.createElement("option");
-        option.value = val;
-        option.textContent = val;
-        select.appendChild(option);
-      });
-      select.value = currentValue;
-    }
-
-    function updateDropdowns(data) {
-      populateDropdown(genreSelect, data.flatMap(m => m.genre));
-      populateDropdown(yearSelect, data.map(m => m.year));
-      //populateDropdown(directorSelect, data.flatMap(m => m.directors));
-      //populateDropdown(writerSelect, data.flatMap(m => m.writers));
-      populateDropdown(bearRatingSelect, data.map(m => m.bearHandsRating).filter(r => r != null));
-      populateDropdown(hubbyRatingSelect, data.map(m => m.hubbyBearRating).filter(r => r != null));
-    }
-
-    function applyFilters() {
-      const genre = genreSelect.value.toLowerCase();
-      const year = yearSelect.value;
-      const directorQuery = directorFilter.value.toLowerCase();
-      const writerQuery = writerFilter.value.toLowerCase();
-      const bearRating = parseInt(bearRatingSelect.value);
-      const hubbyRating = parseInt(hubbyRatingSelect.value);
-      const actorQuery = actorFilter.value.toLowerCase();
-      const themeQuery = themeFilter.value.toLowerCase();
-      const searchQuery = searchBar.value.toLowerCase();
-      const startDate = startDateInput.value ? new Date(startDateInput.value) : null;
-      const endDate = endDateInput.value ? new Date(endDateInput.value) : null;
-
-      currentData = movies.filter(movie => {
-        const matchGenre = genre ? movie.genre.some(g => g.toLowerCase() === genre) : true;
-        const matchYear = year ? movie.year == year : true;
-        const matchDirector = directorQuery ? movie.directors.some(d => d.toLowerCase().includes(directorQuery)) : true;
-        const matchWriter = writerQuery ? movie.writers.some(w => w.toLowerCase().includes(writerQuery)) : true;
-        const matchBear = bearRating ? movie.bearHandsRating === bearRating : true;
-        const matchHubby = hubbyRating ? movie.hubbyBearRating === hubbyRating : true;
-        const matchActor = actorQuery ? movie.actors.some(a => a.toLowerCase().includes(actorQuery)) : true;
-        const matchTheme = themeQuery ? movie.themesKeywords.some(t => t.toLowerCase().includes(themeQuery)) : true;
-        const matchDate = (() => {
-          if (!startDate && !endDate) return true;
-          const watchedDate = new Date(movie.dateWatched);
-          if (startDate && watchedDate < startDate) return false;
-          if (endDate && watchedDate > endDate) return false;
-          return true;
-        })();
-        const matchSearch = searchQuery
-          ? Object.values(movie).some(val => {
-              if (Array.isArray(val)) return val.some(v => v.toLowerCase().includes(searchQuery));
-              return String(val).toLowerCase().includes(searchQuery);
-            })
-          : true;
-
-        return matchGenre && matchYear && matchDirector && matchWriter && matchBear && matchHubby && matchActor && matchTheme && matchSearch &&matchDate;
-      });
-
-      updateDropdowns(currentData);
-      currentPage = 1;
-      renderTable(currentData);
-    }
-
-    function renderTable(data) {
-      const start = (currentPage - 1) * rowsPerPage;
-      const end = start + rowsPerPage;
-      const pageData = data.slice(start, end);
-
-      tableBody.innerHTML = pageData.map(movie => `
-        <tr>
-          <td>${movie.title}</td>
-          <td>${movie.year}</td>
-          <td>${movie.genre.join(", ")}</td>
-          <td>${movie.bearHandsRating ?? ""}</td>
-          <td>${movie.hubbyBearRating ?? ""}</td>
-          <td>
-            <span class="actor-preview">
-              ${movie.actors.slice(0, 3).join(", ")}
-              ${movie.actors.length > 3 ? `<span class="expand-link"> +${movie.actors.length - 3} more</span>` : ""}
-            </span>
-            <span class="actor-full" style="display:none;">
-              ${movie.actors.join(", ")}
-              <span class="collapse-link"> Show less</span>
-            </span>
-          </td>
-          <td>
-            <span class="director-preview">
-              ${movie.directors.slice(0, 2).join(", ")}
-              ${movie.directors.length > 2 ? `<span class="expand-link"> +${movie.directors.length - 2} more</span>` : ""}
-            </span>
-            <span class="director-full" style="display:none;">
-              ${movie.directors.join(", ")}
-              <span class="collapse-link"> Show less</span>
-            </span>
-          </td>
-          <td>
-            <span class="writer-preview">
-              ${movie.writers.slice(0, 2).join(", ")}
-              ${movie.writers.length > 2 ? `<span class="expand-link"> +${movie.writers.length - 2} more</span>` : ""}
-            </span>
-            <span class="writer-full" style="display:none;">
-              ${movie.writers.join(", ")}
-              <span class="collapse-link"> Show less</span>
-            </span>
-          </td>
-          <td>${formatDate(movie.dateWatched)}</td>
-          <td>
-            <span class="theme-preview">
-              ${movie.themesKeywords.slice(0, 3).join(", ")}
-              ${movie.themesKeywords.length > 3 ? `<span class="expand-link" onclick="toggleTheme(this)"> +${movie.themesKeywords.length - 3} more</span>` : ""}
-            </span>
-            <span class="theme-full" style="display:none;">
-              ${movie.themesKeywords.join(", ")}
-              <span class="collapse-link" onclick="toggleTheme(this)"> Show less</span>
-            </span>
-          </td>
-        </tr>
-      `).join("");
-
-      renderPagination(data.length);
-    }
-
-    function toggleActor(el) {
-      const td = el.closest("td");
-      const preview = td.querySelector(".actor-preview");
-      const full = td.querySelector(".actor-full");
-
-      const isExpanding = preview.style.display !== "none";
-      preview.style.display = isExpanding ? "none" : "block";
-      full.style.display = isExpanding ? "block" : "none";
-    }
-
-    function toggleTheme(el) {
-      const td = el.closest("td");
-      const preview = td.querySelector(".theme-preview");
-      const full = td.querySelector(".theme-full");
-
-      const isExpanding = preview.style.display !== "none";
-      preview.style.display = isExpanding ? "none" : "inline";
-      full.style.display = isExpanding ? "inline" : "none";
-    }
-
-    function renderPagination(totalRows) {
-      const totalPages = Math.ceil(totalRows / rowsPerPage);
-      const paginationDiv = document.getElementById("pagination-buttons");
-
-      paginationDiv.innerHTML = `
-        <button ${currentPage === 1 ? "disabled" : ""} id="prev">Prev</button>
-        Page ${currentPage} of ${totalPages}
-        <button ${currentPage === totalPages ? "disabled" : ""} id="next">Next</button>
-      `;
-
-      document.getElementById("prev").onclick = () => {
-        if (currentPage > 1) {
-          currentPage--;
-          renderTable(currentData);
-        }
-      };
-
-      document.getElementById("next").onclick = () => {
-        if (currentPage < totalPages) {
-          currentPage++;
-          renderTable(currentData);
-        }
-      };
-    }
-
-    function sortBy(key) {
-      const direction = sortState[key] === "asc" ? "desc" : "asc";
-      sortState[key] = direction;
-
-      currentData.sort((a, b) => {
-        const aVal = Array.isArray(a[key]) ? a[key][0] ?? "" : a[key] ?? "";
-        const bVal = Array.isArray(b[key]) ? b[key][0] ?? "" : b[key] ?? "";
-
-        if (key === "dateWatched") {
-          return direction === "asc"
-            ? new Date(aVal) - new Date(bVal)
-            : new Date(bVal) - new Date(aVal);
-        }
-
-        const aNum = Number(aVal);
-        const bNum = Number(bVal);
-        const isNumeric = !isNaN(aNum) && !isNaN(bNum);
-
-        if (isNumeric) {
-          return direction === "asc" ? aNum - bNum : bNum - aNum;
-        }
-
-        return direction === "asc"
-          ? String(aVal).localeCompare(String(bVal))
-          : String(bVal).localeCompare(String(aVal));
-      });
-
-      updateArrows(key, direction);
-      currentPage = 1;
-      renderTable(currentData);
-    }
-
-    function updateArrows(activeKey, direction) {
-      headers.forEach(th => {
-        const key = th.getAttribute("data-key");
-        const arrow = th.querySelector(".arrow");
-        if (arrow) {
-          arrow.textContent = key === activeKey
-            ? (direction === "asc" ? "▲" : "▼")
-            : "";
-        }
-      });
-    }
-
-    headers.forEach(th => {
-      th.addEventListener("click", () => {
-        const key = th.getAttribute("data-key");
-        sortBy(key);
-      });
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("movies.json")
+    .then(res => res.json())
+    .then(data => {
+      movies = data;
+      populateFilters(data);
+      applyFilters();
     });
 
-    resetButton.addEventListener("click", () => {
-      genreSelect.value = "";
-      yearSelect.value = "";
-      directorFilter.value = "";
-      writerFilter.value = "";
-      bearRatingSelect.value = "";
-      hubbyRatingSelect.value = "";
-      actorFilter.value = "";
-      themeFilter.value = "";
-      searchBar.value = "";
-      startDateInput.value = "";
-      endDateInput.value = "";
-
-      Object.keys(sortState).forEach(key => delete sortState[key]);
-      currentPage = 1;
-      currentData = [...movies];
-
-      updateDropdowns(movies);
-      renderTable(currentData);
-      updateArrows("", "");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      searchBar.focus();
+  document.querySelectorAll("th").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.key;
+      if (currentSortKey === key) {
+        currentSortOrder = currentSortOrder === "asc" ? "desc" : "asc";
+      } else {
+        currentSortKey = key;
+        currentSortOrder = "asc";
+      }
+      applyFilters();
     });
-
-    updateDropdowns(movies);
-    renderTable(currentData);
   });
 
-  document.addEventListener("click", function(e) {
-  if (e.target.classList.contains("expand-link") || e.target.classList.contains("collapse-link")) {
-    const td = e.target.closest("td");
+  document.querySelectorAll("#controls input, #controls select").forEach(el => {
+    el.addEventListener("input", () => {
+      currentPage = 1;
+      applyFilters();
+    });
+  });
 
-    const preview = td.querySelector(".actor-preview, .director-preview, .writer-preview");
-    const full = td.querySelector(".actor-full, .director-full, .writer-full");
+  document.getElementById("reset-filters").addEventListener("click", () => {
+    document.querySelectorAll("#controls input, #controls select").forEach(el => {
+      el.value = "";
+    });
+    currentPage = 1;
+    applyFilters();
+  });
 
-    const isExpanding = e.target.classList.contains("expand-link");
-    if (preview && full) {
-      preview.style.display = isExpanding ? "none" : "block";
-      full.style.display = isExpanding ? "block" : "none";
+  document.getElementById("prevPage").addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      applyFilters();
     }
-  }
+  });
+
+  document.getElementById("nextPage").addEventListener("click", () => {
+    const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
+    if (currentPage < totalPages) {
+      currentPage++;
+      applyFilters();
+    }
+  });
+
+  document.getElementById("rows-select").addEventListener("change", e => {
+    rowsPerPage = parseInt(e.target.value);
+    currentPage = 1;
+    applyFilters();
+  });
 });
+
+function populateFilters(data) {
+  const genreSet = new Set();
+  const yearSet = new Set();
+  const bearSet = new Set();
+  const hubbySet = new Set();
+
+  data.forEach(movie => {
+    movie.genre.forEach(g => genreSet.add(g));
+    yearSet.add(movie.year);
+    bearSet.add(movie.bearHandsRating);
+    hubbySet.add(movie.hubbyBearRating);
+  });
+
+  populateSelect("genre-select", genreSet);
+  populateSelect("year-select", yearSet);
+  populateSelect("bear-rating-select", bearSet);
+  populateSelect("hubby-rating-select", hubbySet);
+}
+
+function populateSelect(id, values) {
+  const select = document.getElementById(id);
+  [...values].sort((a, b) => a - b).forEach(val => {
+    const option = document.createElement("option");
+    option.value = val;
+    option.textContent = val;
+    select.appendChild(option);
+  });
+}
+
+let filteredMovies = [];
+
+function applyFilters() {
+  const genre = document.getElementById("genre-select").value;
+  const year = document.getElementById("year-select").value;
+  const director = document.getElementById("director-filter").value.toLowerCase();
+  const writer = document.getElementById("writer-filter").value.toLowerCase();
+  const bearRating = document.getElementById("bear-rating-select").value;
+  const hubbyRating = document.getElementById("hubby-rating-select").value;
+  const actorQuery = document.getElementById("actor-filter").value.toLowerCase();
+  const themeQuery = document.getElementById("theme-filter").value.toLowerCase();
+  const startDate = document.getElementById("start-date").value;
+  const endDate = document.getElementById("end-date").value;
+
+  filteredMovies = movies.filter(movie => {
+    return (
+      (!genre || movie.genre.includes(genre)) &&
+      (!year || movie.year == year) &&
+      (!bearRating || movie.bearHandsRating == bearRating) &&
+      (!hubbyRating || movie.hubbyBearRating == hubbyRating) &&
+      (!director || movie.directors.some(d => d.toLowerCase().includes(director))) &&
+      (!writer || movie.writers.some(w => w.toLowerCase().includes(writer))) &&
+      (!actorQuery || movie.actors.some(a => a.toLowerCase().includes(actorQuery))) &&
+      (!themeQuery || movie.themesKeywords.some(t => t.toLowerCase().includes(themeQuery))) &&
+      (!startDate || new Date(movie.dateWatched) >= new Date(startDate)) &&
+      (!endDate || new Date(movie.dateWatched) <= new Date(endDate))
+    );
+  });
+
+  if (currentSortKey) {
+    filteredMovies.sort((a, b) => {
+      const valA = a[currentSortKey];
+      const valB = b[currentSortKey];
+      if (typeof valA === "string") {
+        return currentSortOrder === "asc"
+          ? valA.localeCompare(valB)
+          : valB.localeCompare(valA);
+      }
+      return currentSortOrder === "asc" ? valA - valB : valB - valA;
+    });
+  }
+
+  renderTable();
+}
+
+function renderTable() {
+  const tbody = document.querySelector("#movie-table tbody");
+  tbody.innerHTML = "";
+
+  const start = (currentPage - 1) * rowsPerPage;
+  const pageMovies = filteredMovies.slice(start, start + rowsPerPage);
+
+  pageMovies.forEach(movie => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${movie.title}</td>
+      <td>${movie.year}</td>
+      <td>${movie.genre.join(", ")}</td>
+      <td>${movie.bearHandsRating}</td>
+      <td>${movie.hubbyBearRating}</td>
+      <td>${renderExpandableCell(movie.actors)}</td>
+      <td>${renderExpandableCell(movie.directors)}</td>
+      <td>${renderExpandableCell(movie.writers)}</td>
+      <td>${movie.dateWatched}</td>
+      <td>${renderExpandableCell(movie.themesKeywords)}</td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  document.getElementById("pageIndicator").textContent = `Page ${currentPage}`;
+}
+
+function renderExpandableCell(items) {
+  if (!items || items.length === 0) return "";
+
+  const preview = items.slice(0, 3).join(", ");
+  const full = items.join(", ");
+  const moreCount = items.length - 3;
+
+  return `
+    <div class="toggle-wrapper">
+      <div class="preview">${preview}${moreCount > 0 ? ` <a href="#" onclick="toggleField(event, this)">+${moreCount} more</a>` : ""}</div>
+      <div class="full" style="display:none;">${full} <a href="#" onclick="toggleField(event, this)">Show less</a></div>
+    </div>
+  `;
+}
+
+function toggleField(event, el) {
+  event.preventDefault();
+  const wrapper = el.closest(".toggle-wrapper");
+  const preview = wrapper.querySelector(".preview");
+  const full = wrapper.querySelector(".full");
+
+  const isExpanding = preview.style.display !== "none";
+  preview.style.display = isExpanding ? "none" : "inline";
+  full.style.display = isExpanding ? "inline" : "none";
+}
