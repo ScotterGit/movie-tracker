@@ -137,6 +137,20 @@ function applyFilters() {
   renderTable();
 }
 
+function formatDate(dateStr) {
+  const date = new Date(dateStr);
+  const year = date.getFullYear();
+  const month = date.toLocaleString("en-US", { month: "short" });
+  const day = date.getDate();
+
+  const suffix =
+    day >= 11 && day <= 13
+      ? "th"
+      : ["st", "nd", "rd"][((day % 10) - 1)] || "th";
+
+  return `${year} ${month} ${day}${suffix}`;
+}
+
 function renderTable() {
   const tbody = document.querySelector("#movie-table tbody");
   tbody.innerHTML = "";
@@ -155,7 +169,7 @@ function renderTable() {
       <td>${renderExpandableCell(movie.actors)}</td>
       <td>${renderExpandableCell(movie.directors)}</td>
       <td>${renderExpandableCell(movie.writers)}</td>
-      <td>${movie.dateWatched}</td>
+      <td>${formatDate(movie.dateWatched)}</td>
       <td>${renderExpandableCell(movie.themesKeywords)}</td>
     `;
     tbody.appendChild(row);
