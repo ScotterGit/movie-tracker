@@ -218,7 +218,7 @@ function toggleField(event, el) {
 }
 
 function renderPagination() {
-  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredMovies.length / itemsPerPage);
   const paginationDiv = document.getElementById("pagination-buttons");
   paginationDiv.innerHTML = "";
 
