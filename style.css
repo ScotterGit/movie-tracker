@@ -140,8 +140,15 @@ th:not(.sorted) .arrow {
 #sticky-header {
   position: sticky;
   top: 0;
-  background-color: white;
   z-index: 10;
-  padding-bottom: 0.5rem;
+  background-color: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding-bottom: 0.5rem;
+}
+
+/* Optional: make sure the table header inside sticky-header looks consistent */
+#sticky-header th {
+  background-color: #f0f0f0;
+  vertical-align: middle;
+  user-select: none;
 }
