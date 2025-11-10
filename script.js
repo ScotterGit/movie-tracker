@@ -1,4 +1,5 @@
 let movies = [];
+let filteredMovies = [];
 let currentPage = 1;
 let rowsPerPage = 100;
 let currentSortKey = null;
@@ -15,8 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll("th").forEach(th => {
     const key = th.dataset.key;
-    if (!key) return; // Skip unsortable headers
-
+    if (!key) return;
     th.addEventListener("click", () => {
       if (currentSortKey === key) {
         currentSortOrder = currentSortOrder === "asc" ? "desc" : "asc";
@@ -86,18 +86,12 @@ function populateFilters(data) {
 
 function populateSelect(id, values, sortType = "numeric") {
   const select = document.getElementById(id);
-
-  // Clear existing options
   select.innerHTML = '<option value="">All</option>';
-
-  // Sort values
   if (sortType === "alpha") {
     values.sort((a, b) => a.localeCompare(b));
   } else {
     values.sort((a, b) => a - b);
   }
-
-  // Populate options
   values.forEach(val => {
     const option = document.createElement("option");
     option.value = val;
@@ -105,8 +99,6 @@ function populateSelect(id, values, sortType = "numeric") {
     select.appendChild(option);
   });
 }
-
-let filteredMovies = [];
 
 function applyFilters() {
   const genre = document.getElementById("genre-select").value;
@@ -149,20 +141,7 @@ function applyFilters() {
   }
 
   renderTable();
-}
-
-function formatDate(dateStr) {
-  const date = new Date(dateStr);
-  const year = date.getFullYear();
-  const month = date.toLocaleString("en-US", { month: "short" });
-  const day = date.getDate();
-
-  const suffix =
-    day >= 11 && day <= 13
-      ? "th"
-      : ["st", "nd", "rd"][((day % 10) - 1)] || "th";
-
-  return `${year} ${month} ${day}${suffix}`;
+  renderPagination(); // ✅ This was the missing piece
 }
 
 function renderTable() {
@@ -188,37 +167,10 @@ function renderTable() {
     `;
     tbody.appendChild(row);
   });
-  
-}
-
-function renderExpandableCell(items) {
-  if (!items || items.length === 0) return "";
-
-  const preview = items.slice(0, 3).join(", ");
-  const full = items.join(", ");
-  const moreCount = items.length - 3;
-
-  return `
-    <div class="toggle-wrapper">
-      <div class="preview">${preview}${moreCount > 0 ? ` <a href="#" onclick="toggleField(event, this)">+${moreCount} more</a>` : ""}</div>
-      <div class="full" style="display:none;">${full} <a href="#" onclick="toggleField(event, this)">Show less</a></div>
-    </div>
-  `;
-}
-
-function toggleField(event, el) {
-  event.preventDefault();
-  const wrapper = el.closest(".toggle-wrapper");
-  const preview = wrapper.querySelector(".preview");
-  const full = wrapper.querySelector(".full");
-
-  const isExpanding = preview.style.display !== "none";
-  preview.style.display = isExpanding ? "none" : "inline";
-  full.style.display = isExpanding ? "inline" : "none";
 }
 
 function renderPagination() {
-  const totalPages = Math.ceil(filteredMovies.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
   const paginationDiv = document.getElementById("pagination-buttons");
   paginationDiv.innerHTML = "";
 
@@ -234,7 +186,7 @@ function renderPagination() {
     });
     paginationDiv.appendChild(button);
   }
+
+  // ✅ Update the page indicator
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
-
 }
-
