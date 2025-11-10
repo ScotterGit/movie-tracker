@@ -13,6 +13,19 @@ document.addEventListener("DOMContentLoaded", () => {
       applyFilters();
     });
 
+  document.getElementById("search-bar").addEventListener("input", () => {
+  const query = document.getElementById("search-bar").value.toLowerCase();
+  filteredMovies = movies.filter(movie =>
+    movie.title.toLowerCase().includes(query) ||
+    movie.actors.some(a => a.toLowerCase().includes(query)) ||
+    movie.directors.some(d => d.toLowerCase().includes(query)) ||
+    movie.writers.some(w => w.toLowerCase().includes(query)) ||
+    movie.themesKeywords.some(t => t.toLowerCase().includes(query))
+  );
+  currentPage = 1;
+  renderTable();
+});
+
   document.querySelectorAll("th").forEach(th => {
     const key = th.dataset.key;
     if (!key) return; // Skip unsortable headers
