@@ -7,20 +7,56 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <h1>Movie Tracker</h1>
+
+  <!-- 🔍 Search Bar -->
+  <div id="search-bar">
+    <label for="actor-filter">Search by Actor:</label>
+    <input type="text" id="actor-filter" placeholder="e.g. Keanu Reeves" />
+  </div>
+
+  <!-- 🎛️ Filter Controls -->
   <div id="controls">
-    <select id="genre-select"></select>
-    <select id="year-select"></select>
-    <select id="bear-rating-select"></select>
-    <select id="hubby-rating-select"></select>
-    <input type="text" id="director-filter" placeholder="Director" />
-    <input type="text" id="writer-filter" placeholder="Writer" />
-    <input type="text" id="actor-filter" placeholder="Actor" />
-    <input type="text" id="theme-filter" placeholder="Theme" />
-    <input type="date" id="start-date" />
-    <input type="date" id="end-date" />
+    <div>
+      <label for="genre-select">Genre:</label>
+      <select id="genre-select"></select>
+    </div>
+    <div>
+      <label for="year-select">Year:</label>
+      <select id="year-select"></select>
+    </div>
+    <div>
+      <label for="bear-rating-select">Bear Hands Rating:</label>
+      <select id="bear-rating-select"></select>
+    </div>
+    <div>
+      <label for="hubby-rating-select">Hubby Bear Rating:</label>
+      <select id="hubby-rating-select"></select>
+    </div>
+    <div>
+      <label for="director-filter">Director:</label>
+      <input type="text" id="director-filter" />
+    </div>
+    <div>
+      <label for="writer-filter">Writer:</label>
+      <input type="text" id="writer-filter" />
+    </div>
+    <div>
+      <label for="theme-filter">Theme/Keyword:</label>
+      <input type="text" id="theme-filter" />
+    </div>
+    <div>
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" />
+    </div>
+    <div>
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" />
+    </div>
     <button id="reset-filters">Reset Filters</button>
   </div>
 
+  <!-- 📊 Movie Table -->
   <table id="movie-table">
     <thead>
       <tr>
@@ -39,6 +75,7 @@
     <tbody></tbody>
   </table>
 
+  <!-- ⏮️ Pagination Controls -->
   <div class="pagination-controls">
     <button id="prevPage">Previous</button>
     <span id="pageIndicator">Page 1</span>

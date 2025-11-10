@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       movies = data;
       populateFilters(data);
       applyFilters();
-    });
+    })
+    .catch(err => console.error("Error loading JSON:", err));
 
   document.querySelectorAll("th").forEach(th => {
     const key = th.dataset.key;
@@ -35,10 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  document.getElementById("actor-filter").addEventListener("input", () => {
+    currentPage = 1;
+    applyFilters();
+  });
+
   document.getElementById("reset-filters").addEventListener("click", () => {
     document.querySelectorAll("#controls input, #controls select").forEach(el => {
       el.value = "";
     });
+    document.getElementById("actor-filter").value = "";
     currentPage = 1;
     applyFilters();
   });
@@ -141,52 +148,5 @@ function applyFilters() {
   }
 
   renderTable();
-  renderPagination(); // ✅ This was the missing piece
-}
-
-function renderTable() {
-  const tbody = document.querySelector("#movie-table tbody");
-  tbody.innerHTML = "";
-
-  const start = (currentPage - 1) * rowsPerPage;
-  const pageMovies = filteredMovies.slice(start, start + rowsPerPage);
-
-  pageMovies.forEach(movie => {
-    const row = document.createElement("tr");
-    row.innerHTML = `
-      <td>${movie.title}</td>
-      <td>${movie.year}</td>
-      <td>${movie.genre.join(", ")}</td>
-      <td>${movie.bearHandsRating}</td>
-      <td>${movie.hubbyBearRating}</td>
-      <td>${renderExpandableCell(movie.actors)}</td>
-      <td>${renderExpandableCell(movie.directors)}</td>
-      <td>${renderExpandableCell(movie.writers)}</td>
-      <td>${formatDate(movie.dateWatched)}</td>
-      <td>${movie.themesKeywords.join(", ")}</td>
-    `;
-    tbody.appendChild(row);
-  });
-}
-
-function renderPagination() {
-  const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
-  const paginationDiv = document.getElementById("pagination-buttons");
-  paginationDiv.innerHTML = "";
-
-  for (let i = 1; i <= totalPages; i++) {
-    const button = document.createElement("button");
-    button.textContent = i;
-    button.classList.add("pagination-button");
-    if (i === currentPage) button.classList.add("active");
-    button.addEventListener("click", () => {
-      currentPage = i;
-      renderTable();
-      renderPagination();
-    });
-    paginationDiv.appendChild(button);
-  }
-
-  // ✅ Update the page indicator
-  document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
+  renderPagination(); // ✅ This ensures page indicator and buttons update
 }
