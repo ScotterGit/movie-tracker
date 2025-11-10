@@ -147,8 +147,10 @@ th:not(.sorted) .arrow {
 }
 
 /* Optional: make sure the table header inside sticky-header looks consistent */
-#sticky-header th {
+thead th {
+  position: sticky;
+  top: 100px; /* adjust based on height of #sticky-header */
   background-color: #f0f0f0;
-  vertical-align: middle;
-  user-select: none;
+  z-index: 5;
 }
+
