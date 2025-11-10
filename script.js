@@ -189,7 +189,8 @@ function renderTable() {
     tbody.appendChild(row);
   });
 
-  document.getElementById("pageIndicator").textContent = `Page ${currentPage}`;
+  const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
+  document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
 }
 
 function renderExpandableCell(items) {
