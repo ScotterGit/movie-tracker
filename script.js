@@ -236,6 +236,6 @@ function renderPagination() {
     paginationDiv.appendChild(button);
   }
 
-  document.getElementById("pagination-indicator").textContent = `Page ${currentPage} of ${totalPages}`;
+  document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
 }
 
