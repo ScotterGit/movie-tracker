@@ -136,21 +136,3 @@ th:not(.sorted) .arrow {
 .collapse-link:hover {
   text-decoration: underline;
 }
-
-#sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  padding-bottom: 0.5rem;
-}
-
-/* Optional: make sure the table header inside sticky-header looks consistent */
-thead th {
-  position: sticky;
-  top: 100px; /* adjust based on height of #sticky-header */
-  background-color: #f0f0f0;
-  z-index: 5;
-}
-
