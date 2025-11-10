@@ -4,27 +4,28 @@ let rowsPerPage = 100;
 let currentSortKey = null;
 let currentSortOrder = "asc";
 
+function debounce(func, delay) {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   fetch("movies.json")
     .then(res => res.json())
     .then(data => {
       movies = data;
+      const searchInput = document.getElementById("search-bar");
+      searchInput.addEventListener("input", debounce(() => {
+        currentPage = 1;
+        applyFilters();
+      }, 300));
+
       populateFilters(data);
       applyFilters();
     });
-
-  document.getElementById("search-bar").addEventListener("input", () => {
-  const query = document.getElementById("search-bar").value.toLowerCase();
-  filteredMovies = movies.filter(movie =>
-    movie.title.toLowerCase().includes(query) ||
-    movie.actors.some(a => a.toLowerCase().includes(query)) ||
-    movie.directors.some(d => d.toLowerCase().includes(query)) ||
-    movie.writers.some(w => w.toLowerCase().includes(query)) ||
-    movie.themesKeywords.some(t => t.toLowerCase().includes(query))
-  );
-  currentPage = 1;
-  renderTable();
-});
 
   document.querySelectorAll("th").forEach(th => {
     const key = th.dataset.key;
@@ -132,9 +133,19 @@ function applyFilters() {
   const themeQuery = document.getElementById("theme-filter").value.toLowerCase();
   const startDate = document.getElementById("start-date").value;
   const endDate = document.getElementById("end-date").value;
+  const searchQuery = document.getElementById("search-bar").value.toLowerCase();
 
   filteredMovies = movies.filter(movie => {
+    const matchesSearch =
+      !searchQuery ||
+      movie.title.toLowerCase().includes(searchQuery) ||
+      movie.actors.some(a => a.toLowerCase().includes(searchQuery)) ||
+      movie.directors.some(d => d.toLowerCase().includes(searchQuery)) ||
+      movie.writers.some(w => w.toLowerCase().includes(searchQuery)) ||
+      movie.themesKeywords.some(t => t.toLowerCase().includes(searchQuery));
+
     return (
+      matchesSearch &&
       (!genre || movie.genre.includes(genre)) &&
       (!year || movie.year == year) &&
       (!bearRating || movie.bearHandsRating == bearRating) &&
