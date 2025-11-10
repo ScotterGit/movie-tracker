@@ -188,8 +188,7 @@ function renderTable() {
     `;
     tbody.appendChild(row);
   });
-
-  document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
+  
 }
 
 function renderExpandableCell(items) {
@@ -235,6 +234,7 @@ function renderPagination() {
     });
     paginationDiv.appendChild(button);
   }
+  document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
 
 }
 
