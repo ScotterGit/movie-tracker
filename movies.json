@@ -21,7 +21,7 @@
   "directors": ["Hirokazu Kore-eda"],
   "writers": ["Hirokazu Kore-eda"],
   "dateWatched": "2025-11-04",
-  "themesKeywords": ["family", "poverty", "chosen family", "shoplifting", "social invisibility", "japanese", "Magnolia Pictures"]
+  "themesKeywords": ["Magnolia Pictures", "family", "poverty", "chosen family", "shoplifting", "social invisibility", "japanese"]
 },
 {
   "title": "The Black Phone 2",
@@ -33,7 +33,7 @@
   "directors": ["Scott Derrickson"],
   "writers": ["Scott Derrickson", "C. Robert Cargill"],
   "dateWatched": "2025-11-04",
-  "themesKeywords": ["psychic", "haunted camp", "serial killer", "child abuse"]
+  "themesKeywords": ["Blumhouse", "psychic", "haunted camp", "serial killer", "child abuse"]
 },
 {
   "title": "The Long Walk",
@@ -57,7 +57,7 @@
   "directors": ["Macon Blair"],
   "writers": ["Macon Blair"],
   "dateWatched": "2025-10-25",
-  "themesKeywords": ["corruption", "greed", "environmental", "Troma"]
+  "themesKeywords": ["Troma", "corruption", "greed", "environmental"]
 },
 {
   "title": "Bad Shabbos",
@@ -106,5 +106,78 @@
   "writers": ["Alex Russell"],
   "dateWatched": "2025-10-20",
   "themesKeywords": ["obsession", "pop star", "stalking", "meta horror"]
-}
+},
+{
+  "title": "The Strangers: Chapter 2",
+  "year": 2025,
+  "genre": ["Horror", "Thriller", "Slasher"],
+  "bearHandsRating": 3,
+  "hubbyBearRating": 2,
+  "actors": ["Madelaine Petsch", "Gabriel Basso", "Froy Gutierrez", "Ema Horvath", "Ella Bruccoleri"],
+  "directors": ["Renny Harlin"],
+  "writers": ["Alan R. Cohen", "Alan Freedland"],
+  "dateWatched": "2025-10-19",
+  "themesKeywords": ["masked killers"]
+},
+{
+  "title": "The Amateur",
+  "year": 2025,
+  "genre": ["Action", "Thriller"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 6,
+  "actors": ["Rami Malek", "Rachel Brosnahan", "Caitríona Balfe", "Michael Stuhlbarg", "Laurence Fishburne", "Jon Bernthal", "Holt McCallany", "Julianne Nicholson", "Adrian Martinez", "Danny Sapani", "Takehiro Hira"],
+  "directors": ["James Hawes"],
+  "writers": ["Ken Nolan", "Gary Spinelli"],
+  "dateWatched": "2025-10-18",
+  "themesKeywords": ["CIA", "revenge", "terrorism", "London", "cover-up"]
+},
+{
+  "title": "Locked",
+  "year": 2025,
+  "genre": ["Thriller"],
+  "bearHandsRating": 3,
+  "hubbyBearRating": 3,
+  "actors": ["Bill Skarsgård", "Anthony Hopkins"],
+  "directors": ["David Yarovesky"],
+  "writers": ["Michael Arlen Ross"],
+  "dateWatched": "2025-10-18",
+  "themesKeywords": ["trap", "psychological torment", "torture"]
+},
+{
+  "title": "Vicious",
+  "year": 2025,
+  "genre": ["Horror"],
+  "bearHandsRating": 6,
+  "hubbyBearRating": 6,
+  "actors": ["Dakota Fanning", "Kathryn Hunter", "Mary McCormack", "Rachel Blanchard", "Devyn Nekoda"],
+  "directors": ["Bryan Bertino"],
+  "writers": ["Bryan Bertino"],
+  "dateWatched": "2025-10-12",
+  "themesKeywords": ["cursed object", "doppelganger", "family trauma", "religious guilt", "supernatural torment"]
+},
+{
+  "title": "The Woman in Cabin 10",
+  "year": 2025,
+  "genre": ["Psychological Thriller", "Mystery"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 8,
+  "actors": ["Keira Knightley", "Guy Pearce", "Art Malik", "Gugu Mbatha-Raw", "Kaya Scodelario", "Daniel Ings", "Hannah Waddingham", "David Ajala", "David Morrissey", "Gitte Witt", "Amanda Collin"],
+  "directors": ["Simon Stone"],
+  "writers": ["Joe Shrapnel", "Anna Waterhouse", "Simon Stone"],
+  "dateWatched": "2025-10-11",
+  "themesKeywords": ["cruise ship", "missing woman", "gaslighting", "journalist", "impersonation", "wealthy elite", "murder cover-up", "psychological", "Netflix"]
+},
+{
+  "title": "American Sweatshop",
+  "year": 2025,
+  "genre": ["Mystery", "Thriller"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 7,
+  "actors": ["Lili Reinhart", "Daniela Melchior", "Joel Fry", "Christiane Paul", "Tim Plester", "Faith Delaney", "Jeremy Ang Jones", "Max Croes", "Chris Ginesi", "Levi Mattey", "Alex Lee"],
+  "directors": ["Uta Briesewitz"],
+  "writers": ["Matthew Nemeth"],
+  "dateWatched": "2025-10-10",
+  "themesKeywords": ["social media", "content moderation", "digital trauma", "crime investigation"]
+},
+
 ]
