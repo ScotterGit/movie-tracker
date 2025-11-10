@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Movie Tracker</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Bear Hands Movie Tracker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Movie Tracker</h1>
+  
+  <section id="controls">
+    <input type="text" id="search-bar" placeholder="Search movies..." />
 
-  <!-- 🔍 Search Bar -->
-  <div id="search-bar">
-    <label for="actor-filter">Search by Actor:</label>
-    <input type="text" id="actor-filter" placeholder="e.g. Keanu Reeves" />
-  </div>
+      <div class="filter-group">  
+        <label for="genre-select">Genre:</label>
+        <select id="genre-select"><option value="">All</option></select>
+      </div>
 
-  <!-- 🎛️ Filter Controls -->
-  <div id="controls">
-    <div>
-      <label for="genre-select">Genre:</label>
-      <select id="genre-select"></select>
-    </div>
-    <div>
-      <label for="year-select">Year:</label>
-      <select id="year-select"></select>
-    </div>
-    <div>
-      <label for="bear-rating-select">Bear Hands Rating:</label>
-      <select id="bear-rating-select"></select>
-    </div>
-    <div>
-      <label for="hubby-rating-select">Hubby Bear Rating:</label>
-      <select id="hubby-rating-select"></select>
-    </div>
-    <div>
-      <label for="director-filter">Director:</label>
-      <input type="text" id="director-filter" />
-    </div>
-    <div>
-      <label for="writer-filter">Writer:</label>
-      <input type="text" id="writer-filter" />
-    </div>
-    <div>
-      <label for="theme-filter">Theme/Keyword:</label>
-      <input type="text" id="theme-filter" />
-    </div>
-    <div>
-      <label for="start-date">Start Date:</label>
-      <input type="date" id="start-date" />
-    </div>
-    <div>
-      <label for="end-date">End Date:</label>
-      <input type="date" id="end-date" />
-    </div>
+      <div class="filter-group">        
+        <label for="year-select">Year:</label>
+        <select id="year-select"><option value="">All</option></select>
+      </div>
+
+      <div class="filter-group">  
+        <label for="director-select">Director:</label>
+        <input type="text" id="director-filter" placeholder="Name...">
+      </div>
+
+      <div class="filter-group">  
+        <label for="writer-select">Writer:</label>
+        <input type="text" id="writer-filter" placeholder="Name...">
+      </div>
+
+      <div class="filter-group">  
+        <label for="bear-rating-select">Bear Hands ⭐:</label>
+        <select id="bear-rating-select"><option value="">All</option></select>
+      </div>
+
+      <div class="filter-group">  
+        <label for="hubby-rating-select">Hubby Bear ⭐:</label>
+        <select id="hubby-rating-select"><option value="">All</option></select>
+      </div>
+
+      <div class="filter-group">  
+        <label for="actor-filter">Actor:</label>
+        <input type="text" id="actor-filter" placeholder="Name..." />
+      </div>
+
+      <div class="filter-group">  
+        <label for="theme-filter">Theme/Keyword:</label>
+        <input type="text" id="theme-filter" placeholder="Keyword..." />
+      </div>
+
+      <div class="filter-group">  
+        <label for="start-date">Watched After:</label>
+        <input type="date" id="start-date" />
+      </div>
+
+      <div class="filter-group">  
+        <label for="end-date">Watched Before:</label>
+        <input type="date" id="end-date" />
+      </div>
+
     <button id="reset-filters">Reset Filters</button>
-  </div>
+  </section>
 
-  <!-- 📊 Movie Table -->
   <table id="movie-table">
     <thead>
       <tr>
-        <th data-key="title">Title</th>
-        <th data-key="year">Year</th>
-        <th data-key="genre">Genre</th>
-        <th data-key="bearHandsRating">Bear</th>
-        <th data-key="hubbyBearRating">Hubby</th>
-        <th>Actors</th>
-        <th>Directors</th>
-        <th>Writers</th>
-        <th data-key="dateWatched">Watched</th>
-        <th>Themes</th>
+        <th data-key="title">Title <span class="arrow">↕</span></th>
+        <th data-key="year">Year <span class="arrow">↕</span></th>
+        <th>Genre </th>
+        <th data-key="bearHandsRating">Bear<br>Hands ⭐ <span class="arrow">↕</span></th>
+        <th data-key="hubbyBearRating">Hubby<br>Bear ⭐ <span class="arrow">↕</span></th>
+        <th>Actor </th>
+        <th>Director </th>
+        <th>Writer </th>
+        <th data-key="dateWatched">Date Watched <span class="arrow">↕</span></th>
+        <th>Themes/Keywords </th>
       </tr>
     </thead>
     <tbody></tbody>
   </table>
 
-  <!-- ⏮️ Pagination Controls -->
-  <div class="pagination-controls">
+<div id="pagination-controls">
+  <div id="pagination-buttons">
     <button id="prevPage">Previous</button>
     <span id="pageIndicator">Page 1</span>
     <button id="nextPage">Next</button>
-    <label for="rows-select">Movies per page:</label>
-    <select id="rows-select">
-      <option value="25">25</option>
-      <option value="50">50</option>
-      <option value="100" selected>100</option>
-    </select>
   </div>
 
-  <div id="pagination-buttons"></div>
+  <div id="rows-selector">
+    <label for="rows-select">Movies per page:</label>
+    <select id="rows-select">
+      <option value="100">100</option>
+      <option value="200">200</option>
+      <option value="300">300</option>
+    </select>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>
