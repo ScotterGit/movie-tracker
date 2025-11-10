@@ -217,3 +217,25 @@ function toggleField(event, el) {
   preview.style.display = isExpanding ? "none" : "inline";
   full.style.display = isExpanding ? "inline" : "none";
 }
+
+function renderPagination() {
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+  const paginationDiv = document.getElementById("pagination-buttons");
+  paginationDiv.innerHTML = "";
+
+  for (let i = 1; i <= totalPages; i++) {
+    const button = document.createElement("button");
+    button.textContent = i;
+    button.classList.add("pagination-button");
+    if (i === currentPage) button.classList.add("active");
+    button.addEventListener("click", () => {
+      currentPage = i;
+      renderTable();
+      renderPagination();
+    });
+    paginationDiv.appendChild(button);
+  }
+
+  document.getElementById("pagination-status").textContent = `Page ${currentPage} of ${totalPages}`;
+}
+
