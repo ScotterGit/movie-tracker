@@ -163,7 +163,7 @@ function applyFilters() {
       (!endDate || new Date(movie.dateWatched) <= new Date(endDate))
     );
   });
-}
+
 
   if (currentSortKey) {
     filteredMovies.sort((a, b) => {
