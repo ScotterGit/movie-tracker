@@ -50,7 +50,7 @@
 {
   "title": "The Toxic Avenger",
   "year": 2023,
-  "genre": ["Comedy", "Action/Adventure", "Superhero"],
+  "genre": ["Comedy", "Action", "Superhero"],
   "bearHandsRating": 9,
   "hubbyBearRating": 9,
   "actors": ["Peter Dinklage", "Luisa Guerreiro", "Jacob Tremblay", "Taylour Paige", "Kevin Bacon", "Elijah Wood", "Sarah Niles", "Julia Davis", "Julian Kostov", "Jonny Coyne", "David Yow", "Shaun Dooley", "Annette Badland", "Rebecca O'Mara", "Jane Levy", "Macon Blair", "Lloyd Kaufman"],
@@ -101,7 +101,7 @@
   "genre": ["Drama"],
   "bearHandsRating": 7,
   "hubbyBearRating": 7,
-  "actors": ["Théodore Pellerin", "Archie Madekwe", "Zack Fox", "Havana Rose Liu", "Wale Onayemi", "Daniel Zolghadri", "Sunny Suljic"],
+  "actors": ["Theodore Pellerin", "Archie Madekwe", "Zack Fox", "Havana Rose Liu", "Wale Onayemi", "Daniel Zolghadri", "Sunny Suljic"],
   "directors": ["Alex Russell"],
   "writers": ["Alex Russell"],
   "dateWatched": "2025-10-20",
@@ -137,7 +137,7 @@
   "genre": ["Thriller"],
   "bearHandsRating": 3,
   "hubbyBearRating": 3,
-  "actors": ["Bill Skarsgård", "Anthony Hopkins"],
+  "actors": ["Bill Skarsgard", "Anthony Hopkins"],
   "directors": ["David Yarovesky"],
   "writers": ["Michael Arlen Ross"],
   "dateWatched": "2025-10-18",
@@ -225,7 +225,7 @@
   "directors": ["Matt Shakman"],
   "writers": ["Josh Friedman", "Jeff Kaplan", "Ian Springer"],
   "dateWatched": "2025-10-4",
-  "themesKeywords": ["Marvel", "origin story", "space mission", "1960s"]
+  "themesKeywords": ["Marvel Studio", "MCU", "origin story", "space mission", "1960s"]
 },
 {
   "title": "Dangerous Animals",
@@ -245,10 +245,96 @@
   "genre": ["Horror"],
   "bearHandsRating": 1,
   "hubbyBearRating": 1,
-  "actors": ["Britt Robertson", "Rafi Gavron", "Anna Friel", "Yul Vazquez", "Nicholas Campbell", "Andy McQueen", "Freda Foh Shen", "Etienne Kellici", "Saad Siddiqui"],
+  "actors": ["Britt Robertson", "Anna Friel", "Rafi Gavron", "Yul Vazquez", "Freda Foh Shen", "Nicholas Campbell", "Andy McQueen", "Kenji Fitzgerald", "Paige Turco"],
   "directors": ["Brannon Braga"],
-  "writers": ["Brannon Braga", "Adam Simon", "Clive Barker (original stories)"],
-  "dateWatched": "2025-8-28",
+  "writers": ["Brannon Braga", "Adam Simon", "Clive Barker"],
+  "dateWatched": "2025-09-28",
   "themesKeywords": ["haunted house","Hulu original"]
-}
+},
+{
+  "title": "I Know What You Did Last Summer",
+  "year": 2025,
+  "genre": ["Thriller", "Slasher"],
+  "bearHandsRating": 4,
+  "hubbyBearRating": 3,
+  "dateWatched": "2025-09-27",
+  "directors": ["Jennifer Kaytin Robinson"],
+  "writers": ["Leah McKendrick", "Jennifer Kaytin Robinson"],
+  "actors": ["Madelyn Cline", "Chase Sui Wonders", "Jonah Hauer-King", "Tyriq Withers", "Sarah Pidgeon", "Billy Campbell", "Freddie Prinze Jr.", "Jennifer Love Hewitt", "Gabbriette Bechtel", "Austin Nichols", "Joshua Orpin", "Georgia Flood"],
+  "themesKeywords": ["revenge", "summer pact", "returning cast", "slasher revival", "coastal town"]
+},
+{
+  "title": "Weapons",
+  "year": 2025,
+  "genre": ["Horror", "Mystery"],
+  "bearHandsRating": 10,
+  "hubbyBearRating": 10,
+  "dateWatched": "2025-09-26",
+  "directors": ["Zach Cregger"],
+  "writers": ["Zach Cregger"],
+  "actors": ["Josh Brolin", "Julia Garner", "Alden Ehrenreich", "Austin Abrams", "Cary Christopher", "Toby Huss", "Benedict Wong", "Amy Madigan", "Sara Paxton", "Justin Long", "June Diane Raphael", "Whitmer Thomas", "Callie Schuttera", "Scarlett Sher", "Luke Speakman", "Clayton Farris"],
+  "themesKeywords": ["mysterious disappearance", "kidnapping", "multi-perspective narrative", "witch", "New Line Cinema", "mind control"]
+},
+{
+  "title": "The Naked Gun",
+  "year": 2025,
+  "genre": ["Comedy", "Action"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-09-21",
+  "directors": ["Akiva Schaffer"],
+  "writers": ["Dan Gregor", "Doug Mand", "Akiva Schaffer"],
+  "actors": ["Liam Neeson", "Pamela Anderson", "Paul Walter Hauser", "Danny Huston", "CCH Pounder", "Kevin Durand", "Liza Koshy", "Eddie Yu", "Michael Beasley", "Moses Jones", "Chase Steven Anderson", "Cody Rhodes", "Busta Rhymes", "Eddie DuPriest", "Carl Gilliard", "Elliott Grey", "Wilbur Fitzgerald", "Jon Anik"],
+  "themesKeywords": ["spoof", "bumbling detective", "Police Squad", "slapstick", "parody", "nostalgia reboot", "deadpan humor"]
+},
+{
+  "title": "My Mom Jayne",
+  "year": 2025,
+  "genre": ["Documentary", "Biography"],
+  "bearHandsRating": 6,
+  "hubbyBearRating": 4,
+  "dateWatched": "2025-09-20",
+  "directors": ["Mariska Hargitay"],
+  "writers": ["n/a"],
+  "actors": ["Jayne Mansfield", "Mariska Hargitay", "Zoltán Hargitay", "Mickey Hargitay Jr.", "Jayne Marie Mansfield", "Ellen Hargitay", "Raymond Strait", "Tony Cimber", "Nelson Sardelli", "Giovanna Sardelli", "Pietra Sardelli", "Peter Hermann", "Sam Brody", "Matt Cimber", "Joyce Davidson", "Sabin Gray", "Merv Griffin"],
+  "themesKeywords": ["Hollywood icon", "family tragedy", "tragic death", "1960s", "family legacy", "celebrity biography"]
+},
+{
+  "title": "Ballerina",
+  "year": 2025,
+  "genre": ["Action"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 4,
+  "dateWatched": "2025-09-20",
+  "directors": ["Len Wiseman"],
+  "writers": ["Shay Hatten", "Derek Kolstad"],
+  "actors": ["Ana de Armas", "Keanu Reeves", "Ian McShane", "Anjelica Huston", "Gabriel Byrne", "Catalina Sandino Moreno", "Norman Reedus", "Lance Reddick", "Sharon Duncan-Brewster", "David Castaneda", "Victoria Comte", "Robert Maaser", "Sooyoung Choi", "Park Jung Doo-hong", "Anne Parillaud", "Marc Cram"],
+  "themesKeywords": ["John Wick", "revenge", "assassin", "gun fu", "fight choreography"]
+},
+{
+  "title": "Superman",
+  "year": 2025,
+  "genre": ["Action", "Superhero"],
+  "bearHandsRating": 10,
+  "hubbyBearRating": 9,
+  "dateWatched": "2025-09-19",
+  "directors": ["James Gunn"],
+  "writers": ["James Gunn", "Jerry Siegel", "Joe Shuster"],
+  "actors": ["David Corenswet", "Alan Tudyk", "Grace Chan", "Bradley Cooper", "Angela Sarafyan", "Michael Rooker", "Pom Klementieff", "María Gabriela de Faría", "Sara Sampaio", "Tatiana Piper", "Stephen Blackehart", "Giovannie Cruz", "Bonnie Discepolo", "Terence Rosemore", "Natasha Halevi", "Adriana Leonard", "Paul Kim", "Larry Chin", "Jonah Lees"],
+  "themesKeywords": ["DC Universe", "reboot", "social commentary", "media warfare", "institutional distrust"]
+},
+{
+  "title": "Fight or Flight",
+  "year": 2024,
+  "genre": ["Action", "Comedy"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-09-19",
+  "directors": ["James Madigan"],
+  "writers": ["Brooks McLaren", "D.J. Cotrona"],
+  "actors": ["Josh Hartnett", "Charithra Chandran", "Katee Sackhoff", "Julian Kostov", "Marko Zaror", "JuJu Chan Szeto", "Danny Ashok", "Garrett Jyuddah Jaymes", "Willem van der Vegt", "Sanjeev Kohli", "Declan Baxter", "Sarah Lam", "Irén Bordán", "Attila Árpa", "Nóra Trokán", "Bálint Adorjáni", "Katrina Anne Ward"],
+  "themesKeywords": ["single location", "airplane", "rogue agent", "stylized violence", "campy", "over-the-top action"]
+},
+
+
 ]
