@@ -206,7 +206,7 @@ function renderTable() {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>${movie.hasReview
-        ? `<a href="${movie.reviewLink}" target="_blank">🐾 Posted</a>`
+        ? `<a href="${movie.reviewLink}" target="_blank">Link</a>`
         : `<span class="review-pending">—</span>`}
       </td>
       <td>${movie.title}</td>
