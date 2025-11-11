@@ -169,11 +169,19 @@ function applyFilters() {
     filteredMovies.sort((a, b) => {
       const valA = a[currentSortKey];
       const valB = b[currentSortKey];
-      if (typeof valA === "string") {
+
+      if (typeof valA === "boolean" && typeof valB === "boolean") {
+        return currentSortOrder === "asc"
+          ? Number(valA) - Number(valB)
+          : Number(valB) - Number(valA);
+      }
+
+      if (typeof valA === "string" && typeof valB === "string") {
         return currentSortOrder === "asc"
           ? valA.localeCompare(valB)
           : valB.localeCompare(valA);
       }
+
       return currentSortOrder === "asc" ? valA - valB : valB - valA;
     });
   }
