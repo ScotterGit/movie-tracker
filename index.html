@@ -60,12 +60,21 @@
         <input type="date" id="end-date" />
       </div>
 
+      <div class="filter-group">
+        <label for="review-filter">Show:</label>
+        <select id="review-filter">
+          <option value="">All Movies</option>
+          <option value="reviewed">Only Reviewed</option>
+        </select>
+      </div>
+
     <button id="reset-filters">Reset Filters</button>
   </section>
 
   <table id="movie-table">
     <thead>
       <tr>
+        <th>Review</th>
         <th data-key="title">Title <span class="arrow">↕</span></th>
         <th data-key="year">Year <span class="arrow">↕</span></th>
         <th>Genre </th>

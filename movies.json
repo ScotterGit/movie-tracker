@@ -1,5 +1,7 @@
 [
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Queen of Bones",
   "year": 2023,
   "genre": ["Horror"],
@@ -12,6 +14,8 @@
   "themesKeywords": ["witch", "Great Depression", "family secrets", "rural isolation"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Shoplifters",
   "year": 2018,
   "genre": ["Drama", "Family"],
@@ -24,6 +28,8 @@
   "themesKeywords": ["Magnolia Pictures", "family", "poverty", "chosen family", "shoplifting", "social invisibility", "japanese"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Black Phone 2",
   "year": 2025,
   "genre": ["Horror", "Slasher"],
@@ -36,6 +42,8 @@
   "themesKeywords": ["Blumhouse", "psychic", "haunted camp", "serial killer", "child abuse"]
 },
 {
+  "hasReview": true,
+  "reviewLink": "https://gopher-apricots-lpma.squarespace.com/config/pages/690b466d49c8607961afe28b",
   "title": "The Long Walk",
   "year": 2025,
   "genre": ["Drama", "Dystopian", "Coming-of-age"],
@@ -48,6 +56,8 @@
   "themesKeywords": ["coming of age", "authoritarian", "state-sponsored violence as entertainment"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Toxic Avenger",
   "year": 2023,
   "genre": ["Comedy", "Action", "Superhero"],
@@ -60,6 +70,8 @@
   "themesKeywords": ["Troma", "corruption", "greed", "environmental"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Bad Shabbos",
   "year": 2023,
   "genre": ["Comedy", "Dark Comedy", "Family"],
@@ -72,6 +84,8 @@
   "themesKeywords": ["Jewish culture", "awkward family"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Twinless",
   "year": 2025,
   "genre": ["Dark Comedy", "Mystery", "Drama"],
@@ -84,6 +98,8 @@
   "themesKeywords": ["plot twist", "stalking", "grief", "LGBTQ"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Devil in Disguise: John Wayne Gacy",
   "year": 2025,
   "genre": ["Drama", "True Crime", "Horror"],
@@ -96,6 +112,8 @@
   "themesKeywords": ["serial killer", "Chicago", "investigation"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Lurker",
   "year": 2025,
   "genre": ["Drama"],
@@ -108,6 +126,8 @@
   "themesKeywords": ["obsession", "pop star", "stalking", "meta horror"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Strangers: Chapter 2",
   "year": 2025,
   "genre": ["Horror", "Thriller", "Slasher"],
@@ -120,6 +140,8 @@
   "themesKeywords": ["masked killers"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Amateur",
   "year": 2025,
   "genre": ["Action", "Thriller"],
@@ -132,6 +154,8 @@
   "themesKeywords": ["CIA", "revenge", "terrorism", "London", "cover-up"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Locked",
   "year": 2025,
   "genre": ["Thriller"],
@@ -144,6 +168,8 @@
   "themesKeywords": ["trap", "psychological torment", "torture"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Vicious",
   "year": 2025,
   "genre": ["Horror"],
@@ -156,6 +182,8 @@
   "themesKeywords": ["cursed object", "doppelganger", "family trauma", "religious guilt", "supernatural torment"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Woman in Cabin 10",
   "year": 2025,
   "genre": ["Thriller", "Mystery"],
@@ -168,6 +196,8 @@
   "themesKeywords": ["cruise ship", "gaslighting", "journalist", "doppelganger", "wealthy elite", "murder cover-up", "psychological", "Netflix"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "American Sweatshop",
   "year": 2025,
   "genre": ["Mystery", "Thriller"],
@@ -180,6 +210,8 @@
   "themesKeywords": ["social media", "content moderation", "digital trauma", "crime investigation"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Conjuring: Last Rites",
   "year": 2025,
   "genre": ["Horror"],
@@ -192,6 +224,8 @@
   "themesKeywords": ["possessed object", "psychic visions", "religious horror", "demon", "Atomic Monster"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Man in My Basement",
   "year": 2025,
   "genre": ["Thriller", "Drama"],
@@ -204,6 +238,8 @@
   "themesKeywords": ["racial issues", "power dynamics", "psychological tension"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Monster: The Ed Gein Story",
   "year": 2025,
   "genre": ["Drama", "True Crime", "Horror", "Historical"],
@@ -216,6 +252,8 @@
   "themesKeywords": ["biographical", "serial killer", "mother fixation", "true crime", "crossdressing", "Wisconsin", "Netflix"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Fantastic Four: First Steps",
   "year": 2025,
   "genre": ["Superhero"],
@@ -228,6 +266,8 @@
   "themesKeywords": ["Marvel Studio", "MCU", "origin story", "space mission", "1960s"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Dangerous Animals",
   "year": 2025,
   "genre": ["Thriller"],
@@ -240,6 +280,8 @@
   "themesKeywords": ["shark attack", "serial killer", "Australia"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Books of Blood",
   "year": 2020,
   "genre": ["Horror"],
@@ -252,6 +294,8 @@
   "themesKeywords": ["haunted house","Hulu original"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "I Know What You Did Last Summer",
   "year": 2025,
   "genre": ["Thriller", "Slasher"],
@@ -264,6 +308,8 @@
   "themesKeywords": ["revenge", "summer pact", "returning cast", "slasher revival", "coastal town"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Weapons",
   "year": 2025,
   "genre": ["Horror", "Mystery"],
@@ -276,6 +322,8 @@
   "themesKeywords": ["mysterious disappearance", "kidnapping", "multi-perspective narrative", "witch", "New Line Cinema", "mind control"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "The Naked Gun",
   "year": 2025,
   "genre": ["Comedy", "Action"],
@@ -288,6 +336,8 @@
   "themesKeywords": ["spoof", "bumbling detective", "Police Squad", "slapstick", "parody", "nostalgia reboot", "deadpan humor"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "My Mom Jayne",
   "year": 2025,
   "genre": ["Documentary", "Biography"],
@@ -300,6 +350,8 @@
   "themesKeywords": ["Hollywood icon", "family tragedy", "tragic death", "1960s", "family legacy", "celebrity biography"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Ballerina",
   "year": 2025,
   "genre": ["Action"],
@@ -312,6 +364,8 @@
   "themesKeywords": ["John Wick", "revenge", "assassin", "gun fu", "fight choreography"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Superman",
   "year": 2025,
   "genre": ["Action", "Superhero"],
@@ -324,6 +378,8 @@
   "themesKeywords": ["DC Universe", "reboot", "social commentary", "media warfare", "institutional distrust"]
 },
 {
+  "hasReview": false,
+  "reviewLink": null,
   "title": "Fight or Flight",
   "year": 2024,
   "genre": ["Action", "Comedy"],
@@ -333,7 +389,7 @@
   "directors": ["James Madigan"],
   "writers": ["Brooks McLaren", "D.J. Cotrona"],
   "actors": ["Josh Hartnett", "Charithra Chandran", "Katee Sackhoff", "Julian Kostov", "Marko Zaror", "JuJu Chan Szeto", "Danny Ashok", "Garrett Jyuddah Jaymes", "Willem van der Vegt", "Sanjeev Kohli", "Declan Baxter", "Sarah Lam", "Irén Bordán", "Attila Árpa", "Nóra Trokán", "Bálint Adorjáni", "Katrina Anne Ward"],
-  "themesKeywords": ["single location", "airplane", "rogue agent", "stylized violence", "campy", "over-the-top action"]
+  "themesKeywords": ["single location", "airplane", "rogue agent", "stylized violence", "campy", "over-the-top"]
 }
 
 

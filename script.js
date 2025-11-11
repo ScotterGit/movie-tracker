@@ -134,6 +134,7 @@ function applyFilters() {
   const startDate = document.getElementById("start-date").value;
   const endDate = document.getElementById("end-date").value;
   const searchQuery = document.getElementById("search-bar").value.toLowerCase();
+  const reviewSetting = document.getElementById("review-filter").value;
 
   filteredMovies = movies.filter(movie => {
     const matchesSearch =
@@ -144,8 +145,12 @@ function applyFilters() {
       movie.writers.some(w => w.toLowerCase().includes(searchQuery)) ||
       movie.themesKeywords.some(t => t.toLowerCase().includes(searchQuery));
 
+    const matchesReview =
+      reviewSetting === "reviewed" ? movie.hasReview === true : true;
+
     return (
       matchesSearch &&
+      matchesReview &&
       (!genre || movie.genre.includes(genre)) &&
       (!year || movie.year == year) &&
       (!bearRating || movie.bearHandsRating == bearRating) &&
@@ -158,6 +163,7 @@ function applyFilters() {
       (!endDate || new Date(movie.dateWatched) <= new Date(endDate))
     );
   });
+}
 
   if (currentSortKey) {
     filteredMovies.sort((a, b) => {
@@ -199,6 +205,10 @@ function renderTable() {
   pageMovies.forEach(movie => {
     const row = document.createElement("tr");
     row.innerHTML = `
+      <td>${movie.hasReview
+        ? `<a href="${movie.reviewLink}" target="_blank">🐾 Posted</a>`
+        : `<span class="review-pending">—</span>`}
+      </td>
       <td>${movie.title}</td>
       <td>${movie.year}</td>
       <td>${movie.genre.join(", ")}</td>

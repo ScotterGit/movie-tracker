@@ -136,3 +136,17 @@ th:not(.sorted) .arrow {
 .collapse-link:hover {
   text-decoration: underline;
 }
+
+.review-pending {
+  color: #999;
+  font-style: italic;
+}
+
+a.review-link {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+a.review-link:hover {
+  text-decoration: underline;
+}
