@@ -28,8 +28,9 @@
   "themesKeywords": ["Magnolia Pictures", "family", "poverty", "chosen family", "shoplifting", "social invisibility", "japanese"]
 },
 {
-  "hasReview": false,
-  "reviewLink": null,
+  "hasReview": true,
+  "reviewedBy": "BH",
+  "reviewLink": "https://www.imdb.com/title/tt13652286/",
   "title": "The Black Phone 2",
   "year": 2025,
   "genre": ["Horror", "Slasher"],
