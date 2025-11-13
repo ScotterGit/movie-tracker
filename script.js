@@ -123,6 +123,7 @@ function populateSelect(id, values, sortType = "numeric") {
 let filteredMovies = [];
 
 function applyFilters() {
+  const reviewerSetting = document.getElementById("reviewer-filter").value;
   const genre = document.getElementById("genre-select").value;
   const year = document.getElementById("year-select").value;
   const director = document.getElementById("director-filter").value.toLowerCase();
@@ -147,10 +148,17 @@ function applyFilters() {
 
     const matchesReview =
       reviewSetting === "reviewed" ? movie.hasReview === true : true;
-
+    
+    const matchesReviewer =
+      reviewerSetting === ""
+        ? true
+        : movie.hasReview &&
+          movie.reviews.some(r => r.reviewedBy === reviewerSetting);
+    
     return (
       matchesSearch &&
       matchesReview &&
+      matchesReviewer &&
       (!genre || movie.genre.includes(genre)) &&
       (!year || movie.year == year) &&
       (!bearRating || movie.bearHandsRating == bearRating) &&
