@@ -213,9 +213,12 @@ function renderTable() {
   pageMovies.forEach(movie => {
     const row = document.createElement("tr");
     row.innerHTML = `
-      <td>${movie.hasReview
-        ? `<a href="${movie.reviewLink}" target="_blank">Link</a>`
-        : `<span class="review-pending">—</span>`}
+      <td>
+        ${movie.hasReview
+          ? movie.reviews.map(r =>
+              `<a href="${r.reviewLink}" target="_blank">${r.reviewedBy} 🐾</a>`
+            ).join(" | ")
+          : `<span class="review-pending">—</span>`}
       </td>
       <td>${movie.title}</td>
       <td>${movie.year}</td>

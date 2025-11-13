@@ -43,7 +43,16 @@
 },
 {
   "hasReview": true,
-  "reviewLink": "https://gopher-apricots-lpma.squarespace.com/config/pages/690b466d49c8607961afe28b",
+  "reviews": [
+    {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+    },
+    {
+      "reviewedBy": "HB",
+      "reviewLink": "https://www.imdb.com/title/tt7181546/"
+    }
+  ],
   "title": "The Long Walk",
   "year": 2025,
   "genre": ["Drama", "Dystopian", "Coming-of-age"],
