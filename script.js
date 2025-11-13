@@ -216,7 +216,7 @@ function renderTable() {
       <td>
         ${movie.hasReview
           ? movie.reviews.map(r =>
-              `<a href="${r.reviewLink}" target="_blank">${r.reviewedBy} 🐾</a>`
+              `<a href="${r.reviewLink}" target="_blank">${r.reviewedBy}</a>`
             ).join(" | ")
           : `<span class="review-pending">—</span>`}
       </td>
