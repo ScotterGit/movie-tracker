@@ -29,8 +29,12 @@
 },
 {
   "hasReview": true,
-  "reviewedBy": "BH",
-  "reviewLink": "https://www.imdb.com/title/tt13652286/",
+  "reviews": [
+    {
+    "reviewedBy": "BH",
+    "reviewLink": "https://www.imdb.com/title/tt13652286/",
+    }
+  ],
   "title": "The Black Phone 2",
   "year": 2025,
   "genre": ["Horror", "Slasher"],
