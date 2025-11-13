@@ -150,3 +150,13 @@ a.review-link {
 a.review-link:hover {
   text-decoration: underline;
 }
+
+.review-link {
+  margin-right: 6px;
+  font-weight: bold;
+  color: #2a7;
+}
+.review-pending {
+  color: #999;
+  font-style: italic;
+}
