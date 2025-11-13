@@ -354,7 +354,7 @@
   "reviewLink": null,
   "title": "My Mom Jayne",
   "year": 2025,
-  "genre": ["Documentary", "Biography"],
+  "genre": ["Documentary"],
   "bearHandsRating": 6,
   "hubbyBearRating": 4,
   "dateWatched": "2025-09-20",
@@ -404,6 +404,62 @@
   "writers": ["Brooks McLaren", "D.J. Cotrona"],
   "actors": ["Josh Hartnett", "Charithra Chandran", "Katee Sackhoff", "Julian Kostov", "Marko Zaror", "JuJu Chan Szeto", "Danny Ashok", "Garrett Jyuddah Jaymes", "Willem van der Vegt", "Sanjeev Kohli", "Declan Baxter", "Sarah Lam", "Irén Bordán", "Attila Árpa", "Nóra Trokán", "Bálint Adorjáni", "Katrina Anne Ward"],
   "themesKeywords": ["single location", "airplane", "rogue agent", "stylized violence", "campy", "over-the-top"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "28 Years Later",
+  "year": 2025,
+  "genre": ["Post-Apocalyptic"],
+  "bearHandsRating": 5,
+  "hubbyBearRating": 3,
+  "dateWatched": "2025-09-18",
+  "directors": ["Danny Boyle"],
+  "writers": ["Alex Garland"],
+  "actors": ["Jodie Comer", "Aaron Taylor-Johnson", "Jack O'Connell", "Alfie Williams", "Ralph Fiennes", "Rocco Haynes", "Haley Flaherty", "Harriet Taylor", "Hannah Allan-Robertson", "Annabelle Graham", "Olivia Morley", "Theadora Rawlings", "Darcie Smith", "Isla Vickers", "Kim Allan", "Sandy Batchelor", "Christopher Fulford", "Sienna Giblin", "Amy Cameron", "Stella Gonet"],
+  "themesKeywords": ["rage virus", "zombies", "British Isles"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Jurassic World: Rebirth",
+  "year": 2025,
+  "genre": ["Adventure", "Sci-Fi"],
+  "bearHandsRating": 6,
+  "hubbyBearRating": 4,
+  "dateWatched": "2025-09-17",
+  "directors": ["Gareth Edwards"],
+  "writers": ["David Koepp", "Michael Crichton"],
+  "actors": ["Scarlett Johansson", "Mahershala Ali", "Jonathan Bailey", "Rupert Friend", "Manuel Garcia-Rulfo", "Luna Blaise", "David Iacono", "Philippine Velge", "Sylvain LeClerc", "Ed Skrein", "Adam Loxley Williams", "Niamh Finlay", "Julian Edgar", "Lucy Thackeray", "Billy Smith", "Jonny Lavelle", "Dylan Bickel"],
+  "themesKeywords": ["mutant dinosaurs"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Neighborhood Watch",
+  "year": 2025,
+  "genre": ["Drama", "Thriller"],
+  "bearHandsRating": 4,
+  "hubbyBearRating": 3,
+  "dateWatched":"2025-09-17",
+  "directors": ["David M. Rosenthal"],
+  "writers": ["Ross Partridge"],
+  "actors": ["Jack Quaid", "Jeffrey Dean Morgan", "Britt Baron", "Zoe Winters", "Will Brill", "David Pittu", "Danny Wolohan", "Ben Rappaport", "Kelli Barrett", "Michael Chernus"],
+  "themesKeywords": ["mental illness", "emotional trauma", "unreliable narrator"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Anaconda",
+  "year": 2025,
+  "genre": ["Adventure", "Comedy"],
+  "bearHandsRating": null,
+  "hubbyBearRating": 10,
+  "dateWatched": "2025-09-14",
+  "directors": ["Tom Gormican"],
+  "writers": ["Kevin Etten", "Tom Gormican"],
+  "actors": ["Thandiwe Newton", "Steve Zahn", "Paul Rudd", "Jack Black", "Daniela Melchior", "Ione Skye", "Ben Lawson", "Selton Mello", "Santiago Braga", "Renee Herbert", "Yasmin Kassim", "Aimee Bah", "Cal Giardina", "Jack Waters", "Matt Aristizabal", "Diego Arnary", "Sebastian Sero", "Rui Ricardo Diaz", "Romeo Ellard"],
+  "themesKeywords": ["remake", "jungle survival"]
 }
 
 
