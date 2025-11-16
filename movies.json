@@ -896,7 +896,7 @@
   "themesKeywords": ["martial arts", "grindhouse style", "Wu-Tang aesthetic", "revenge", "over-the-top violence", "feudal China"]
 },
 {
-  "hasReview": true,
+  "hasReview": false,
   "reviewLink": null,
   "title": "One of Them Days",
   "year": 2025,
@@ -910,7 +910,7 @@
   "themesKeywords": ["roommate chaos", "rent crisis", "friendship", "eviction", "urban hustle", "buddy dynamics", "Black culture", "celebrity cameos"]
 },
 {
-  "hasReview": true,
+  "hasReview": false,
   "reviewLink": null,
   "title": "Drop",
   "year": 2025,
@@ -924,7 +924,7 @@
   "themesKeywords": ["first date", "anonymous threats", "restaurant", "single location", "stalker", "text message terror", "modern whodunnit", "Blumhouse Productions"]
 },
 {
-  "hasReview": true,
+  "hasReview": false,
   "reviewLink": null,
   "title": "The Brothers Grimm",
   "year": 2005,
@@ -938,7 +938,7 @@
   "themesKeywords": ["fairy tale mashup", "con artists", "enchanted forest", "missing children", "witch", "French occupation", "brotherly tension", "illusion vs reality", "supernatural hoax"]
 },
 {
-  "hasReview": true,
+  "hasReview": false,
   "reviewLink": null,
   "title": "Out of Darkness",
   "year": 2022,
@@ -952,7 +952,7 @@
   "themesKeywords": ["prehistoric survival", "Stone Age horror", "tribal paranoia", "mythical predator", "ancient language"]
 },
 {
-  "hasReview": true,
+  "hasReview": false,
   "reviewLink": null,
   "title": "Bloodshot",
   "year": 2020,
