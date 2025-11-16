@@ -1071,12 +1071,112 @@
   "genre": ["Drama"],
   "bearHandsRating": 10,
   "hubbyBearRating": 9,
-  "dateWatched": "",
+  "dateWatched": "2025-06-22",
   "directors": ["Wayne Wang"],
   "writers": ["Amy Tan", "Ron Bass"],
   "actors": ["Kieu Chinh", "Tsai Chin", "France Nuyen", "Lisa Lu", "Ming-Na Wen", "Tamlyn Tomita", "Lauren Tom", "Rosalind Chao", "Chao Li Chi", "Victor Wong", "Irene Ng", "Meijuan Xi", "Guo-Rong Chin", "Hsu Ying Li"],
   "themesKeywords": ["mother-daughter relationships", "Chinese-American identity", "intergenerational trauma", "immigrant experience", "female sacrifice", "emotional repression", "storytelling across generations", "gender roles", "family legacy"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Teenage Mutant Ninja Turtles: Out of the Shadows",
+  "year": 2016,
+  "genre": ["Action", "Superhero"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-06-21",
+  "directors": ["Dave Green"],
+  "writers": ["Josh Appelbaum", "Andre Nemec", "Peter Laird"],
+  "actors": ["Megan Fox", "Will Arnett", "Laura Linney", "Stephen Amell", "Noel Fisher", "Jeremy Howard", "Pete Ploszek", "Alan Ritchson", "Tyler Perry", "Brian Tee", "Stephen Farrelly", "Gary Anthony Williams", "Peter Donald Badalamenti II", "Tony Shalhoub", "Brad Garrett", "Opal Alladin", "Brittany Ishibashi", "Connor Fox"],
+  "themesKeywords": ["alien invasion", "dimension portal", "teamwork", "comic book adaptation", "Michael Bay production"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Teenage Mutant Ninja Turtles",
+  "year": 2014,
+  "genre": ["Action", "Superhero"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 6,
+  "dateWatched": "2025-06-21",
+  "directors": ["Jonathan Liebesman"],
+  "writers": ["Josh Appelbaum", "André Nemec", "Evan Daugherty"],
+  "actors": ["Megan Fox", "Will Arnett", "William Fichtner", "Alan Ritchson", "Noel Fisher", "Pete Ploszek", "Johnny Knoxville", "Jeremy Howard", "Danny Woodburn", "Tony Shalhoub", "Tohoru Masamune", "Whoopi Goldberg", "Minae Noji", "Abby Elliott", "Taran Killam", "K. Todd Freeman", "Paul Fitzgerald"],
+  "themesKeywords": ["mutant turtles", "Shredder", "origin reboot", "corporate villainy", "underground heroes", "sibling dynamics", "martial arts", "product placement", "Michael Bay production", "CGI-heavy action"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Flight Risk",
+  "year": 2025,
+  "genre": ["Action", "Crime", "Drama", "Thriller", "Psychological Thriller"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-06-20",
+  "directors": ["Mel Gibson"],
+  "writers": ["Jared Rosenberg"],
+  "actors": ["Mark Wahlberg", "Michelle Dockery", "Topher Grace", "Leah Remini", "Paul Ben-Victor", "Eilise Patton", "Maaz Ali", "Senor Pablo", "Savanah Joeckel", "Mark Schotz", "Monib Abhat", "Milko Kadikov", "Georgi S. Georgiev", "Atanas Srebrev"],
+  "themesKeywords": ["confined thriller", "Alaskan wilderness", "pilot", "fugitive transport", "single location", "identity deception", "air marshal tension"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "I Trapped the Devil",
+  "year": 2019,
+  "genre": ["Horror", "Thriller"],
+  "bearHandsRating": 1,
+  "hubbyBearRating": 2,
+  "dateWatched": "2025-06-15",
+  "directors": ["Josh Lobo"],
+  "writers": ["Josh Lobo"],
+  "actors": ["Scott Poythress", "AJ Bowen", "Susan Burke", "Rowan Russell", "John Marrott", "Alan", "Jocelin Donahue", "Chris Sullivan", "Aaron Larsen", "Jack Vernon", "Victoria Smith"],
+  "themesKeywords": ["paranoia", "Christmas horror", "basement", "devil in disguise", "mental instability", "faith vs delusion", "single-location", "psychological breakdown", "IFC Midnight"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "I, Robot",
+  "year": 2004,
+  "genre": ["Action", "Sci-Fi"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-06-14",
+  "directors": ["Alex Proyas"],
+  "writers": ["Jeff Vintar", "Akiva Goldsman", "Isaac Asimov"],
+  "actors": ["Will Smith", "Bridget Moynahan", "Alan Tudyk", "James Cromwell", "Bruce Greenwood", "Chi McBride", "Shia LaBeouf", "Peter Shinkoda", "Terry Chen", "Fiona Hogan", "Adrian Ricard", "Jerry Wasserman", "David Haysom", "Scott Heindl"],
+  "themesKeywords": ["AI ethics", "robot uprising", "future Chicago", "free will vs programming", "human-robot trust"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Life",
+  "year": 2017,
+  "genre": ["Sci-Fi", "Thriller"],
+  "bearHandsRating": 6,
+  "hubbyBearRating": 6,
+  "dateWatched": "2025-06-13",
+  "directors": ["Daniel Espinosa"],
+  "writers": ["Rhett Reese", "Paul Wernick"],
+  "actors": ["Jake Gyllenhaal", "Rebecca Ferguson", "Ryan Reynolds", "Hiroyuki Sanada", "Ariyon Bakare", "Olga Dykhovichnaya"],
+  "themesKeywords": ["alien organism", "space horror", "Martian lifeform", "crew breakdown", "containment", "space mission"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "A Murder of Crows",
+  "year": 1998,
+  "genre": ["Thriller"],
+  "bearHandsRating": 5,
+  "hubbyBearRating": 4,
+  "dateWatched": "2025-06-10",
+  "directors": ["Rowdy Herrington"],
+  "writers": ["Rowdy Herrington", "David Himmelstein"],
+  "actors": ["Cuba Gooding Jr.", "Tom Berenger", "Marianne Jean-Baptiste", "Eric Stoltz", "Mark Pellegrino", "Noel Gugliemi", "Carmen Argenziano", "Anne Haney", "Norman Max Maxwell", "Tamara Tunie", "Lucinda Jenney", "Sean Pratt", "Mark Boone Junior"],
+  "themesKeywords": ["plagiarism", "legal ethics", "wrongful accusation", "murder mystery", "lawyer protagonist", "manuscript deception", "identity theft", "justice system"]
 }
+
+
 
 
 
