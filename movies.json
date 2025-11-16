@@ -1637,9 +1637,49 @@
   "writers": ["Vojtech Masek", "Jakub Smid"],
   "actors": ["Tereza Ramba", "Martha Issova", "Martin Pechlat", "Martin Finger", "Pavla Beretova", "Petr Buchta"],
   "themesKeywords": ["Czech thriller", "family secrets", "rural mystery", "psychological descent"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "You'll Never Find Me",
+  "year": 2023,
+  "genre": ["Thriller"],
+  "bearHandsRating": 5,
+  "hubbyBearRating": 3,
+  "dateWatched": "2025-04-05",
+  "directors": ["Indianna Bell", "Josiah Allen"],
+  "writers": ["Indianna Bell"],
+  "actors": ["Brendan Rock", "Jordan Cowan"],
+  "themesKeywords": ["Australian thriller", "stranger at the door", "psychological tension"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Bagman",
+  "year": 2024,
+  "genre": ["Horror"],
+  "bearHandsRating": 1,
+  "hubbyBearRating": 1,
+  "dateWatched": "2025-04-04",
+  "directors": ["Colm McCarthy"],
+  "writers": ["John Hulme"],
+  "actors": ["Sam Claflin", "Antonia Thomas", "Caréll Vincent Rhoden", "Will Davis", "Adelle Leonce", "William Hope", "Steven Cree", "Rosalie Craig", "Peter McDonald", "Frankie Corio"],
+  "themesKeywords": ["childhood trauma", "urban legend horror", "family in peril", "mythical creature", "intergenerational fear", "PG-13 horror", "bag-snatching entity", "parental dread", "British supernatural thriller", "return of the past"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Saint Maud",
+  "year": 2019,
+  "genre": ["Drama", "Horror", "Mystery", "Thriller"],
+  "bearHandsRating": 5,
+  "hubbyBearRating": 4,
+  "dateWatched": "2025-04-03",
+  "directors": ["Rose Glass"],
+  "writers": ["Rose Glass"],
+  "actors": ["Morfydd Clark", "Jennifer Ehle", "Lily Knight", "Lily Frazer", "Turlough Convery", "Marcus Hutton", "Carl Prekopp"],
+  "themesKeywords": ["religious obsession", "psychological horror", "divine delusion", "British indie horror"]
 }
-
-
 
 
 
