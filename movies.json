@@ -1174,8 +1174,49 @@
   "writers": ["Rowdy Herrington", "David Himmelstein"],
   "actors": ["Cuba Gooding Jr.", "Tom Berenger", "Marianne Jean-Baptiste", "Eric Stoltz", "Mark Pellegrino", "Noel Gugliemi", "Carmen Argenziano", "Anne Haney", "Norman Max Maxwell", "Tamara Tunie", "Lucinda Jenney", "Sean Pratt", "Mark Boone Junior"],
   "themesKeywords": ["plagiarism", "legal ethics", "wrongful accusation", "murder mystery", "lawyer protagonist", "manuscript deception", "identity theft", "justice system"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Moana 2",
+  "year": 2024,
+  "genre": ["Animation", "Family", "Musical"],
+  "bearHandsRating": 4,
+  "hubbyBearRating": 5,
+  "dateWatched": "2025-06-08",
+  "directors": ["David G. Derrick Jr.", "Jason Hand", "Dana Ledoux Miller"],
+  "writers": ["Jared Bush", "Dana Ledoux Miller", "Bek Smith"],
+  "actors": ["Auli'i Cravalho", "Dwayne Johnson", "Hualalai Chung", "Rose Matafeo", "David Fane", "Awhimai Fraser", "Khaleesi Lambert-Tsuda", "Temuera Morrison", "Nicole Scherzinger", "Rachel House", "Gerald Faitala", "Ramsey Tautai", "Alan Tudyk", "Jemaine Clement", "Tofiga Fepulea'i", "Jasmine Johnson", "Tiana Johnson"],
+  "themesKeywords": ["wayfinding legacy", "oceanic mythology", "ancestral calling", "female leadership", "cultural heritage", "voyaging adventure", "family bonds", "musical journey", "animated sequel", "Disney princess", "Walt Disney Pictures"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Kinda Pregnant",
+  "year": 2025,
+  "genre": ["Comedy", "Rom-Com"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 9,
+  "dateWatched": "2025-06-07",
+  "directors": ["Tyler Spindel"],
+  "writers": ["Julie Paiva", "Amy Schumer"],
+  "actors": ["Amy Schumer", "Will Forte", "Jillian Bell", "Brianne Howey", "Lizze Broadway", "Urzila Carlson", "Chris Geere", "Damon Wayans Jr.", "Alex Moffat", "Joel David Moore", "Jackie Sandler", "Molly Sims", "Chris Titone", "Duke McCloud", "Connor Robbie", "Crandall Liam", "Max Malas", "Rae Thompson", "Amber Kylie Kuioka"],
+  "themesKeywords": ["fake pregnancy", "female friendship", "cringe comedy", "farce", "emotional desperation", "modern dating", "family pressure", "identity performance", "pregnancy trope", "Netflix", "Happy Madison Productions"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Villains",
+  "year": 2019,
+  "genre": ["Dark Comedy", "Thriller"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-06-06",
+  "directors": ["Dan Berk", "Robert Olsen"],
+  "writers": ["Dan Berk", "Robert Olsen"],
+  "actors": ["Bill Skarsgard", "Maika Monroe", "Blake Baumgartner", "Jeffrey Donovan", "Kyra Sedgwick", "Noah Robbins", "Nikolas Kontomanolis", "Danny Johnson"],
+  "themesKeywords": ["home invasion", "dark comedy", "sadistic couple", "kidnapped girl", "twisted morality", "gas station robbery", "anti-heroes", "suburban nightmare", "psychological games", "criminals vs worse criminals"]
 }
-
 
 
 
