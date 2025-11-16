@@ -60,7 +60,7 @@
   ],
   "title": "The Long Walk",
   "year": 2025,
-  "genre": ["Drama", "Dystopian", "Coming-of-age"],
+  "genre": ["Drama", "Dystopian", "Coming-of-Age"],
   "bearHandsRating": 4,
   "hubbyBearRating": 3,
   "actors": ["Cooper Hoffman", "David Jonsson", "Garrett Wareing", "Tut Nyuot", "Charlie Plummer", "Ben Wang", "Jordan Gonzalez", "Joshua Odjick", "Mark Hamill", "Roman Griffin Davis", "Judy Greer", "Josh Hamilton", "Noah de Mel", "Daymon Wrightly", "Jack Giffin", "Thamela Mpumlwana", "Keenan Lehmann", "Dale Neri", "Teagan Stark", "Sam Clark", "Emmanuel Oderemi"],
@@ -1033,7 +1033,7 @@
   "directors": ["India Donaldson"],
   "writers": ["India Donaldson"],
   "actors": ["Lily Collias", "Sumaya Bouhbal", "Valentine Black", "Diana Irvine", "James Le Gros", "Danny McCarthy", "Julian Grady", "Becca Morrin", "Sarah Wilson", "Samuel Lanier", "Eric Yates", "Peter McNally"],
-  "themesKeywords": ["Catskills hiking trip", "father-daughter", "middle-aged male ego", "teen perspective", "not believeing women", "metoo", "quiet tension", "coming-of-age introspection", "female gaze", "sexual predator", "grooming"]
+  "themesKeywords": ["Catskills hiking trip", "father-daughter", "middle-aged male ego", "teen perspective", "not believeing women", "metoo", "quiet tension", "female gaze", "sexual predator", "grooming"]
 },
 {
   "hasReview": false,
@@ -1216,6 +1216,76 @@
   "writers": ["Dan Berk", "Robert Olsen"],
   "actors": ["Bill Skarsgard", "Maika Monroe", "Blake Baumgartner", "Jeffrey Donovan", "Kyra Sedgwick", "Noah Robbins", "Nikolas Kontomanolis", "Danny Johnson"],
   "themesKeywords": ["home invasion", "dark comedy", "sadistic couple", "kidnapped girl", "twisted morality", "gas station robbery", "anti-heroes", "suburban nightmare", "psychological games", "criminals vs worse criminals"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Argylle",
+  "year": 2024,
+  "genre": ["Action", "Comedy"],
+  "bearHandsRating": 5,
+  "hubbyBearRating": 4,
+  "dateWatched": "2025-06-01",
+  "directors": ["Matthew Vaughn"],
+  "writers": ["Jason Fuchs"],
+  "actors": ["Bryce Dallas Howard", "Sam Rockwell", "Henry Cavill", "Dua Lipa", "Ariana DeBose", "John Cena", "Catherine O'Hara", "Bryan Cranston", "Samuel L. Jackson", "Sofia Boutella", "Jing Lusi", "Stanley Morgan", "Jason Fuchs"],
+  "themesKeywords": ["spy fiction", "meta storytelling", "cat companion", "espionage parody", "author", "secret agent", "identity confusion", "stylized violence", "Apple Original"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Hunt for the Wilderpeople",
+  "year": 2016,
+  "genre": ["Adventure", "Comedy", "Coming-of-Age"],
+  "bearHandsRating": 10,
+  "hubbyBearRating": 9,
+  "dateWatched": "2025-05-31",
+  "directors": ["Taika Waititi"],
+  "writers": ["Taika Waititi", "Barry Crump"],
+  "actors": ["Julian Dennison", "Sam Neill", "Rima Te Wiata", "Rachel House", "Oscar Kightley", "Rhys Darby", "Tioreore Ngatai-Melbourne", "Troy Kingi", "Cohen Holloway", "Mike Minogue"],
+  "themesKeywords": ["foster care", "found family", "New Zealand wilderness", "grumpy mentor", "anti-authority adventure"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Watcher",
+  "year": 2022,
+  "genre": ["Thriller"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-05-30",
+  "directors": ["Chloe Okuno"],
+  "writers": ["Zack Ford", "Chloe Okuno"],
+  "actors": ["Maika Monroe", "Karl Glusman", "Burn Gorman", "Tudor Petrut", "Madalina Anea", "Cristina Deleanu", "Daniel Nuta", "Gabriela Butuc", "Florian Ghimpu", "Ioana Abur"],
+  "themesKeywords": ["urban isolation", "female paranoia", "voyeurism", "gaslighting", "serial killer suspicion", "language barrier", "psychological dread", "Bucharest setting"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "The Watcher",
+  "year": 2022,
+  "genre": ["Mystery", "Thriller"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 5,
+  "dateWatched": "2025-05-29",
+  "directors": ["Ryan Murphy", "Jennifer Lynch", "Paris Barclay", "Max Winkler"],
+  "writers": ["Ian Brennan", "Ryan Murphy"],
+  "actors": ["Naomi Watts", "Bobby Cannavale", "Jennifer Coolidge", "Margo Martindale", "Richard Kind", "Mia Farrow", "Terry Kinney", "Christopher McDonald", "Isabel Gravitt", "Luke David Blumm", "Henry Hunter Hall"],
+  "themesKeywords": ["suburban paranoia", "anonymous threats", "home invasion anxiety", "neighborhood secrets", "family unraveling", "creepy letters", "Netflix"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Kick-Ass 2",
+  "year": 2013,
+  "genre": ["Action", "Dark Comedy", "Superhero"],
+  "bearHandsRating": 10,
+  "hubbyBearRating": 8,
+  "dateWatched": "2025-05-25",
+  "directors": ["Jeff Wadlow"],
+  "writers": ["Jeff Wadlow", "Mark Millar", "John Romita Jr."],
+  "actors": ["Aaron Taylor-Johnson", "Chloë Grace Moretz", "Christopher Mintz-Plasse", "Jim Carrey", "Clark Duke", "Morris Chestnut", "Augustus Prew", "John Leguizamo", "Donald Faison", "Lindy Booth", "Daniel Kaluuya"],
+  "themesKeywords": ["vigilante hero", "DIY superheroes", "revenge plot", "teen angst", "comic book adaptation", "morality of justice", "underground hero league", "stylized violence"]
 }
 
 
