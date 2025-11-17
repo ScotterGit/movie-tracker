@@ -151,7 +151,8 @@
   "directors": ["Renny Harlin"],
   "writers": ["Alan R. Cohen", "Alan Freedland"],
   "dateWatched": "2025-10-19",
-  "themesKeywords": ["masked killers"]
+  "themesKeywords": ["masked killers"],
+  "productionCompanies": ["Lionsgate", "Fifth Element"]
 },
 {
   "hasReview": false,
@@ -402,7 +403,7 @@
   "dateWatched": "2025-09-19",
   "directors": ["James Madigan"],
   "writers": ["Brooks McLaren", "D.J. Cotrona"],
-  "actors": ["Josh Hartnett", "Charithra Chandran", "Katee Sackhoff", "Julian Kostov", "Marko Zaror", "JuJu Chan Szeto", "Danny Ashok", "Garrett Jyuddah Jaymes", "Willem van der Vegt", "Sanjeev Kohli", "Declan Baxter", "Sarah Lam", "Irén Bordan", "Attila arpa", "Nóra Trokan", "Balint Adorjani", "Katrina Anne Ward"],
+  "actors": ["Josh Hartnett", "Charithra Chandran", "Katee Sackhoff", "Julian Kostov", "Marko Zaror", "JuJu Chan Szeto", "Danny Ashok", "Garrett Jyuddah Jaymes", "Willem van der Vegt", "Sanjeev Kohli", "Declan Baxter", "Sarah Lam", "Iren Bordan", "Attila arpa", "Nóra Trokan", "Balint Adorjani", "Katrina Anne Ward"],
   "themesKeywords": ["single location", "airplane", "rogue agent", "stylized violence", "campy", "over-the-top"]
 },
 {
@@ -668,7 +669,7 @@
   "dateWatched": "2025-08-10",
   "directors": ["John Maclean"],
   "writers": ["John Maclean", "Kate Leys"],
-  "actors": ["Kōki", "Nathan Malone", "Tim Roth", "Rory McCann", "Dennis Okwera", "Jamie Michie", "Douglas Russell", "Ian Hanmore", "Sammy Hayman", "Jack Morris", "Bryan Michael Mills", "Jack Lowden", "Kerry Lynn Hamilton", "Alex Macqueen", "Nina Barnett", "Raphaël Thiéry", "Takehiro Hira", "Joanne Whalley"],
+  "actors": ["Kōki", "Nathan Malone", "Tim Roth", "Rory McCann", "Dennis Okwera", "Jamie Michie", "Douglas Russell", "Ian Hanmore", "Sammy Hayman", "Jack Morris", "Bryan Michael Mills", "Jack Lowden", "Kerry Lynn Hamilton", "Alex Macqueen", "Nina Barnett", "Raphaël Thiery", "Takehiro Hira", "Joanne Whalley"],
   "themesKeywords": ["revenge", "samurai training", "martial arts", "crime gang", "stylized violence", "minimal dialouge"]
 },
 {
@@ -724,7 +725,7 @@
   "dateWatched": "2025-08-03",
   "directors": ["Sally Rose Griffiths"],
   "writers": [],
-  "actors": ["Dov Charney", "Jonny Makeup", "Carson Giles", "E.J. Merlin", "Michelle Lemay", "Susan Berfield", "Toni Jaramilla", "Fred Armisen", "Beyoncé", "Katie Couric", "Ann Curry", "Ana Kasparian"],
+  "actors": ["Dov Charney", "Jonny Makeup", "Carson Giles", "E.J. Merlin", "Michelle Lemay", "Susan Berfield", "Toni Jaramilla", "Fred Armisen", "Beyonce", "Katie Couric", "Ann Curry", "Ana Kasparian"],
   "themesKeywords": ["fashion industry", "toxic workplace", "cult of personality", "sexual harassment", "corporate downfall", "media spectacle", "employee testimony"]
 },
 {
@@ -1101,7 +1102,7 @@
   "hubbyBearRating": 6,
   "dateWatched": "2025-06-21",
   "directors": ["Jonathan Liebesman"],
-  "writers": ["Josh Appelbaum", "André Nemec", "Evan Daugherty"],
+  "writers": ["Josh Appelbaum", "Andre Nemec", "Evan Daugherty"],
   "actors": ["Megan Fox", "Will Arnett", "William Fichtner", "Alan Ritchson", "Noel Fisher", "Pete Ploszek", "Johnny Knoxville", "Jeremy Howard", "Danny Woodburn", "Tony Shalhoub", "Tohoru Masamune", "Whoopi Goldberg", "Minae Noji", "Abby Elliott", "Taran Killam", "K. Todd Freeman", "Paul Fitzgerald"],
   "themesKeywords": ["mutant turtles", "Shredder", "origin reboot", "corporate villainy", "underground heroes", "sibling dynamics", "martial arts", "product placement", "Michael Bay production", "CGI-heavy action"]
 },
@@ -1663,7 +1664,7 @@
   "dateWatched": "2025-04-04",
   "directors": ["Colm McCarthy"],
   "writers": ["John Hulme"],
-  "actors": ["Sam Claflin", "Antonia Thomas", "Caréll Vincent Rhoden", "Will Davis", "Adelle Leonce", "William Hope", "Steven Cree", "Rosalie Craig", "Peter McDonald", "Frankie Corio"],
+  "actors": ["Sam Claflin", "Antonia Thomas", "Carell Vincent Rhoden", "Will Davis", "Adelle Leonce", "William Hope", "Steven Cree", "Rosalie Craig", "Peter McDonald", "Frankie Corio"],
   "themesKeywords": ["childhood trauma", "urban legend horror", "family in peril", "mythical creature", "intergenerational fear", "PG-13 horror", "bag-snatching entity", "parental dread", "British supernatural thriller", "return of the past"]
 },
 {
@@ -1679,7 +1680,86 @@
   "writers": ["Rose Glass"],
   "actors": ["Morfydd Clark", "Jennifer Ehle", "Lily Knight", "Lily Frazer", "Turlough Convery", "Marcus Hutton", "Carl Prekopp"],
   "themesKeywords": ["religious obsession", "psychological horror", "divine delusion", "British indie horror"]
-}
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Caddo Lake",
+  "year": 2024,
+  "genre": ["Mystery", "Drama", "Sci-Fi", "Thriller"],
+  "bearHandsRating": 10,
+  "hubbyBearRating": 9,
+  "actors": ["Dylan O'Brien", "Eliza Scanlen", "Lauren Ambrose", "Eric Lange", "Sam Hennings"],
+  "directors": ["Logan George", "Celine Held"],
+  "writers": ["Logan George", "Celine Held"],
+  "dateWatched": "2025-04-04",
+  "themesKeywords": ["missing girl", "time travel", "family trauma", "lake mystery", "nonlinear storytelling"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  
+  "year": 2019,
+  "genre": ["Horror", "Supernatural", "Drama", "Fantasy"],
+  "bearHandsRating": 3,
+  "hubbyBearRating": 2,
+  "actors": ["Jessica Chastain", "James McAvoy", "Bill Hader", "Isaiah Mustafa", "Jay Ryan", "James Ransone", "Andy Bean", "Bill Skarsgård"],
+  "directors": ["Andy Muschietti"],
+  "writers": ["Stephen King", "Gary Dauberman"],
+  "dateWatched": "2025-10-13",
+  "themesKeywords": ["Pennywise", "childhood trauma", "return to hometown", "cosmic horror", "flashbacks", "Ritual of Chud"],
+  "title": "It Chapter Two"
+},
+
+
+
+
+
+
+
+//Need to update the watch days and the order of these
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "The Strangers: Chapter 1",
+  "year": 2024,
+  "genre": ["Horror", "Slasher"],
+  "bearHandsRating": 2,
+  "hubbyBearRating": 2,
+  "actors": ["Madelaine Petsch", "Froy Gutierrez", "Ryan Bown", "Ema Horvath", "Richard Brake"],
+  "directors": ["Renny Harlin"],
+  "writers": ["Alan R. Cohen", "Alan Freedland", "Bryan Bertino"],
+  "dateWatched": "2025-04-03",
+  "themesKeywords": ["masked killers", "home invasion", "cabin in the woods", "reboot"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "The Strangers",
+  "year": 2008,
+  "genre": ["Horror", "Thriller", "Mystery"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 5,
+  "actors": ["Liv Tyler", "Scott Speedman", "Gemma Ward", "Kip Weeks", "Laura Margolis"],
+  "directors": ["Bryan Bertino"],
+  "writers": ["Bryan Bertino"],
+  "dateWatched": "2025-04-02",
+  "themesKeywords": ["home invasion", "masked killers", "cabin in the woods", "psychological torment"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Now You See Me",
+  "year": 2013,
+  "genre": ["Crime", "Mystery", "Thriller"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 6,
+  "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Isla Fisher", "Dave Franco", "Melanie Laurent", "Morgan Freeman", "Michael Caine"],
+  "directors": ["Louis Leterrier"],
+  "writers": ["Ed Solomon", "Boaz Yakin", "Edward Ricourt"],
+  "dateWatched": "2025-04-01",
+  "themesKeywords": ["illusionists", "heist", "sleight of hand", "FBI pursuit", "magic show", "Robin Hood spectacle"]
+},
 
 
 
