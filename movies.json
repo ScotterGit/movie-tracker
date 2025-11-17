@@ -1689,28 +1689,208 @@
   "genre": ["Mystery", "Drama", "Sci-Fi", "Thriller"],
   "bearHandsRating": 10,
   "hubbyBearRating": 9,
-  "actors": ["Dylan O'Brien", "Eliza Scanlen", "Lauren Ambrose", "Eric Lange", "Sam Hennings"],
+  "dateWatched": "2025-04-04",
   "directors": ["Logan George", "Celine Held"],
   "writers": ["Logan George", "Celine Held"],
-  "dateWatched": "2025-04-04",
+  "actors": ["Dylan O'Brien", "Eliza Scanlen", "Lauren Ambrose", "Eric Lange", "Sam Hennings", "Cynthia Mace", "Drew Powell", "Dale Dickey", "James Healy Jr."],
   "themesKeywords": ["missing girl", "time travel", "family trauma", "lake mystery", "nonlinear storytelling"]
 },
 {
   "hasReview": false,
   "reviewLink": null,
-  
+  "title": "It Chapter Two",
   "year": 2019,
-  "genre": ["Horror", "Supernatural", "Drama", "Fantasy"],
+  "genre": ["Horror", "Drama"],
   "bearHandsRating": 3,
-  "hubbyBearRating": 2,
-  "actors": ["Jessica Chastain", "James McAvoy", "Bill Hader", "Isaiah Mustafa", "Jay Ryan", "James Ransone", "Andy Bean", "Bill Skarsgård"],
+  "hubbyBearRating": 4,
+  "dateWatched": "2025-04-03",
   "directors": ["Andy Muschietti"],
   "writers": ["Stephen King", "Gary Dauberman"],
-  "dateWatched": "2025-10-13",
-  "themesKeywords": ["Pennywise", "childhood trauma", "return to hometown", "cosmic horror", "flashbacks", "Ritual of Chud"],
-  "title": "It Chapter Two"
+  "actors": ["Jessica Chastain", "James McAvoy", "Bill Hader", "Isaiah Mustafa", "Jay Ryan", "James Ransone", "Andy Bean", "Bill Skarsgård", "Jaeden Martell", "Sophia Lillis", "Finn Wolfhard", "Jack Dylan Grazer", "Chosen Jacobs", "Wyatt Oleff", "Jeremy Ray Taylor", "Teach Grant", "Xavier Dolan", "Stephen King"],
+  "themesKeywords": ["Pennywise", "childhood trauma", "return to hometown", "cosmic horror", "flashbacks", "alien clown"]
 },
-
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "It",
+  "year": 2017,
+  "genre": ["Horror", "Drama"],
+  "bearHandsRating": 3,
+  "hubbyBearRating": 5,
+  "dateWatched": "2025-04-03",
+  "directors": ["Andy Muschietti"],
+  "writers": ["Chase Palmer", "Cary Joji Fukunaga", "Gary Dauberman", "Stephen King"],
+  "actors": ["Jaeden Martell", "Sophia Lillis", "Finn Wolfhard", "Jack Dylan Grazer", "Jeremy Ray Taylor", "Chosen Jacobs", "Wyatt Oleff", "Bill Skarsgård", "Nicholas Hamilton", "Jake Sim", "Logan Thompson", "Owen Teague", "Jackson Robert Scott", "Stephen Bogaert", "Megan Charpentier", "Stuart Hughes", "Molly Atkinson"],
+  "themesKeywords": ["Pennywise", "childhood trauma", "misfits", "fear manifestation", "missing children", "Maine"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Caveat",
+  "year": 2020,
+  "genre": ["Horror"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 8,
+  "dateWatched": "2025-04-02",
+  "directors": ["Damian Mc Carthy"],
+  "writers": ["Damian Mc Carthy"],
+  "actors": ["Ben Caplan", "Jonathan French", "Leila Sykes", "Inma Pavon", "Conor Dwane", "Siobhan Burton", "Sam White", "Charlie"],
+  "themesKeywords": ["remote isolation", "secluded island", "creepy doll", "memory loss", "housebound", "chained harness", "babysitting", "Shudder"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "The Invitation",
+  "year": 2015,
+  "genre": ["Horror", "Thriller"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 9,
+  "dateWatched": "2025-04-01",
+  "directors": ["Karyn Kusama"],
+  "writers": ["Phil Hay", "Matt Manfredi"],
+  "actors": ["Logan Marshall-Green", "Tammy Blanchard", "Emayatzy Corinealdi", "Michiel Huisman", "John Carroll Lynch", "Lindsay Burdge", "Mike Doyle", "Jay Larson", "Marieh Delfino", "Michelle Krusiec", "Jordi Vilasuso", "Toby Huss", "Karl Yune"],
+  "themesKeywords": ["cult", "grief", "dinner party tension", "psychological unraveling", "slow burn suspense"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Oddity",
+  "year": 2024,
+  "genre": ["Horror", "Thriller"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 9,
+  "dateWatched": "2025-03-31",
+  "directors": ["Damian Mc Carthy"],
+  "writers": ["Damian Mc Carthy"],
+  "actors": ["Carolyn Bracken", "Gwilym Lee", "Steve Wall", "Tadhg Murphy", "Caroline Menton", "Jonathan French", "Joe Rooney", "Shane Whisker", "Joshua Campbell", "Austin Lawlor", "Peter McCarthy", "Fiach McHugh", "Patrick Mullins", "Jim O'Donnell", "Inma Pavon", "Leticia Lopez Ramos", "Chris Mudrack", "Eileen McCarthy"],
+  "themesKeywords": ["golem", "psychic medium", "blind", "murder mystery", "Irish horror", "supernatural revenge", "Jewish folklore"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Rosemary's Baby",
+  "year": 2014,
+  "genre": ["Drama", "Horror", "Mystery", "Thriller"],
+  "bearHandsRating": 6,
+  "hubbyBearRating": 3,
+  "dateWatched": "2025-03-30",
+  "directors": ["Agnieszka Holland"],
+  "writers": ["Scott Abbott", "James Wong"],
+  "actors": ["Zoe Saldana", "Patrick J. Adams", "Carole Bouquet", "Jason Isaacs", "Christina Cole", "Olivier Rabourdin", "François Civil", "Rosemarie La Vaullée", "Eva Lutz", "Wojciech Pszoniak", "Hiro Uchiyama", "Joseph Malerba", "Stany Coppet", "Stefano Cassetti", "Victoire Bélèzy", "Cyril Casmèze", "Stéphane Boucher", "Franck Vincent"],
+  "themesKeywords": ["Satanic cult", "pregnancy horror", "betrayal", "Paris setting", "modern remake", "occult manipulation"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Apartment 7A",
+  "year": 2024,
+  "genre": ["Horror", "Thriller"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 8,
+  "dateWatched": "2025-03-29",
+  "directors": ["Natalie Erika James"],
+  "writers": ["Natalie Erika James", "Christian White", "Skylar James"],
+  "actors": ["Julia Garner", "Dianne Wiest", "Kevin McNally", "Jim Sturgess", "Marli Siu", "Rosy McEwen", "Andrew Buchan", "Anton Blake", "Raphael Sowole", "Tina Gray", "Patrick Lyster", "Rachel Atkins", "Andre Lillis", "Simon Adkins", "Lukas McFarlane", "Dylan Baldwin", "Sean Browne", "David Bardsley"],
+  "themesKeywords": ["prequel", "Rosemary's Baby", "Satanic cult", "Broadway", "occult manipulation", "dancer", "The Dakota", "New York City", "Manhattan"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Rosemary's Baby",
+  "year": 1968,
+  "genre": ["Drama", "Horror", "Thriller"],
+  "bearHandsRating": 5,
+  "hubbyBearRating": 10,
+  "dateWatched": "2025-03-28",
+  "directors": ["Roman Polanski"],
+  "writers": ["Ira Levin", "Roman Polanski"],
+  "actors": ["Mia Farrow", "John Cassavetes", "Ruth Gordon", "Sidney Blackmer", "Maurice Evans", "Ralph Bellamy", "Victoria Vetri", "Patsy Kelly", "Elisha Cook Jr.", "Emmaline Henry", "Charles Grodin", "Hanna Landy", "Phil Leeds", "D'Urville Martin", "Hope Summers", "Marianne Gordon", "Wende Wagner", "Toby Adler"],
+  "themesKeywords": ["Satanic cult", "pregnancy horror", "urban paranoia", "occult manipulation", "New York City", "1960s", "gaslighting", "The Dakota", "cult classic"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Cuckoo",
+  "year": 2024,
+  "genre": ["Horror"],
+  "bearHandsRating": 6,
+  "hubbyBearRating": 9,
+  "dateWatched": "2025-03-23",
+  "directors": ["Tilman Singer"],
+  "writers": ["Tilman Singer"],
+  "actors": ["Hunter Schafer", "Dan Stevens", "Jessica Henwick", "Marton Csokas", "Jan Bluthardt", "Mila Lieu", "Greta Fernández", "Proschat Madani", "Àstrid Bergès-Frisbey", "Konrad Singer", "Kalin Morrow", "Johannes Benecke", "Veronika Bachfischer", "Joshua Hupfauer", "Philipp Arnold", "Conny Brandt", "Christoph Cordes", "Massimiliano Monticciollo"],
+  "themesKeywords": ["resort", "mute sibling", "German Alps", "body horror", "selective breeding", "bird people", "surreal visions", "eugenics"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Longlegs",
+  "year": 2024,
+  "genre": ["Horror", "Mystery", "Thriller", "Psychological Horror"],
+  "bearHandsRating": 3,
+  "hubbyBearRating": 3,
+  "dateWatched": "2025-03-22",
+  "directors": ["Osgood Perkins"],
+  "writers": ["Osgood Perkins"],
+  "actors": ["Maika Monroe", "Nicolas Cage", "Blair Underwood", "Alicia Witt", "Michelle Choi-Lee", "Dakota Daulby", "Lauren Acala", "Kiernan Shipka", "Maila Hosie", "Jason William Day", "Lisa Chandler", "Ava Kelders", "Rryla McIntosh", "Carmel Amit", "Shafin Karim", "Trey Helten", "Daniel Bacon", "Vanessa Walsh"],
+  "themesKeywords": ["serial killer", "occult clues", "FBI investigation", "psychic visions", "retro aesthetic", "parental trauma", "creepy local"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Jeepers Creepers",
+  "year": 2001,
+  "genre": ["Horror"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 8,
+  "dateWatched": "2025-03-21",
+  "directors": ["Victor Salva"],
+  "writers": ["Victor Salva"],
+  "actors": ["Gina Philips", "Justin Long", "Jonathan Breck", "Patricia Belcher", "Brandon Smith", "Eileen Brennan", "Peggy Sheffield", "Jeffrey William Evans", "Patrick Cherry", "Jon Beshara", "Avis-Marie Barnes", "Steve Raulerson", "Tom Tarantini", "William Haze", "Kim Kahana", "Chris Shepardson", "Noel Maree", "Tim Phoenix"],
+  "themesKeywords": ["flesh-eating creature", "road trip", "abandoned church", "ritualistic killing", "creature feature", "monster movie"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Speed",
+  "year": 1994,
+  "genre": ["Action", "Thriller"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-03-14",
+  "directors": ["Jan de Bont"],
+  "writers": ["Graham Yost"],
+  "actors": ["Keanu Reeves", "Sandra Bullock", "Dennis Hopper", "Joe Morton", "Jeff Daniels", "Alan Ruck", "Glenn Plummer", "Richard Lineback", "Beth Grant", "Hawthorne James", "Carlos Carrasco", "David Kriegel", "Natsuko Ohama", "Daniel Villarreal", "Simone Gad", "Loretta Jean", "Sherri Villanueva", "Margaret Medina"],
+  "themesKeywords": ["bomb on bus", "high-speed suspense", "hostage crisis", "SWAT team", "transport thriller"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Problemista",
+  "year": 2023,
+  "genre": ["Comedy", "Fantasy"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 8,
+  "dateWatched": "2025-03-08",
+  "directors": ["Julio Torres"],
+  "writers": ["Julio Torres"],
+  "actors": ["Julio Torres", "Tilda Swinton", "RZA", "Isabella Rossellini", "Catalina Saavedra", "James Scully", "Laith Nakli", "Spike Einbinder", "Logan J. Alarcon-Poucel", "Greta Lee", "Larry Owens", "Glo Tavarez", "Kelly McCormack", "Ronald Peet", "Greta Titelman", "Shakina Nayfack", "Theo Maltz"],
+  "themesKeywords": ["immigration bureaucracy", "surreal comedy", "toy design", "art world satire", "visa struggle", "FileMaker obsession", "cryogenics", "Latinx identity"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Mrs. Doubtfire",
+  "year": 1993,
+  "genre": ["Comedy", "Family"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 9,
+  "dateWatched": "2025-03-07",
+  "directors": ["Chris Columbus"],
+  "writers": ["Anne Fine", "Randi Mayem Singer", "Leslie Dixon"],
+  "actors": ["Robin Williams", "Sally Field", "Pierce Brosnan", "Harvey Fierstein", "Lisa Jakub", "Matthew Lawrence", "Mara Wilson", "Robert Prosky", "Anne Haney", "Scott Capurro", "Sydney Walker", "Joe Bellan", "Martin Mull", "Karen Kahn", "Eva Gholson", "James Cunningham", "Terence McGovern"],
+  "themesKeywords": ["divorce", "custody battle", "disguise", "British nanny persona", "gender bending", "identity comedy", "cross dressing", "drag queen adjacent"]
+},
 
 
 
@@ -1726,10 +1906,10 @@
   "genre": ["Horror", "Slasher"],
   "bearHandsRating": 2,
   "hubbyBearRating": 2,
-  "actors": ["Madelaine Petsch", "Froy Gutierrez", "Ryan Bown", "Ema Horvath", "Richard Brake"],
+  "dateWatched": "2025-04-03",
   "directors": ["Renny Harlin"],
   "writers": ["Alan R. Cohen", "Alan Freedland", "Bryan Bertino"],
-  "dateWatched": "2025-04-03",
+  "actors": ["Madelaine Petsch", "Froy Gutierrez", "Gabriel Basso", "Ema Horvath", "Ella Bruccoleri", "Richard Brake", "Pedro Leandro", "Rachel Shenton", "Ben Cartwright", "India Fowler", "Brooke Lena Johnson", "Miles Yekinni"],
   "themesKeywords": ["masked killers", "home invasion", "cabin in the woods", "reboot"]
 },
 {
@@ -1740,10 +1920,10 @@
   "genre": ["Horror", "Thriller", "Mystery"],
   "bearHandsRating": 7,
   "hubbyBearRating": 5,
-  "actors": ["Liv Tyler", "Scott Speedman", "Gemma Ward", "Kip Weeks", "Laura Margolis"],
+  "dateWatched": "2025-04-02",
   "directors": ["Bryan Bertino"],
   "writers": ["Bryan Bertino"],
-  "dateWatched": "2025-04-02",
+  "actors": ["Liv Tyler", "Scott Speedman", "Gemma Ward", "Kip Weeks", "Laura Margolis", "Glenn Howerton", "Alex Fisher", "Peter Clayton-Luce", "Nick Barghini", "Shawn McClellan", "Jordan Orr"],
   "themesKeywords": ["home invasion", "masked killers", "cabin in the woods", "psychological torment"]
 },
 {
@@ -1754,16 +1934,11 @@
   "genre": ["Crime", "Mystery", "Thriller"],
   "bearHandsRating": 8,
   "hubbyBearRating": 6,
-  "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Isla Fisher", "Dave Franco", "Melanie Laurent", "Morgan Freeman", "Michael Caine"],
+  "dateWatched": "2025-04-01",
   "directors": ["Louis Leterrier"],
   "writers": ["Ed Solomon", "Boaz Yakin", "Edward Ricourt"],
-  "dateWatched": "2025-04-01",
+  "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Isla Fisher", "Dave Franco", "Mélanie Laurent", "Morgan Freeman", "Michael Caine", "Michael Kelly", "Common", "José Garcia", "Jessica Lindsey", "Caitríona Balfe", "Laura Cayouette", "Douglas M. Griffin", "Adam Shapiro"],
   "themesKeywords": ["illusionists", "heist", "sleight of hand", "FBI pursuit", "magic show", "Robin Hood spectacle"]
 }
-
-
-
-
-
 
 ]
