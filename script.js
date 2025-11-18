@@ -177,21 +177,22 @@ function applyFilters() {
 
   if (currentSortKey) {
     filteredMovies.sort((a, b) => {
-      let valA = a[currentSortKey];
-      let valB = b[currentSortKey];
+      const valA = a[currentSortKey];
+      const valB = b[currentSortKey];
 
-      if (Array.isArray(valA)) valA = valA.join(', ');
-      if (Array.isArray(valB)) valB = valB.join(', ');
-
-      if (valA == null) valA = '';
-      if (valB == null) valB = '';
-
-      const na = Number(valA), nb = Number(valB);
-      if (!isNaN(na) && !isNaN(nb)) {
-        return currentSortOrder === 'asc' ? na - nb : nb - na;
+      if (typeof valA === "boolean" && typeof valB === "boolean") {
+        return currentSortOrder === "asc"
+          ? Number(valA) - Number(valB)
+          : Number(valB) - Number(valA);
       }
-      const aStr = String(valA), bStr = String(valB);
-      return currentSortOrder === 'asc' ? aStr.localeCompare(bStr) : bStr.localeCompare(aStr);
+
+      if (typeof valA === "string" && typeof valB === "string") {
+        return currentSortOrder === "asc"
+          ? valA.localeCompare(valB)
+          : valB.localeCompare(valA);
+      }
+
+      return currentSortOrder === "asc" ? valA - valB : valB - valA;
     });
   }
 
@@ -237,7 +238,7 @@ function renderTable() {
       <td>${renderExpandableCell(movie.actors)}</td>
       <td>${renderExpandableCell(movie.directors)}</td>
       <td>${renderExpandableCell(movie.writers)}</td>
-      <td>${movie.productionCompanies}</td>
+      <td>${renderExpandableCell(movie.productionCompanies)}</td>
       <td>${formatDate(movie.dateWatched)}</td>
       <td>${movie.themesKeywords.join(", ")}</td>
     `;
