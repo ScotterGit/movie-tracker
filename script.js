@@ -98,6 +98,13 @@ function populateFilters(data) {
   populateSelect("hubby-rating-select", [...hubbySet], "numeric");
 }
 
+function highlightMatch(text, query) {
+  if (!query) return text;
+  const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`(${escapedQuery})`, "gi");
+  return text.replace(regex, '<mark>$1</mark>');
+}
+
 function populateSelect(id, values, sortType = "numeric") {
   const select = document.getElementById(id);
 
@@ -223,6 +230,8 @@ function renderTable() {
   const start = (currentPage - 1) * rowsPerPage;
   const pageMovies = filteredMovies.slice(start, start + rowsPerPage);
 
+  const searchQuery = document.getElementById("search-bar").value.toLowerCase(); // ✅ Ensure this is defined here
+
   pageMovies.forEach(movie => {
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -233,7 +242,7 @@ function renderTable() {
             ).join(" | ")
           : `<span class="review-pending">—</span>`}
       </td>
-      <td>${highlightMatch(movie.title)}</td>
+      <td>${highlightMatch(movie.title, searchQuery)}</td>
       <td>${highlightMatch(movie.year.toString(), searchQuery)}</td>
       <td>${highlightMatch(movie.genre.join(", "), searchQuery)}</td>
       <td>${movie.bearHandsRating}</td>
@@ -278,9 +287,3 @@ function toggleField(event, el) {
   full.style.display = isExpanding ? "inline" : "none";
 }
 
-function highlightMatch(text, query) {
-  if (!query) return text;
-  const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // escape regex
-  const regex = new RegExp(`(${escapedQuery})`, "gi");
-  return text.replace(regex, '<mark>$1</mark>');
-}
