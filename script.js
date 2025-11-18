@@ -237,6 +237,7 @@ function renderTable() {
       <td>${renderExpandableCell(movie.actors)}</td>
       <td>${renderExpandableCell(movie.directors)}</td>
       <td>${renderExpandableCell(movie.writers)}</td>
+      <td>${movie.productionCompanies}</td>
       <td>${formatDate(movie.dateWatched)}</td>
       <td>${movie.themesKeywords.join(", ")}</td>
     `;
