@@ -1,246 +1,233 @@
-:root{
-  --bg:#f9f9f9;
-  --panel:#ffffff;
-  --muted:#666;
-  --accent:#0077cc;
-  --border:#ddd;
-  --gap:1rem;
-  --pad:0.75rem;
-  --max-width:1200px;
+/* ---------- Original base styles (unchanged, kept for parity) ---------- */
+body { 
+  font-family: sans-serif; 
+  padding: 20px; 
 }
 
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:2rem;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background:var(--bg);
-  color:#222;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+#search-bar { 
+  width: 100%; 
+  padding: 10px; 
+  font-size: 16px; 
+  margin-bottom: 20px; 
 }
 
-/* Container sizing */
-main, .sticky-filter, .pagination-area{
-  width:100%;
-  max-width:var(--max-width);
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 20px; 
 }
 
-/* Header */
-header h1{
-  margin:0 0 1rem 0;
-  font-weight:600;
-  text-align:center;
+th, td { 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  text-align: left; 
 }
 
-/* Sticky filter panel */
-.sticky-filter{
-  position:sticky;
-  top:1rem;
-  z-index:40;
-  background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));
-  border:1px solid var(--border);
-  border-radius:8px;
-  padding:0.5rem;
-  margin-bottom:1rem;
-  box-shadow:0 6px 18px rgba(20,20,20,0.03);
+/* Sortable headers */
+th[data-key] { 
+  vertical-align: middle; 
+  background-color: #f0f0f0; 
+  cursor: pointer; 
+  user-select: none; 
 }
 
-/* Top row inside sticky filter */
-.top-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:var(--gap);
-  padding:0.25rem 0.5rem;
+/* Unsortable headers */
+th:not([data-key]) { 
+  vertical-align: middle; 
+  background-color: #f0f0f0; 
+  cursor: default; 
+  user-select: none; 
 }
 
-.left-controls{
-  display:flex;
-  gap:0.5rem;
-  align-items:center;
+/* Hover only on sortable headers */
+th[data-key]:hover { 
+  background-color: #e0e0e0; 
 }
 
-.left-controls input#global-search{
-  padding:0.5rem 0.6rem;
-  width:340px;
-  border:1px solid var(--border);
-  border-radius:6px;
-  background:transparent;
-  font-size:0.95rem;
+/* Sort arrow */
+.arrow { 
+  margin-left: 6px; 
+  font-size: 14px; 
+  color: #333; 
+  display: inline-block; 
+  width: 16px; 
 }
 
-.left-controls button{
-  padding:0.5rem 0.75rem;
-  border-radius:6px;
-  border:1px solid var(--border);
-  background:var(--panel);
-  cursor:pointer;
+/* Hide arrows unless actively sorted 
+th:not(.sorted) .arrow { 
+  visibility: hidden; 
+}*/
+
+#pagination-controls { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 1.5rem; 
+  gap: 1rem; 
+  flex-wrap: wrap; 
 }
 
-/* Right controls: page display and page-size */
-.right-controls{
-  display:flex;
-  gap:0.5rem;
-  align-items:center;
-  font-size:0.95rem;
-  color:var(--muted);
+#pagination-buttons, 
+#rows-selector { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
 }
 
-.page-info{font-weight:600}
-.page-size-label{margin-right:0.25rem}
-select#page-size{
-  padding:0.35rem;
-  border-radius:6px;
-  border:1px solid var(--border);
-  background:var(--panel);
-  font-size:0.95rem;
+#pagination-buttons button { 
+  padding: 6px 12px; 
+  font-size: 14px; 
 }
 
-/* Filters row table wrapper (keeps layout aligned with data table) */
-.filters-row{
-  overflow:hidden;
-  padding:0.5rem;
+#rows-selector label { 
+  font-weight: bold; 
 }
 
-.filters-table{
-  width:100%;
-  border-collapse:collapse;
-  table-layout:fixed;
-  background:transparent;
+#rows-selector select { 
+  padding: 6px; 
+  font-size: 14px; 
+  border-radius: 4px; 
+  border: 1px solid #ccc; 
 }
 
-.filters-table th{
-  padding:0;
-  border:none;
+#controls { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 1rem; 
+  align-items: center; 
+  margin-bottom: 1.5rem; 
 }
 
-/* Inputs inside filters */
-.filters-table input[type="text"],
-.filters-table select,
-.filters-table input[type="date"]{
-  width:100%;
-  padding:0.45rem 0.5rem;
-  border:1px solid var(--border);
-  border-radius:6px;
-  font-size:0.9rem;
-  background:var(--panel);
+#controls label { 
+  font-weight: bold; 
+  margin-right: 0.5rem; 
 }
 
-/* Date inputs grouped */
-.date-filters{
-  display:flex;
-  gap:0.4rem;
-  align-items:center;
-  padding:0;
+#controls select, 
+#controls input { 
+  padding: 0.4rem 0.6rem; 
+  border-radius: 4px; 
+  border: 1px solid #ccc; 
+  min-width: 150px; 
 }
 
-/* Visually hidden (for labels) */
-.visually-hidden{
-  position:absolute !important;
-  height:1px;width:1px;
-  overflow:hidden;clip:rect(1px,1px,1px,1px);
-  white-space:nowrap;border:0;padding:0;margin:-1px;
+.filter-group { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.05rem; 
+  min-width: 150px; 
 }
 
-/* Main data table */
-.data-table{
-  width:100%;
-  border-collapse:collapse;
-  table-layout:fixed;
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:8px;
-  overflow:hidden;
-  box-shadow:0 6px 18px rgba(20,20,20,0.03);
+.actor-preview, 
+.actor-full { 
+  display: block; 
+  line-height: 1.4; 
 }
 
-.data-table thead{
-  background:#fafafa;
-  position:sticky;
-  top: calc(1rem + 64px); /* preserves header below sticky-filter; tweak if header height changes */
-  z-index:10;
+.expand-link, 
+.collapse-link { 
+  color: #0077cc; 
+  cursor: pointer; 
+  margin-left: 6px; 
+  font-weight: 500; 
+  font-size: 0.9em; 
 }
 
-.header-row th{
-  text-align:left;
-  padding:0.75rem;
-  border-bottom:1px solid var(--border);
-  font-weight:600;
-  cursor:pointer;
-  user-select:none;
-  font-size:0.95rem;
+.expand-link:hover, 
+.collapse-link:hover { 
+  text-decoration: underline; 
 }
 
-/* Body cells */
-.data-table td{
-  padding:0.65rem;
-  border-bottom:1px solid #f0f0f0;
-  font-size:0.92rem;
-  vertical-align:top;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
+.review-pending { 
+  color: #999; 
+  font-style: italic; 
 }
 
-/* Make some columns wrap (actors/production) */
-.data-table td:nth-child(6),
-.data-table td:nth-child(9),
-.data-table td:nth-child(11){
-  white-space:normal;
-  word-break:break-word;
-  max-width:22ch;
+a.review-link { 
+  color: green; 
+  font-weight: bold; 
+  text-decoration: none; 
 }
 
-/* +more toggle */
-.more-toggle{
-  color:var(--accent);
-  cursor:pointer;
-  font-weight:700;
-  margin-left:0.5rem;
+a.review-link:hover { 
+  text-decoration: underline; 
 }
 
-/* Hidden items shown inline after clicking +more */
-.hidden-items{display:none}
+/* ---------- Patches and enhancements for Production column + layout ---------- */
 
-/* Pagination area/footer */
-.pagination-area{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:var(--gap);
-  margin-top:0.75rem;
-  width:100%;
-  max-width:var(--max-width);
+/* Allow table columns to size naturally so the extra Production column doesn't force truncation */
+table {
+  table-layout: auto; /* makes columns flexible */
 }
 
-.pagination{display:flex;gap:0.25rem}
-.pagination button{
-  padding:0.45rem 0.6rem;
-  border-radius:6px;
-  border:1px solid var(--border);
-  background:#eee;
-  cursor:pointer;
-}
-.pagination button.active{
-  background:var(--accent);
-  color:#fff;
-  border-color:transparent;
+/* Make long-list cells wrap and remain readable; prefer top alignment */
+th, td {
+  white-space: normal;        /* allow wrapping for long lists */
+  word-break: break-word;     /* break long tokens if necessary */
+  vertical-align: top;
 }
 
-/* Responsive tweaks */
-@media (max-width:1100px){
-  left-controls input#global-search{width:220px}
-  .data-table td:nth-child(6), .data-table td:nth-child(9), .data-table td:nth-child(11){
-    max-width:32ch;
+/* Target list-heavy columns (Actors, Production, Themes).
+   Adjust nth-child indexes if your column order differs.
+   These limits make long lists readable and keep rows compact. */
+table td:nth-child(6),
+table td:nth-child(9),
+table td:nth-child(11) {
+  max-width: 40ch;            /* readable width for lists */
+  overflow: visible;
+}
+
+/* Ensure header sits below the filter panel if you use a sticky filter.
+   To make this exact, set --sticky-filter-height on your filter container
+   (see the small JS helper in the guidance if you want automated syncing). */
+.sticky-filter {
+  --sticky-filter-height: auto;
+}
+
+/* If your table header is sticky, force it to sit below the filter panel using the CSS variable */
+table thead {
+  position: sticky;
+  top: calc(var(--sticky-filter-height, 0px) + 8px);
+  z-index: 10;
+  background: #f8f8f8;
+}
+
+/* Keep +more / expand/collapse inline and visually consistent with actor links */
+.expand-link,
+.collapse-link,
+.more-toggle {
+  display: inline-block;
+  margin-left: 6px;
+  color: #0077cc;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Show the bottom page-size selector if it was hidden */
+#page-size-bottom {
+  display: inline-block !important;
+  margin-left: 0.5rem;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+/* Small responsive tweaks for narrower screens */
+@media (max-width: 900px) {
+  .filter-group { min-width: 120px; }
+  table td:nth-child(6), table td:nth-child(9), table td:nth-child(11) {
+    max-width: 60ch;
   }
 }
 
-@media (max-width:800px){
-  .top-row{flex-direction:column;align-items:stretch}
-  .right-controls{justify-content:space-between}
-  .filters-table thead tr th{display:block;margin-bottom:0.5rem}
-  .data-table thead .header-row{display:none} /* optional: hide header on small screens; remove if you prefer */
-  .data-table td{font-size:0.9rem}
+/* Optional: subtle focus state for inputs and selects to aid keyboard users */
+#controls input:focus,
+#controls select:focus,
+#search-bar:focus,
+#rows-selector select:focus {
+  outline: 3px solid rgba(0,119,204,0.12);
+  outline-offset: 2px;
 }
+
+/* End of stylesheet */
