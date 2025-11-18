@@ -20,15 +20,26 @@
       <!-- Filter Row -->
       <tr class="search-row">
         <td><input type="text" placeholder="Title" id="search-title" /></td>
-        <td><input type="text" placeholder="Year" id="search-year" /></td>
-        <td><input type="text" placeholder="Genre" id="search-genre" /></td>
-        <td><input type="text" placeholder="Bear Hands" id="search-bear" /></td>
-        <td><input type="text" placeholder="Hubby Bear" id="search-hubby" /></td>
+        <td>
+          <select id="year-select"><option value="">All</option></select>
+        </td>
+        <td>
+          <select id="genre-select"><option value="">All</option></select>
+        </td>
+        <td>
+          <select id="bear-rating-select"><option value="">All</option></select>
+        </td>
+        <td>
+          <select id="hubby-rating-select"><option value="">All</option></select>
+        </td>
         <td><input type="text" placeholder="Actors" id="search-actors" /></td>
         <td><input type="text" placeholder="Directors" id="search-directors" /></td>
         <td><input type="text" placeholder="Writers" id="search-writers" /></td>
         <td><input type="text" placeholder="Production" id="search-production" /></td>
-        <td><input type="text" placeholder="Date Watched" id="search-date" /></td>
+        <td>
+          <input type="date" id="watched-after" placeholder="Watched After" />
+          <input type="date" id="watched-before" placeholder="Watched Before" />
+        </td>
         <td><input type="text" placeholder="Themes" id="search-themes" /></td>
       </tr>
 

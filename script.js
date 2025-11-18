@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(res => res.json())
     .then(data => {
       movies = data;
+      populateDropdowns(data);
       renderTable();
       setupFilters();
       setupSorting();
@@ -16,6 +17,35 @@ document.addEventListener('DOMContentLoaded', () => {
       setupGlobalSearch();
     });
 });
+
+function populateDropdowns(data) {
+  const yearSet = new Set();
+  const genreSet = new Set();
+  const bearSet = new Set();
+  const hubbySet = new Set();
+
+  data.forEach(movie => {
+    yearSet.add(movie.year);
+    movie.genre.forEach(g => genreSet.add(g));
+    bearSet.add(movie.bearHandsRating);
+    hubbySet.add(movie.hubbyBearRating);
+  });
+
+  populateSelect('year-select', [...yearSet].sort((a, b) => b - a));
+  populateSelect('genre-select', [...genreSet].sort());
+  populateSelect('bear-rating-select', [...bearSet].sort((a, b) => b - a));
+  populateSelect('hubby-rating-select', [...hubbySet].sort((a, b) => b - a));
+}
+
+function populateSelect(id, values) {
+  const select = document.getElementById(id);
+  values.forEach(val => {
+    const option = document.createElement('option');
+    option.value = val;
+    option.textContent = val;
+    select.appendChild(option);
+  });
+}
 
 function renderTable() {
   const tableBody = document.getElementById('table-body');
@@ -59,19 +89,23 @@ function formatExpandable(list) {
 }
 
 function applyFilters(data) {
+  const watchedAfter = document.getElementById('watched-after').value;
+  const watchedBefore = document.getElementById('watched-before').value;
+
   return data.filter(movie => {
     return (
       match(movie.title, 'search-title') &&
-      match(movie.year, 'search-year') &&
-      matchArray(movie.genre, 'search-genre') &&
-      match(movie.bearHandsRating, 'search-bear') &&
-      match(movie.hubbyBearRating, 'search-hubby') &&
+      matchSelect(movie.year, 'year-select') &&
+      matchSelectArray(movie.genre, 'genre-select') &&
+      matchSelect(movie.bearHandsRating, 'bear-rating-select') &&
+      matchSelect(movie.hubbyBearRating, 'hubby-rating-select') &&
       matchArray(movie.actors, 'search-actors') &&
       matchArray(movie.directors, 'search-directors') &&
       matchArray(movie.writers, 'search-writers') &&
       matchArray(movie.production, 'search-production') &&
       match(movie.dateWatched, 'search-date') &&
-      matchArray(movie.themesKeywords, 'search-themes')
+      matchArray(movie.themesKeywords, 'search-themes') &&
+      matchDateRange(movie.dateWatched, watchedAfter, watchedBefore)
     );
   });
 }
@@ -86,6 +120,24 @@ function matchArray(arr, inputId) {
   const input = document.getElementById(inputId);
   if (!input || !input.value.trim()) return true;
   return arr.some(item => item.toLowerCase().includes(input.value.trim().toLowerCase()));
+}
+
+function matchSelect(value, selectId) {
+  const select = document.getElementById(selectId);
+  return !select || !select.value || String(value) === select.value;
+}
+
+function matchSelectArray(arr, selectId) {
+  const select = document.getElementById(selectId);
+  return !select || !select.value || arr.includes(select.value);
+}
+
+function matchDateRange(dateStr, after, before) {
+  if (!dateStr) return true;
+  const date = new Date(dateStr);
+  if (after && date < new Date(after)) return false;
+  if (before && date > new Date(before)) return false;
+  return true;
 }
 
 function applySorting(data) {
@@ -118,8 +170,12 @@ function setupSorting() {
 }
 
 function setupFilters() {
-  document.querySelectorAll('.search-row input').forEach(input => {
-    input.addEventListener('input', () => {
+  document.querySelectorAll('.search-row input, .search-row select').forEach(el => {
+    el.addEventListener('input', () => {
+      currentPage = 1;
+      renderTable();
+    });
+    el.addEventListener('change', () => {
       currentPage = 1;
       renderTable();
     });
@@ -128,7 +184,9 @@ function setupFilters() {
 
 function setupReset() {
   document.getElementById('reset-filters').addEventListener('click', () => {
-    document.querySelectorAll('.search-row input, #global-search').forEach(input => input.value = '');
+    document.querySelectorAll('.search-row input, .search-row select, #global-search').forEach(el => {
+      el.value = '';
+    });
     currentPage = 1;
     renderTable();
     document.getElementById('global-search').focus();
