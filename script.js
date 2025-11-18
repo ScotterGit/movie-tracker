@@ -232,30 +232,37 @@ function renderTable() {
 
   const searchQuery = document.getElementById("search-bar").value.toLowerCase();
 
-  pageMovies.forEach(movie => {
-    const row = document.createElement("tr");
-    row.innerHTML = `
-      <td>
-        ${movie.hasReview
-          ? movie.reviews.map(r =>
-              `<a href="${r.reviewLink}" target="_blank">${r.reviewedBy}</a>`
-            ).join(" | ")
-          : `<span class="review-pending">—</span>`}
-      </td>
-      <td>${highlightMatch(movie.title, searchQuery)}</td>
-      <td>${highlightMatch(movie.year.toString(), searchQuery)}</td>
-      <td>${highlightMatch(movie.genre.join(", "), searchQuery)}</td>
-      <td>${movie.bearHandsRating}</td>
-      <td>${movie.hubbyBearRating}</td>
-      <td>${renderExpandableCell(movie.actors, searchQuery)}</td>
-      <td>${renderExpandableCell(movie.directors, searchQuery)}</td>
-      <td>${renderExpandableCell(movie.writers, searchQuery)}</td>
-      <td>${renderExpandableCell(movie.productionCompanies, searchQuery)}</td>
-      <td>${formatDate(movie.dateWatched)}</td>
-      <td>${highlightMatch(movie.themesKeywords.join(", "), searchQuery)}</td>
-    `;
-    tbody.appendChild(row);
-  });
+pageMovies.forEach(movie => {
+  const searchQuery = document.getElementById("search-bar").value.toLowerCase();
+
+  // 🔍 Debug logs — insert here
+  console.log("Search Query:", searchQuery);
+  console.log("Writer Raw:", movie.writers.join(", "));
+  console.log("Writer Highlighted:", highlightMatch(movie.writers.join(", "), searchQuery));
+
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td>
+      ${movie.hasReview
+        ? movie.reviews.map(r =>
+            `<a href="${r.reviewLink}" target="_blank">${r.reviewedBy}</a>`
+          ).join(" | ")
+        : `<span class="review-pending">—</span>`}
+    </td>
+    <td>${highlightMatch(movie.title, searchQuery)}</td>
+    <td>${highlightMatch(movie.year.toString(), searchQuery)}</td>
+    <td>${highlightMatch(movie.genre.join(", "), searchQuery)}</td>
+    <td>${movie.bearHandsRating}</td>
+    <td>${movie.hubbyBearRating}</td>
+    <td>${renderExpandableCell(movie.actors, searchQuery)}</td>
+    <td>${renderExpandableCell(movie.directors, searchQuery)}</td>
+    <td>${renderExpandableCell(movie.writers, searchQuery)}</td>
+    <td>${renderExpandableCell(movie.productionCompanies, searchQuery)}</td>
+    <td>${formatDate(movie.dateWatched)}</td>
+    <td>${highlightMatch(movie.themesKeywords.join(", "), searchQuery)}</td>
+  `;
+  tbody.appendChild(row);
+});
 
   const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
