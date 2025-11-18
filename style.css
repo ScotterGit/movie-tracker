@@ -1,153 +1,90 @@
 body {
-  font-family: sans-serif;
-  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-#search-bar {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 20px;
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+
+thead {
+  background-color: #eee;
 }
 
 th, td {
+  padding: 0.75rem;
   border: 1px solid #ccc;
-  padding: 10px;
   text-align: left;
+  vertical-align: top;
 }
 
-/* Sortable headers */
-th[data-key] {
-  vertical-align: middle;
-  background-color: #f0f0f0;
+th {
   cursor: pointer;
   user-select: none;
 }
 
-/* Unsortable headers */
-th:not([data-key]) {
-  vertical-align: middle;
-  background-color: #f0f0f0;
-  cursor: default;
-  user-select: none;
+.search-row input {
+  width: 100%;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
 }
 
-/* Hover only on sortable headers */
-th[data-key]:hover {
-  background-color: #e0e0e0;
-}
-
-/* Sort arrow */
-.arrow {
-  margin-left: 6px;
-  font-size: 14px;
-  color: #333;
-  display: inline-block;
-  width: 16px;
-}
-
-/* Hide arrows unless actively sorted 
-th:not(.sorted) .arrow {
-  visibility: hidden;
-}*/
-
-#pagination-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1.5rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-#pagination-buttons,
-#rows-selector {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-#pagination-buttons button {
-  padding: 6px 12px;
-  font-size: 14px;
-}
-
-#rows-selector label {
-  font-weight: bold;
-}
-
-#rows-selector select {
-  padding: 6px;
-  font-size: 14px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-#controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-#controls label {
-  font-weight: bold;
-  margin-right: 0.5rem;
-}
-
-#controls select,
-#controls input {
-  padding: 0.4rem 0.6rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  min-width: 150px;
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.05rem;
-  min-width: 150px;
-}
-
-.actor-preview,
-.actor-full {
-  display: block;
-  line-height: 1.4;
-}
-
-.expand-link,
-.collapse-link {
+.more-toggle {
   color: #0077cc;
   cursor: pointer;
-  margin-left: 6px;
-  font-weight: 500;
-  font-size: 0.9em;
-}
-
-.expand-link:hover,
-.collapse-link:hover {
-  text-decoration: underline;
-}
-
-.review-pending {
-  color: #999;
-  font-style: italic;
-}
-
-a.review-link {
-  color: green;
   font-weight: bold;
-  text-decoration: none;
-}
-a.review-link:hover {
-  text-decoration: underline;
+  margin-left: 0.5rem;
 }
 
+.hidden-items {
+  display: none;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  margin: 0 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #0077cc;
+  color: white;
+}
