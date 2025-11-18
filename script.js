@@ -233,17 +233,17 @@ function renderTable() {
             ).join(" | ")
           : `<span class="review-pending">—</span>`}
       </td>
-      <td>${movie.title}</td>
-      <td>${movie.year}</td>
-      <td>${movie.genre.join(", ")}</td>
+      <td>${highlightMatch(movie.title)}</td>
+      <td>${highlightMatch(movie.year.toString(), searchQuery)}</td>
+      <td>${highlightMatch(movie.genre.join(", "), searchQuery)}</td>
       <td>${movie.bearHandsRating}</td>
       <td>${movie.hubbyBearRating}</td>
-      <td>${renderExpandableCell(movie.actors)}</td>
-      <td>${renderExpandableCell(movie.directors)}</td>
-      <td>${renderExpandableCell(movie.writers)}</td>
-      <td>${renderExpandableCell(movie.productionCompanies)}</td>
+      <td>${renderExpandableCell(movie.actors, searchQuery)}</td>
+      <td>${renderExpandableCell(movie.directors, searchQuery)}</td>
+      <td>${renderExpandableCell(movie.writers, searchQuery)}</td>
+      <td>${renderExpandableCell(movie.productionCompanies, searchQuery)}</td>
       <td>${formatDate(movie.dateWatched)}</td>
-      <td>${movie.themesKeywords.join(", ")}</td>
+      <td>${highlightMatch(movie.themesKeywords.join(", "), searchQuery)}</td>
     `;
     tbody.appendChild(row);
   });
@@ -252,11 +252,11 @@ function renderTable() {
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
 }
 
-function renderExpandableCell(items) {
+function renderExpandableCell(items, query) {
   if (!items || items.length === 0) return "";
 
-  const preview = items.slice(0, 3).join(", ");
-  const full = items.join(", ");
+  const preview = items.slice(0, 3).map(i => highlightMatch(i, query)).join(", ");
+  const full = items.map(i => highlightMatch(i, query)).join(", ");
   const moreCount = items.length - 3;
 
   return `
@@ -276,4 +276,11 @@ function toggleField(event, el) {
   const isExpanding = preview.style.display !== "none";
   preview.style.display = isExpanding ? "none" : "inline";
   full.style.display = isExpanding ? "inline" : "none";
+}
+
+function highlightMatch(text, query) {
+  if (!query) return text;
+  const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // escape regex
+  const regex = new RegExp(`(${escapedQuery})`, "gi");
+  return text.replace(regex, '<mark>$1</mark>');
 }
