@@ -1,67 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Movie Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Movie Dashboard</h1>
-    <div class="search-bar">
-      <input type="text" id="global-search" placeholder="Search all fields..." />
-      <button id="reset-filters">Reset Filters</button>
-    </div>
   </header>
 
-  <table>
-    <thead>
-      <!-- Filter Row -->
-      <tr class="search-row">
-        <td><input type="text" placeholder="Title" id="search-title" /></td>
-        <td>
-          <select id="year-select"><option value="">All</option></select>
-        </td>
-        <td>
-          <select id="genre-select"><option value="">All</option></select>
-        </td>
-        <td>
-          <select id="bear-rating-select"><option value="">All</option></select>
-        </td>
-        <td>
-          <select id="hubby-rating-select"><option value="">All</option></select>
-        </td>
-        <td><input type="text" placeholder="Actors" id="search-actors" /></td>
-        <td><input type="text" placeholder="Directors" id="search-directors" /></td>
-        <td><input type="text" placeholder="Writers" id="search-writers" /></td>
-        <td><input type="text" placeholder="Production" id="search-production" /></td>
-        <td>
-          <input type="date" id="watched-after" placeholder="Watched After" />
-          <input type="date" id="watched-before" placeholder="Watched Before" />
-        </td>
-        <td><input type="text" placeholder="Themes" id="search-themes" /></td>
-      </tr>
+  <!-- Sticky filter / search bar -->
+  <div class="sticky-filter" role="region" aria-label="Filters and search">
+    <div class="top-row">
+      <div class="left-controls">
+        <input type="text" id="global-search" placeholder="Search all fields..." aria-label="Global search" />
+        <button id="reset-filters" type="button">Reset Filters</button>
+      </div>
+      <div class="right-controls">
+        <div class="page-info" id="page-display">Page 1 of 1</div>
+        <label for="page-size" class="page-size-label">Show</label>
+        <select id="page-size" aria-label="Page size">
+          <option value="100">100</option>
+          <option value="200">200</option>
+          <option value="300">300</option>
+        </select>
+      </div>
+    </div>
 
-      <!-- Header Row -->
-      <tr class="header-row">
-        <th data-sort="title">Title ▲▼</th>
-        <th data-sort="year">Year ▲▼</th>
-        <th data-sort="genre">Genre ▲▼</th>
-        <th data-sort="bearHandsRating">Bear Hands ▲▼</th>
-        <th data-sort="hubbyBearRating">Hubby Bear ▲▼</th>
-        <th data-sort="actors">Actors ▲▼</th>
-        <th data-sort="directors">Directors ▲▼</th>
-        <th data-sort="writers">Writers ▲▼</th>
-        <th data-sort="production">Production ▲▼</th>
-        <th data-sort="dateWatched">Date Watched ▲▼</th>
-        <th data-sort="themesKeywords">Themes ▲▼</th>
-      </tr>
-    </thead>
-    <tbody id="table-body"></tbody>
-  </table>
+    <div class="filters-row">
+      <table class="filters-table" aria-hidden="true">
+        <thead>
+          <tr>
+            <th><input type="text" id="search-title" placeholder="Search title" /></th>
 
-  <div id="pagination" class="pagination"></div>
+            <th>
+              <select id="year-select" aria-label="Filter by year">
+                <option value="">All</option>
+              </select>
+            </th>
+
+            <th>
+              <select id="genre-select" aria-label="Filter by genre">
+                <option value="">All</option>
+              </select>
+            </th>
+
+            <th>
+              <select id="bear-rating-select" aria-label="Filter by Bear Hands rating">
+                <option value="">All</option>
+              </select>
+            </th>
+
+            <th>
+              <select id="hubby-rating-select" aria-label="Filter by Hubby Bear rating">
+                <option value="">All</option>
+              </select>
+            </th>
+
+            <th><input type="text" id="search-actors" placeholder="Search actors" /></th>
+            <th><input type="text" id="search-directors" placeholder="Search directors" /></th>
+            <th><input type="text" id="search-writers" placeholder="Search writers" /></th>
+            <th><input type="text" id="search-production" placeholder="Search production" /></th>
+
+            <th class="date-filters">
+              <label for="watched-after" class="visually-hidden">Search watched after date</label>
+              <input type="date" id="watched-after" placeholder="Search watched after date" />
+              <label for="watched-before" class="visually-hidden">Search watched before date</label>
+              <input type="date" id="watched-before" placeholder="Search watched before date" />
+            </th>
+
+            <th><input type="text" id="search-themes" placeholder="Search themes" /></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+  <!-- Main table -->
+  <main>
+    <table class="data-table" aria-label="Movies table">
+      <thead>
+        <tr class="header-row">
+          <th data-sort="title">Title ▲▼</th>
+          <th data-sort="year">Year ▲▼</th>
+          <th data-sort="genre">Genre ▲▼</th>
+          <th data-sort="bearHandsRating">Bear Hands ▲▼</th>
+          <th data-sort="hubbyBearRating">Hubby Bear ▲▼</th>
+          <th data-sort="actors">Actors ▲▼</th>
+          <th data-sort="directors">Directors ▲▼</th>
+          <th data-sort="writers">Writers ▲▼</th>
+          <th data-sort="production">Production ▲▼</th>
+          <th data-sort="dateWatched">Date Watched ▲▼</th>
+          <th data-sort="themesKeywords">Themes ▲▼</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- rows injected by script -->
+      </tbody>
+    </table>
+  </main>
+
+  <!-- Pagination control (buttons generated by JS) -->
+  <footer class="pagination-area">
+    <div class="pagination-left">
+      <div id="pagination" class="pagination"></div>
+    </div>
+    <div class="pagination-right">
+      <!-- duplicate page-size for convenience (kept in sync by JS) -->
+      <label for="page-size-bottom" class="visually-hidden">Page size bottom</label>
+      <select id="page-size-bottom" aria-label="Page size bottom" style="display:none;">
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+      </select>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
