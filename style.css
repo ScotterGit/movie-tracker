@@ -156,3 +156,11 @@ td:nth-child(7), td:nth-child(8) {
   word-break: break-word;
   max-width: 40ch;
 }
+
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* or match your table background */
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* optional polish */
+}
