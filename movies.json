@@ -460,6 +460,7 @@
   "directors": ["Gareth Edwards"],
   "writers": ["David Koepp", "Michael Crichton"],
   "actors": ["Scarlett Johansson", "Mahershala Ali", "Jonathan Bailey", "Rupert Friend", "Manuel Garcia-Rulfo", "Luna Blaise", "David Iacono", "Philippine Velge", "Sylvain LeClerc", "Ed Skrein", "Adam Loxley Williams", "Niamh Finlay", "Julian Edgar", "Lucy Thackeray"],
+  "productionCompanies": ["Frank Marshall", "Patrick Crowley", "Gareth Edwards", "Amblin Entertainment", "Perfect World Pictures", "Universal Pictures"],
   "themesKeywords": ["mutant dinosaurs"]
 },
 {
@@ -470,10 +471,11 @@
   "genre": ["Drama", "Thriller"],
   "bearHandsRating": 4,
   "hubbyBearRating": 3,
-  "dateWatched":"2025-09-17",
+  "dateWatched": "2025-09-17",
   "directors": ["David M. Rosenthal"],
   "writers": ["Ross Partridge"],
   "actors": ["Jack Quaid", "Jeffrey Dean Morgan", "Britt Baron", "Zoe Winters", "Will Brill", "David Pittu", "Danny Wolohan", "Ben Rappaport", "Kelli Barrett", "Michael Chernus"],
+  "productionCompanies": ["David M. Rosenthal", "Ross Partridge", "Anonymous Content", "Black Bear Pictures", "Netflix"],
   "themesKeywords": ["mental illness", "emotional trauma", "unreliable narrator"]
 },
 {
@@ -488,6 +490,7 @@
   "directors": ["Tom Gormican"],
   "writers": ["Kevin Etten", "Tom Gormican"],
   "actors": ["Thandiwe Newton", "Steve Zahn", "Paul Rudd", "Jack Black", "Daniela Melchior", "Ione Skye", "Ben Lawson", "Selton Mello", "Santiago Braga", "Renee Herbert", "Yasmin Kassim", "Aimee Bah", "Cal Giardina", "Jack Waters", "Matt Aristizabal", "Diego Arnary", "Sebastian Sero", "Rui Ricardo Diaz"],
+  "productionCompanies": ["Tom Gormican", "Kevin Etten", "Brad Fuller", "Andrew Form", "Samson Mucke", "Columbia Pictures", "Fully Formed Entertainment", "Sony Pictures Releasing"],
   "themesKeywords": ["remake", "jungle survival"]
 },
 {
@@ -502,6 +505,7 @@
   "directors": ["Ryan Coogler"],
   "writers": ["Ryan Coogler"],
   "actors": ["Miles Caton", "Saul Williams", "Andrene Ward-Hammond", "Jack O'Connell", "Michael B. Jordan", "Hailee Steinfeld", "Jayme Lawson", "Delroy Lindo", "Omar Benson Miller", "Tenaj L. Jackson", "Li Jun Li", "Helena Hu", "Dave Maldonado", "Aadyn Encalarde", "Terry Ja'Quan Monroe-Henderson", "Lucy Thackeray"],
+  "productionCompanies": ["Ryan Coogler", "Zinzi Coogler", "Sev Ohanian", "Ludwig Göransson", "Proximity Media", "Domain Entertainment", "Warner Bros. Pictures"],
   "themesKeywords": ["twins", "vampirer", "southern", "period setting"]
 },
 {
@@ -516,6 +520,7 @@
   "directors": ["Dan Berk", "Robert Olsen"],
   "writers": ["Lars Jacobson"],
   "actors": ["Jack Quaid", "Amber Midthunder", "Ray Nicholson", "Jacob Batalon", "Betty Gabriel", "Matt Walsh", "Conrad Kemp", "Evan Hengst", "Craig Jackson", "Lou Beatty Jr.", "Garth Collins", "Tristan de Beer", "Jessica Leigh Stanley", "Chioma Antoinette Umeala", "Margot Wood", "Dylan Skews", "Keeno Lee Hector", "Maria Vos"],
+  "productionCompanies": ["Drew Simon", "Tory Tunnell", "Joby Harold", "Sam Speiser", "Matt Schwartz", "Julian Rosenberg", "Infrared Pictures", "Safehouse Pictures", "Circle of Confusion", "Paramount Pictures"],
   "themesKeywords": ["CIPA disorder", "bank robbery", "kidnapping", "one-man army", "dark comedy", "gruesome", "pain immunity", "superhero parody"]
 },
 {
@@ -530,6 +535,7 @@
   "directors": ["Jeff Tomsic"],
   "writers": ["Rob McKittrick", "Mark Steilen", "Russell Adams"],
   "actors": ["Ed Helms", "Lil Rel Howery", "Jon Hamm", "Annabelle Wallis", "Jake Johnson", "Isla Fisher", "Hannibal Buress", "Leslie Bibb", "Rashida Jones", "Steve Berg", "Jeremy Renner", "Nora Dunn", "Sebastian Maniscalco", "Thomas Middleditch"],
+  "productionCompanies": ["Todd Garner", "Mark Steilen", "New Line Cinema", "Broken Road Productions", "Warner Bros. Pictures"],
   "themesKeywords": ["male friendship", "bad ending", "based on true story", "grown-up antics"]
 },
 {
@@ -544,6 +550,7 @@
   "directors": ["Todd Haynes"],
   "writers": ["Samy Burch", "Alex Mechanik"],
   "actors": ["Natalie Portman", "Julianne Moore", "Charles Melton", "Chris Tenzis", "Andrea Frankle", "Gabriel Barbosa", "Mikenzie Taylor", "Jocelyn Shelfo", "Elizabeth Yu", "D.W. Moffett", "Cory Michael Smith", "Kelvin Han Yee", "Julie Ivey", "Drew Scheid", "Fatou Jackson", "Hans Obma", "Piper Curda", "Allie McCulloch"],
+  "productionCompanies": ["Natalie Portman", "Will Ferrell", "Jessica Elbaum", "Christine Vachon", "Pam Koffler", "Sophie Mas", "Grant Johnson", "Killer Films", "Gloria Sanchez Productions", "MountainA", "Netflix"],
   "themesKeywords": ["age-gap relationship", "tabloid scandal", "emotional trauma", "family dynamics", "Savannah setting"]
 },
 {
@@ -558,7 +565,8 @@
   "directors": ["Max Eggers", "Sam Eggers"],
   "writers": ["Susan Hill", "Max Eggers", "Sam Eggers"],
   "actors": ["Brandy Norwood", "Andrew Burnap", "Kathryn Hunter", "Neal Huff", "David Manis", "Mary Catherine Wright", "Ellen J. Maddow", "Mary Testa", "Mary Morgen McKynzie", "Kerry Flanagan", "Wendy Heagy", "Rueby Wray", "Chasity Orr", "Charlize Orr"],
-  "themesKeywords": ["pregnancy", "estranged family", "religious fanaticism","elderly care horror", "A24"]
+  "productionCompanies": ["Max Eggers", "Sam Eggers", "A24", "Square Peg"],
+  "themesKeywords": ["pregnancy", "estranged family", "religious fanaticism", "elderly care horror", "A24"]
 },
 {
   "hasReview": false,
@@ -572,6 +580,7 @@
   "directors": ["Christian Swegal"],
   "writers": ["Christian Swegal"],
   "actors": ["Dennis Quaid", "Jacob Tremblay", "Nick Offerman", "Terry J. Nelson", "Bobby Gilchrist", "Kezia DaCosta", "Megan Mullally", "Ruby Wolf", "Buddy Campbell", "Tommy Kramer", "Jared Carter", "Jennifer Nesbitt-Eck", "Mike L. Thomas", "Cheryl Vanwinkle", "Jason Cochran", "Chris Greene", "Jade Fernandez", "William Sherman"],
+  "productionCompanies": ["Christian Swegal", "Dennis Quaid", "Nick Offerman", "XYZ Films", "Saban Films", "Thunder Road Pictures"],
   "themesKeywords": ["anti-government extremism", "father-son relationship", "police standoff", "indoctrination", "paranoia", "based on true events", "psychological tension"]
 },
 {
@@ -586,20 +595,22 @@
   "directors": ["Gerard Johnstone"],
   "writers": ["Gerard Johnstone", "Akela Cooper", "James Wan"],
   "actors": ["Allison Williams", "Violet McGraw", "Amie Donald", "Jenna Davis", "Brian Jordan Alvarez", "Jen Van Epps", "Ivanna Sakhno", "Aristotle Athari", "Jemaine Clement", "Timm Sharp", "James Gaylyn", "Jacque Drew", "Martin Richard", "Paul Waggott", "Shervonne Grierson", "Omar Al-Sobky", "Ara Raad"],
-  "themesKeywords": ["AI ethics", "killer doll", "revenge sequel","campy"]
+  "productionCompanies": ["Jason Blum", "James Wan", "Allison Williams", "Blumhouse Productions", "Atomic Monster", "Divide/Conquer", "Universal Pictures"],
+  "themesKeywords": ["AI ethics", "killer doll", "revenge sequel", "campy"]
 },
 {
   "hasReview": false,
   "reviewLink": null,
   "title": "M3GAN",
   "year": 2022,
-  "genre": ["Horror", "Sci-Fi","Dark Comedy"],
+  "genre": ["Horror", "Sci-Fi", "Dark Comedy"],
   "bearHandsRating": 9,
   "hubbyBearRating": 9,
   "dateWatched": "2025-08-30",
   "directors": ["Gerard Johnstone"],
   "writers": ["Akela Cooper", "James Wan"],
   "actors": ["Allison Williams", "Violet McGraw", "Ronny Chieng", "Amie Donald", "Jenna Davis", "Brian Jordan Alvarez", "Jen Van Epps", "Stephane Garneau-Monten", "Lori Dungey", "Amy Usherwood", "Jack Cassidy", "Michael Saccente", "Kira Josephson", "Renee Lyons", "Millen Baird", "Chelsie Preston Crayford", "Arlo Green"],
+  "productionCompanies": ["Jason Blum", "James Wan", "Blumhouse Productions", "Atomic Monster", "Divide/Conquer", "Universal Pictures"],
   "themesKeywords": ["AI companion", "grief and loss", "parenting by proxy", "killer doll", "tech ethics", "corporate pressure", "childhood trauma", "satirical horror", "Chucky homage", "uncanny valley"]
 },
 {
@@ -614,6 +625,7 @@
   "directors": ["Jake Schreier"],
   "writers": ["Eric Pearson", "Joanna Calo", "Kurt Busiek"],
   "actors": ["Florence Pugh", "Sebastian Stan", "Julia Louis-Dreyfus", "David Harbour", "Wyatt Russell", "Lewis Pullman", "Hannah John-Kamen", "Olga Kurylenko", "Geraldine Viswanathan", "Violet McGraw", "Wendell Pierce", "Chris Bauer", "Alexa Swinton", "Eric Lange"],
+  "productionCompanies": ["Kevin Feige", "Marvel Studios", "Walt Disney Studios Motion Pictures"],
   "themesKeywords": ["antihero team-up", "dark pasts", "MCU", "misfits", "super soldier"]
 },
 {
@@ -628,7 +640,8 @@
   "directors": ["Nick Cassavetes"],
   "writers": ["Boston Teran", "Nick Cassavetes"],
   "actors": ["Maika Monroe", "Nikolaj Coster-Waldau", "Karl Glusman", "January Jones", "Jamie Foxx", "Paul Johansson", "David Thornton", "Ethan Suplee", "Jonathan Tucker", "Brendan Sexton III", "Garrett Wareing", "Virginia Cassavetes", "Chloe Guy", "Nancy De Mayo", "Dexter Demme"],
-  "themesKeywords": ["satanic cult", "kidnapping", "revenge","vigilante justice", "trauma","based on novel"]
+  "productionCompanies": ["Michael Mendelsohn", "Don Allen", "Kim H. Winther", "Nick Cassavetes", "Patriot Pictures", "Capstone Studios", "XYZ Films", "Wayward Entertainment"],
+  "themesKeywords": ["satanic cult", "kidnapping", "revenge", "vigilante justice", "trauma", "based on novel"]
 },
 {
   "hasReview": false,
@@ -642,7 +655,8 @@
   "directors": ["Josh Ruben"],
   "writers": ["Phillip Murphy", "Christopher Landon", "Michael Kennedy"],
   "actors": ["Alex Walker", "Lauren O'Hara", "Latham Gaines", "Olivia Holt", "Ben Black", "Amy L. Workman", "Joseph Wycoff", "Sahil Arora", "Kali Kopae", "Gary Young", "Madeleine McCarthy", "Alaina Wilks", "Kaylim Miller", "Molly Curnow", "Dylan Thuraisingham", "Conor Bowden"],
-  "themesKeywords": ["Valentine's Day", "serial killer", "campy gore","masked killer"]
+  "productionCompanies": ["Christopher Landon", "Michael Kennedy", "Josh Ruben", "Blumhouse Productions", "Divide/Conquer", "Universal Pictures"],
+  "themesKeywords": ["Valentine's Day", "serial killer", "campy gore", "masked killer"]
 },
 {
   "hasReview": false,
@@ -656,7 +670,8 @@
   "directors": ["Joe Lo Truglio"],
   "writers": ["Joe Lo Truglio"],
   "actors": ["Beth Dover", "Ato Essandoh", "Dallas Roberts", "Dylan Baker", "Becky Ann Baker", "Dana Millican", "Tim Neff", "Doug Dawson", "D.R. Anderson", "Ta'Rea Campbell", "Faith Clark Doebler", "Corinne Patrick", "Stephen Morton", "John Scott Horton", "Joe Mortimer", "Kevin Kahl Lease", "Tabatha Brooke", "Johnny Cook"],
-  "themesKeywords": ["PTSD", "solitude","wilderness isolation", "hallucinations", "trauma recovery","psychological unraveling", "indie horror"]
+  "productionCompanies": ["Joe Lo Truglio", "Beth Dover", "Paperclip Ltd.", "Quiver Distribution"],
+  "themesKeywords": ["PTSD", "solitude", "wilderness isolation", "hallucinations", "trauma recovery", "psychological unraveling", "indie horror"]
 },
 {
   "hasReview": false,
@@ -670,7 +685,8 @@
   "directors": ["Oren Peli"],
   "writers": ["Oren Peli"],
   "actors": ["Katie Featherston", "Micah Sloat", "Mark Fredrichs", "Amber Armstrong", "Ashley Palmer", "Crystal Cartwright", "Spencer Marks", "Randy McDowell", "James Piper"],
-  "themesKeywords": ["demonic haunting", "found footage", "low budget horror", "Ouija board","Blumhouse debut", "cult classic"]
+  "productionCompanies": ["Oren Peli", "Jason Blum", "Blumhouse Productions", "Paramount Pictures"],
+  "themesKeywords": ["demonic haunting", "found footage", "low budget horror", "Ouija board", "Blumhouse debut", "cult classic"]
 },
 {
   "hasReview": false,
@@ -684,6 +700,7 @@
   "directors": ["Julius Onah"],
   "writers": ["Rob Edwards", "Malcolm Spellman", "Dalan Musson"],
   "actors": ["Anthony Mackie", "Harrison Ford", "Danny Ramirez", "Shira Haas", "Carl Lumbly", "Tim Blake Nelson", "Giancarlo Esposito", "Liv Tyler", "Xosha Roquemore", "Johannes Haukur Jóhannesson", "William Mark McCullough", "Takehiro Hira", "Harsh Nayyar", "Rick Espaillat", "Todd Allen Durkin", "Dustin Lewis"],
+  "productionCompanies": ["Kevin Feige", "Nate Moore", "Marvel Studios", "Walt Disney Studios Motion Pictures"],
   "themesKeywords": ["global conspiracy", "political tension", "MCU continuity", "espionage", "villain underdevelopment", "franchise fatigue"]
 },
 {
@@ -698,6 +715,7 @@
   "directors": ["John Maclean"],
   "writers": ["John Maclean", "Kate Leys"],
   "actors": ["Kōki", "Nathan Malone", "Tim Roth", "Rory McCann", "Dennis Okwera", "Jamie Michie", "Douglas Russell", "Ian Hanmore", "Sammy Hayman", "Jack Morris", "Bryan Michael Mills", "Jack Lowden", "Kerry Lynn Hamilton", "Alex Macqueen", "Nina Barnett", "Raphaël Thiery", "Takehiro Hira", "Joanne Whalley"],
+  "productionCompanies": ["John Maclean", "Kate Leys", "DMC Film", "BBC Film", "Film4 Productions", "Bleecker Street"],
   "themesKeywords": ["revenge", "samurai training", "martial arts", "crime gang", "stylized violence", "minimal dialouge"]
 },
 {
@@ -712,6 +730,7 @@
   "directors": ["Paul Feig"],
   "writers": ["Darcey Bell", "Jessica Sharzer", "Laeta Kalogridis"],
   "actors": ["Anna Kendrick", "Blake Lively", "Joshua Satine", "Andrew Rannells", "Jayne Lulu Holmes", "Aparna Nancherla", "Kelly McCormack", "Alex Newell", "Bashir Salahuddin", "Kate Rachesky", "Melanie Neu", "Taylor Ortega", "Sylvia Sakellaridis", "Hilary Belle Walker", "Michele Morrone", "Silvio Caldarozzi"],
+  "productionCompanies": ["Paul Feig", "Laura Fischer", "Jessica Sharzer", "Feigco Entertainment", "Lionsgate", "Amazon MGM Studios"],
   "themesKeywords": ["Capri", "wedding", "murder mystery", "female friendship", "sequel", "book tour", "betrayal", "twist"]
 },
 {
@@ -726,6 +745,7 @@
   "directors": ["Ron Howard"],
   "writers": ["Noah Pink", "Ron Howard"],
   "actors": ["Jude Law", "Ana de Armas", "Vanessa Kirby", "Daniel Brühl", "Sydney Sweeney", "Richard Roxburgh", "Toby Wallace", "Felix Kammerer", "Jonathan Tittel", "Ignacio Gasparini", "Paul Gleeson", "Thiago Moraes", "Tim Ross", "Antonio Alvarez", "Benjamin Gorrono"],
+  "productionCompanies": ["Ron Howard", "Brian Grazer", "Imagine Entertainment", "AGC Studios", "Netflix"],
   "themesKeywords": ["Galapagos", "utopian collapse", "philosophical conflict", "ego clash", "post-WWI escapism", "colonial tension", "homesteading"]
 },
 {
@@ -740,6 +760,7 @@
   "directors": ["Tim Pine"],
   "writers": ["Tim Pine", "Travis Akbar", "Thibul Nettle"],
   "actors": ["Thibul Nettle", "Claudia Bonifazio", "Natasha Wanganeen", "Nick Buckland", "Luana Pohe", "Gail Morrison", "Matt Connelly", "Paul Atkins", "Georgia Williams", "Tess O'Flaherty", "Trung Le", "Mark Amar", "Matthew Brice", "Scott King", "Angus Kromer", "Tegan Nottle"],
+  "productionCompanies": ["Tim Pine", "Travis Akbar", "Thibul Nettle", "Pine Entertainment", "Umbrella Entertainment"],
   "themesKeywords": ["mental asylum", "escaped killer", "night shift horror"]
 },
 {
@@ -754,6 +775,7 @@
   "directors": ["Sally Rose Griffiths"],
   "writers": [],
   "actors": ["Dov Charney", "Jonny Makeup", "Carson Giles", "E.J. Merlin", "Michelle Lemay", "Susan Berfield", "Toni Jaramilla", "Fred Armisen", "Beyonce", "Katie Couric", "Ann Curry", "Ana Kasparian"],
+  "productionCompanies": ["Sally Rose Griffiths", "Vice Studios", "Netflix"],
   "themesKeywords": ["fashion industry", "toxic workplace", "cult of personality", "sexual harassment", "corporate downfall", "media spectacle", "employee testimony"]
 },
 {
@@ -768,6 +790,7 @@
   "directors": ["Rodger Griffiths"],
   "writers": ["Rodger Griffiths", "Robert Drummond"],
   "actors": ["Paul Higgins", "Brian Vernel", "Daniel Portman", "Calum Ross", "Anita Vettesse", "James Harkness", "Joanne Thomson"],
+  "productionCompanies": ["Rodger Griffiths", "Creative Scotland", "Great Point Media", "Library Pictures International", "MR. B Films", "Northern Ireland Screen"],
   "themesKeywords": ["fratricide", "abusive father", "Scottish wilderness", "shallow grave", "paranoia", "family trauma", "loyalty unraveling", "gun violence", "flashbacks", "mistrust", "Saban"]
 },
 {
@@ -782,6 +805,7 @@
   "directors": ["David Twohy"],
   "writers": ["David Twohy"],
   "actors": ["Steve Zahn", "Timothy Olyphant", "Milla Jovovich", "Kiele Sanchez", "Marley Shelton", "Chris Hemsworth", "Anthony Ruivivar", "Dale Dickey"],
+  "productionCompanies": ["Ryan Kavanaugh", "Mark Canton", "Tucker Tooley", "Robbie Brenner", "Relativity Media", "Rogue Pictures", "QED International", "Universal Pictures"],
   "themesKeywords": ["honeymoon horror", "Hawaiian wilderness", "identity twist"]
 },
 {
@@ -796,6 +820,7 @@
   "directors": ["Gary Fleder"],
   "writers": ["Andrew Klavan", "Anthony Peckham", "Patrick Smith Kelly"],
   "actors": ["Michael Douglas", "Sean Bean", "Brittany Murphy", "Skye McCole Bartusiak", "Famke Janssen", "Jennifer Esposito", "Oliver Platt", "Paul Schulze", "Lance Reddick"],
+  "productionCompanies": ["Arnold Kopelson", "Gary Fleder", "Kopelson Entertainment", "20th Century Fox"],
   "themesKeywords": ["kidnapping", "psychiatrist", "traumatized patient", "time-sensitive rescue", "New York setting", "twist ending"]
 },
 {
@@ -810,6 +835,7 @@
   "directors": ["Billy Bryk", "Finn Wolfhard"],
   "writers": ["Billy Bryk", "Finn Wolfhard"],
   "actors": ["Adam Pally", "Rosebud Baker", "Fred Hechinger", "Susan Coyne", "Billy Bryk", "Finn Wolfhard", "D'Pharaoh Woon-A-Tai", "Abby Quinn", "Krista Nazaire", "Matthew Finlan", "Daniel Gravelle", "Julia Doyle", "Julia Lalonde", "Pardis Saremi", "Nicole Cyrille"],
+  "productionCompanies": ["Billy Bryk", "Finn Wolfhard", "Parts & Labor", "30West", "Altitude Film Distribution"],
   "themesKeywords": ["summer camp", "masked killer", "Gen Z", "slasher parody", "first-time directors", "genre homage"]
 },
 {
@@ -824,6 +850,7 @@
   "directors": ["James Ross"],
   "writers": ["Matthew Rangecroft"],
   "actors": ["Devin Marble", "Larry Poret", "Rebekah Poret", "Ashley", "Kalin", "Jayme Lamm", "Jen Baxter", "Hanna", "Abhi", "Stephen", "Buck Banks", "Brooke Baldwin", "Mary Poret", "Frank Spagnoletti", "Wolf Blitzer", "Anderson Cooper", "Conan O'Brien"],
+  "productionCompanies": ["James Ross", "Vice Studios", "Netflix"],
   "themesKeywords": ["Carnival Triumph", "sewage failure", "cruise ship disaster", "viral media", "corporate negligence", "PR meltdown"]
 },
 {
@@ -838,6 +865,7 @@
   "directors": ["Andy Tennant"],
   "writers": ["Derek Steiner"],
   "actors": ["Don Johnson", "Isabelle Fuhrman", "Jack Huston", "James DuMont", "Christopher James Baker", "Manny Galan", "Juvian Marquez", "Anirudh Pisharody", "Jenna Z. Alvarez", "Jason Altman", "Lia Lando", "Ronnie James Hughes"],
+  "productionCompanies": ["Andy Tennant", "Derek Steiner", "Capstone Studios", "Brickell & Broadbridge International", "Paramount Pictures"],
   "themesKeywords": ["storage facility siege", "precious cargo", "gang infiltration", "locked unit mystery", "low-budget action", "single-location tension"]
 },
 {
@@ -852,7 +880,8 @@
   "directors": ["Gavin O'Connor"],
   "writers": ["Bill Dubuque"],
   "actors": ["Ben Affleck", "Jon Bernthal", "Cynthia Addai-Robinson", "J.K. Simmons", "Allison Robertson", "Daniella Pineda", "Robert Morgan", "Andrew Howard", "Yael Ocasio", "Fernando Chien"],
-  "themesKeywords": ["autistic protagonist", "brotherly bond", "government conspiracy", "neurodivergent hero","action sequel"]
+  "productionCompanies": ["Gavin O'Connor", "Mark Williams", "Bill Dubuque", "Warner Bros. Pictures", "Madison Wells", "Electric City Entertainment"],
+  "themesKeywords": ["autistic protagonist", "brotherly bond", "government conspiracy", "neurodivergent hero", "action sequel"]
 },
 {
   "hasReview": false,
@@ -866,6 +895,7 @@
   "directors": ["Mark Pellington"],
   "writers": ["Richard Hatem", "John A. Keel"],
   "actors": ["Richard Gere", "Laura Linney", "Will Patton", "Debra Messing", "Lucinda Jenney", "Alan Bates", "David Eigenberg", "Bob Tracey", "Ron Emanuel", "Yvonne Erickson"],
+  "productionCompanies": ["Gary W. Goldstein", "Tom Rosenberg", "Gary Lucchesi", "Screen Gems", "Lakeshore Entertainment", "Sony Pictures Entertainment"],
   "themesKeywords": ["paranormal investigation", "prophetic visions", "urban legend"]
 },
 {
@@ -880,6 +910,7 @@
   "directors": ["Jacob Tierney"],
   "writers": ["Jacob Tierney", "Chrystine Brouillet"],
   "actors": ["Jay Baruchel", "Scott Speedman", "Emily Hampshire", "Anne-Marie Cadieux", "Diane D'Aquila", "Xavier Dolan", "Gary Farmer", "Clara Furey", "Kaniehtiio Horn", "Pat Kiely", "Micheline Lanctôt", "Sean Lu"],
+  "productionCompanies": ["Kevin Tierney", "Jacob Tierney", "Kevin DeWalt", "Mark Gingras", "Christina Piovesan", "Alliance Films", "Minds Eye Entertainment", "Foundry Films"],
   "themesKeywords": ["serial killer", "Montreal apartment", "cat obsession", "social awkwardness", "Canadian indie"]
 },
 {
@@ -894,6 +925,7 @@
   "directors": ["Dan Trachtenberg", "Joshua Wassung"],
   "writers": ["Micho", "Robert Rutare", "Dan Trachtenberg", "Jim Thomas"],
   "actors": ["Michael Biehn", "Doug Cockle", "Rick Gonzalez", "Damien C. Haas", "Lauren Holt", "Lindsay LaVanchy", "Jeff Leach", "Cherami Leigh", "Louis Ozawa", "Felix Solis"],
+  "productionCompanies": ["Dan Trachtenberg", "Joshua Wassung", "20th Century Studios", "Hulu", "Disney Television Animation"],
   "themesKeywords": ["Predator franchise", "animated anthology", "historical warriors", "Vikings", "samurai", "World War II", "interconnected stories"]
 },
 {
@@ -908,6 +940,7 @@
   "directors": ["Ruben Fleischer"],
   "writers": ["Rafe Judkins", "Art Marcum", "Matt Holloway"],
   "actors": ["Tom Holland", "Mark Wahlberg", "Antonio Banderas", "Sophia Ali", "Tati Gabrielle", "Steven Waddington", "Pingi Moli", "Tiernan Jones", "Rudy Pankow"],
+  "productionCompanies": ["Charles Roven", "Avi Arad", "Alex Gartner", "Ruben Fleischer", "PlayStation Productions", "Arad Productions", "Atlas Entertainment", "Columbia Pictures"],
   "themesKeywords": ["video game adaptation", "treasure map", "stylized action"]
 },
 {
@@ -922,6 +955,7 @@
   "directors": ["RZA"],
   "writers": ["RZA", "Eli Roth"],
   "actors": ["RZA", "Russell Crowe", "Lucy Liu", "Rick Yune", "Dave Bautista", "Jamie Chung", "Cung Le", "Byron Mann", "Daniel Wu", "Zhu Zhu"],
+  "productionCompanies": ["Marc Abraham", "Eric Newman", "Eli Roth", "RZA", "Strike Entertainment", "Arcade Pictures", "Universal Pictures"],
   "themesKeywords": ["martial arts", "grindhouse style", "Wu-Tang aesthetic", "revenge", "over-the-top violence", "feudal China"]
 },
 {
@@ -936,6 +970,7 @@
   "directors": ["Lawrence Lamont"],
   "writers": ["Syreeta Singleton"],
   "actors": ["Keke Palmer", "SZA", "Vanessa Bell Calloway", "Lil Rel Howery", "Katt Williams", "Maude Apatow", "Patrick Cage", "Gabrielle Dennis", "Janelle James", "Amin Joseph", "Keyla Monterroso Mejia", "Joshua David Neal", "Dewayne Perkins", "Aziza Scott", "Rizi Timane", "DomiNque Perry", "Dustin Ybarra"],
+  "productionCompanies": ["Keke Palmer", "Syreeta Singleton", "Lawrence Lamont", "Hartbeat", "Amazon MGM Studios"],
   "themesKeywords": ["roommate chaos", "rent crisis", "friendship", "eviction", "urban hustle", "buddy dynamics", "Black culture", "celebrity cameos"]
 },
 {
@@ -950,6 +985,7 @@
   "directors": ["Christopher Landon"],
   "writers": ["Jillian Jacobs", "Chris Roach"],
   "actors": ["Meghann Fahy", "Brandon Sklenar", "Violett Beane", "Jacob Robinson", "Reed Diamond", "Gabrielle Ryan", "Sarah McCormack", "Jeffery Self", "Ed Weeks", "Ben Pelletier", "Travis Nelson", "Saoirse Hayden", "Fiona Browne", "Stephanie Karam", "Michael Shea", "Gerry Brauders"],
+  "productionCompanies": ["Jason Blum", "Christopher Landon", "Jillian Jacobs", "Chris Roach", "Blumhouse Productions", "Universal Pictures"],
   "themesKeywords": ["first date", "anonymous threats", "restaurant", "single location", "stalker", "text message terror", "modern whodunnit", "Blumhouse Productions"]
 },
 {
@@ -964,6 +1000,7 @@
   "directors": ["Terry Gilliam"],
   "writers": ["Ehren Kruger"],
   "actors": ["Matt Damon", "Heath Ledger", "Lena Headey", "Monica Bellucci", "Peter Stormare", "Jonathan Pryce", "Mackenzie Crook", "Richard Ridings", "Roger Ashton-Griffiths", "Anna Rust", "Barbora Lukesova", "Petr Ratimec", "Jeremy Robson", "Radim Kalvoda", "Martin Hofmann", "Josef Pepa Nos", "Miroslav Taborský", "Marika Sarah Prochazkova", "Alena Jakobova", "Rudolf Pellar", "Dana Dohnalova"],
+  "productionCompanies": ["Charles Roven", "Daniel Bobker", "Terry Gilliam", "Mosaic Media Group", "Revolution Studios", "Metro-Goldwyn-Mayer", "Dimension Films"],
   "themesKeywords": ["fairy tale mashup", "con artists", "enchanted forest", "missing children", "witch", "French occupation", "brotherly tension", "illusion vs reality", "supernatural hoax"]
 },
 {
@@ -978,6 +1015,7 @@
   "directors": ["Andrew Cumming"],
   "writers": ["Ruth Greenberg", "Andrew Cumming", "Oliver Kassman"],
   "actors": ["Iola Evans", "Arno Lüning", "Rosebud Melarkey", "Tyrell Mhlanga", "Chuku Modu", "Luna Mwezi", "Safia Oakley-Green", "Kit Young"],
+  "productionCompanies": ["Oliver Kassman", "David Kaplan", "Nadia Kamlichi", "Martin Metz", "Escape Plan Productions", "Bleecker Street", "Altitude Film Distribution"],
   "themesKeywords": ["prehistoric survival", "Stone Age horror", "tribal paranoia", "mythical predator", "ancient language"]
 },
 {
@@ -992,6 +1030,7 @@
   "directors": ["Dave Wilson"],
   "writers": ["Jeff Wadlow", "Eric Heisserer", "Kevin VanHook"],
   "actors": ["Vin Diesel", "Eiza Gonzalez", "Sam Heughan", "Toby Kebbell", "Talulah Riley", "Lamorne Morris", "Guy Pearce", "Jóhannes Haukur Jóhannesson", "Alex Hernandez", "Siddharth Dhananjay", "Tamer Burjaq", "Clyde Berning", "David Dukas", "Charlie Bouguenon", "Tyrel Meyer", "Frans Steyn", "David Davadoss", "Alex Anastasopoulos"],
+  "productionCompanies": ["Neal H. Moritz", "Vin Diesel", "Dan Mintz", "Dinesh Shamdasani", "Original Film", "Cross Creek Pictures", "Valiant Entertainment", "Columbia Pictures"],
   "themesKeywords": ["nanotech soldier", "memory manipulation", "cyborg revenge", "military experiment", "superhero", "comic book adaptation", "Valiant Comics", "superhuman healing"]
 },
 {
@@ -1006,6 +1045,7 @@
   "directors": ["Scott McGehee", "David Siegel"],
   "writers": ["Elisabeth Sanxay Holding", "Scott McGehee", "David Siegel"],
   "actors": ["Tilda Swinton", "Goran Visnjic", "Jonathan Tucker", "Peter Donat", "Josh Lucas", "Raymond J. Barry", "Tamara Hope", "Jordon Dorrance", "Heather Mathieson", "Lloyd Holmes", "Osborne Loan", "Richard Gross", "Frankie Loyal", "Kip Ellwood", "Margot Krindel", "Michael Pizzuto", "Tajma Soleil", "F.W. McGehee"],
+  "productionCompanies": ["Ted Hope", "Anne Carey", "Sarah Green", "Fox Searchlight Pictures", "Good Machine"],
   "themesKeywords": ["murder cover-up", "blackmail", "Lake Tahoe setting", "moral ambiguity", "parental sacrifice", "family secrets"]
 },
 {
@@ -1020,6 +1060,7 @@
   "directors": ["Kyle Hausmann-Stokes"],
   "writers": ["Kyle Hausmann-Stokes", "Cherish Chen", "A.J. Bermudez"],
   "actors": ["Sonequa Martin-Green", "Natalie Morales", "Ed Harris", "Morgan Freeman", "Gloria Reuben", "Utkarsh Ambudkar", "James Bane", "Assia Lau'ren", "Thom Tran", "Alicia Borja", "Zeke Alton", "Richard Milanesi", "Rich Paul", "John-Peter Cruz", "Del Lewis", "Roy Purdy", "Drew Rausch", "Kelsi Umeko", "Barbara Lusch"],
+  "productionCompanies": ["Travis Kelce", "Kyle Hausmann-Stokes", "FirstGen Content", "Wayfarer Studios", "U.S. Department of Veterans Affairs", "Thunder Road Pictures"],
   "themesKeywords": ["PTSD", "veteran", "imaginary friend", "military family", "grief processing", "female soldier"]
 },
 {
@@ -1034,6 +1075,7 @@
   "directors": ["Andrzej Bartkowiak"],
   "writers": ["Dave Callaham", "Wesley Strick"],
   "actors": ["Dwayne Johnson", "Karl Urban", "Rosamund Pike", "Deobia Oparei", "Ben Daniels", "Razaaq Adoti", "Richard Brake", "Al Weaver", "Dexter Fletcher", "Brian Steele", "Yao Chin", "Robert Russell", "Daniel York", "Ian Hughes", "Sara Houghton", "Blanka Jarosova", "Vladislav Dyntera", "Petr Hnetkovský"],
+  "productionCompanies": ["Lorenzo di Bonaventura", "John Wells", "John Wells Productions", "Di Bonaventura Pictures", "Stillking Films", "Universal Pictures"],
   "themesKeywords": ["video game adaptation", "Mars", "genetic mutation", "space marines", "first-person shooter", "monster outbreak", "military sci-fi", "bioengineering", "corporate greed", "corporate negligence"]
 },
 {
@@ -1048,6 +1090,7 @@
   "directors": ["James Ashcroft"],
   "writers": ["Eli Kent", "James Ashcroft", "Owen Marshall"],
   "actors": ["Geoffrey Rush", "John Lithgow", "Nikki MacDonnell", "Maaka Pohatu", "George Henare", "Fiona Collins", "Yvette Parsons", "Ian Mune", "Richard Chapman", "Bruce Phillips", "Irene Wood", "Annie Ruth", "Nick Blake", "Nathaniel Lees", "Hilary Norris", "Holly Shanahan", "Lutz Halbhubner", "Sean Dunn"],
+  "productionCompanies": ["James Ashcroft", "Kristen Marston", "Matthew Metcalfe", "GFC Films", "New Zealand Film Commission", "XYZ Films"],
   "themesKeywords": ["elder abuse", "nursing home horror", "psychological torment", "stroke victim", "puppet", "sadistic villain"]
 },
 {
@@ -1062,6 +1105,7 @@
   "directors": ["India Donaldson"],
   "writers": ["India Donaldson"],
   "actors": ["Lily Collias", "Sumaya Bouhbal", "Valentine Black", "Diana Irvine", "James Le Gros", "Danny McCarthy", "Julian Grady", "Becca Morrin", "Sarah Wilson", "Samuel Lanier", "Eric Yates", "Peter McNally"],
+  "productionCompanies": ["India Donaldson", "Mike S. Ryan", "Zachary Luke Kislevitz", "Killjoy Films", "Magnolia Pictures"],
   "themesKeywords": ["Catskills hiking trip", "father-daughter", "middle-aged male ego", "teen perspective", "not believeing women", "metoo", "quiet tension", "female gaze", "sexual predator", "grooming"]
 },
 {
@@ -1076,7 +1120,8 @@
   "directors": ["Warren Skeels"],
   "writers": ["Sharon Y. Cobb", "Warren Skeels"],
   "actors": ["Madison Wolfe", "Brec Bassinger", "Ali Larter", "Sean Astin", "Skai Jackson", "Gavin Warren", "Noah Lomax", "Addison Riecke", "Deborah Ann Woll", "Julianne Arrieta", "Darrius Thomas", "Dylan Summerall", "Tom Gillen", "Patrick Kirton", "Brooke Butler", "John F. Daniel"],
-  "themesKeywords": ["serial predator", "van stalking", "1970s Florida","female protagonist dismissed", "suburban fear"]
+  "productionCompanies": ["Warren Skeels", "Gulfstream Pictures", "BondIt Media Capital", "Productivity Media", "WonderHill Studios"],
+  "themesKeywords": ["serial predator", "van stalking", "1970s Florida", "female protagonist dismissed", "suburban fear"]
 },
 {
   "hasReview": false,
@@ -1090,6 +1135,7 @@
   "directors": ["Guillermo del Toro"],
   "writers": ["Guillermo del Toro", "Kim Morgan", "William Lindsay Gresham"],
   "actors": ["Bradley Cooper", "Cate Blanchett", "Toni Collette", "Willem Dafoe", "Richard Jenkins", "Rooney Mara", "Ron Perlman", "Mary Steenburgen", "David Strathairn", "Mark Povinelli", "Peter MacNeill", "Holt McCallany", "Paul Anderson", "Lara Jean Chorostecki", "Jim Beaver", "Clifton Collins Jr.", "Tim Blake Nelson", "David Hewlett"],
+  "productionCompanies": ["Guillermo del Toro", "J. Miles Dale", "TSG Entertainment", "Double Dare You Productions", "Searchlight Pictures"],
   "themesKeywords": ["carnival grifter", "mentalism", "fake psychic", "class ambition", "moral corruption"]
 },
 {
@@ -1104,6 +1150,7 @@
   "directors": ["Wayne Wang"],
   "writers": ["Amy Tan", "Ron Bass"],
   "actors": ["Kieu Chinh", "Tsai Chin", "France Nuyen", "Lisa Lu", "Ming-Na Wen", "Tamlyn Tomita", "Lauren Tom", "Rosalind Chao", "Chao Li Chi", "Victor Wong", "Irene Ng", "Meijuan Xi", "Guo-Rong Chin", "Hsu Ying Li"],
+  "productionCompanies": ["Wayne Wang", "Amy Tan", "Ron Bass", "Patrick Markey", "Hollywood Pictures"],
   "themesKeywords": ["mother-daughter relationships", "Chinese-American identity", "intergenerational trauma", "immigrant experience", "female sacrifice", "emotional repression", "storytelling across generations", "gender roles", "family legacy"]
 },
 {
@@ -1118,6 +1165,7 @@
   "directors": ["Dave Green"],
   "writers": ["Josh Appelbaum", "Andre Nemec", "Peter Laird"],
   "actors": ["Megan Fox", "Will Arnett", "Laura Linney", "Stephen Amell", "Noel Fisher", "Jeremy Howard", "Pete Ploszek", "Alan Ritchson", "Tyler Perry", "Brian Tee", "Stephen Farrelly", "Gary Anthony Williams", "Peter Donald Badalamenti II", "Tony Shalhoub", "Brad Garrett", "Opal Alladin", "Brittany Ishibashi", "Connor Fox"],
+  "productionCompanies": ["Michael Bay", "Andrew Form", "Brad Fuller", "Galen Walker", "Scott Mednick", "Nickelodeon Movies", "Platinum Dunes", "Gama Entertainment", "Mednick Productions", "Smithrowe Entertainment", "Paramount Pictures"],
   "themesKeywords": ["alien invasion", "dimension portal", "teamwork", "comic book adaptation", "Michael Bay production"]
 },
 {
@@ -1132,6 +1180,7 @@
   "directors": ["Jonathan Liebesman"],
   "writers": ["Josh Appelbaum", "Andre Nemec", "Evan Daugherty"],
   "actors": ["Megan Fox", "Will Arnett", "William Fichtner", "Alan Ritchson", "Noel Fisher", "Pete Ploszek", "Johnny Knoxville", "Jeremy Howard", "Danny Woodburn", "Tony Shalhoub", "Tohoru Masamune", "Whoopi Goldberg", "Minae Noji", "Abby Elliott", "Taran Killam", "K. Todd Freeman", "Paul Fitzgerald"],
+  "productionCompanies": ["Michael Bay", "Andrew Form", "Brad Fuller", "Galen Walker", "Scott Mednick", "Nickelodeon Movies", "Platinum Dunes", "Mednick Productions", "Paramount Pictures"],
   "themesKeywords": ["mutant turtles", "Shredder", "origin reboot", "corporate villainy", "underground heroes", "sibling dynamics", "martial arts", "product placement", "Michael Bay production", "CGI-heavy action"]
 },
 {
@@ -1146,6 +1195,7 @@
   "directors": ["Mel Gibson"],
   "writers": ["Jared Rosenberg"],
   "actors": ["Mark Wahlberg", "Michelle Dockery", "Topher Grace", "Leah Remini", "Paul Ben-Victor", "Eilise Patton", "Maaz Ali", "Senor Pablo", "Savanah Joeckel", "Mark Schotz", "Monib Abhat", "Milko Kadikov", "Georgi S. Georgiev", "Atanas Srebrev"],
+  "productionCompanies": ["Mel Gibson", "Jared Rosenberg", "John Davis", "Davis Entertainment", "Lionsgate"],
   "themesKeywords": ["confined thriller", "Alaskan wilderness", "pilot", "fugitive transport", "single location", "identity deception", "air marshal tension"]
 },
 {
@@ -1160,6 +1210,7 @@
   "directors": ["Josh Lobo"],
   "writers": ["Josh Lobo"],
   "actors": ["Scott Poythress", "AJ Bowen", "Susan Burke", "Rowan Russell", "John Marrott", "Alan", "Jocelin Donahue", "Chris Sullivan", "Aaron Larsen", "Jack Vernon", "Victoria Smith"],
+  "productionCompanies": ["Josh Lobo", "Spooky Pictures", "Yellow Veil Pictures", "IFC Midnight"],
   "themesKeywords": ["paranoia", "Christmas horror", "basement", "devil in disguise", "mental instability", "faith vs delusion", "single-location", "psychological breakdown", "IFC Midnight"]
 },
 {
@@ -1174,6 +1225,7 @@
   "directors": ["Alex Proyas"],
   "writers": ["Jeff Vintar", "Akiva Goldsman", "Isaac Asimov"],
   "actors": ["Will Smith", "Bridget Moynahan", "Alan Tudyk", "James Cromwell", "Bruce Greenwood", "Chi McBride", "Shia LaBeouf", "Peter Shinkoda", "Terry Chen", "Fiona Hogan", "Adrian Ricard", "Jerry Wasserman", "David Haysom", "Scott Heindl"],
+  "productionCompanies": ["Laurence Mark", "John Davis", "Topher Dow", "Davis Entertainment", "Laurence Mark Productions", "20th Century Fox"],
   "themesKeywords": ["AI ethics", "robot uprising", "future Chicago", "free will vs programming", "human-robot trust"]
 },
 {
@@ -1188,6 +1240,7 @@
   "directors": ["Daniel Espinosa"],
   "writers": ["Rhett Reese", "Paul Wernick"],
   "actors": ["Jake Gyllenhaal", "Rebecca Ferguson", "Ryan Reynolds", "Hiroyuki Sanada", "Ariyon Bakare", "Olga Dykhovichnaya"],
+  "productionCompanies": ["David Ellison", "Dana Goldberg", "Bonnie Curtis", "Julie Lynn", "Skydance Media", "Columbia Pictures"],
   "themesKeywords": ["alien organism", "space horror", "Martian lifeform", "crew breakdown", "containment", "space mission"]
 },
 {
@@ -1202,6 +1255,7 @@
   "directors": ["Rowdy Herrington"],
   "writers": ["Rowdy Herrington", "David Himmelstein"],
   "actors": ["Cuba Gooding Jr.", "Tom Berenger", "Marianne Jean-Baptiste", "Eric Stoltz", "Mark Pellegrino", "Noel Gugliemi", "Carmen Argenziano", "Anne Haney", "Norman Max Maxwell", "Tamara Tunie", "Lucinda Jenney", "Sean Pratt", "Mark Boone Junior"],
+  "productionCompanies": ["Rowdy Herrington", "Andrew Stevens", "Concorde-New Horizons", "Franchise Pictures", "Morgan Creek Entertainment"],
   "themesKeywords": ["plagiarism", "legal ethics", "wrongful accusation", "murder mystery", "lawyer protagonist", "manuscript deception", "identity theft", "justice system"]
 },
 {
@@ -1216,6 +1270,7 @@
   "directors": ["David G. Derrick Jr.", "Jason Hand", "Dana Ledoux Miller"],
   "writers": ["Jared Bush", "Dana Ledoux Miller", "Bek Smith"],
   "actors": ["Auli'i Cravalho", "Dwayne Johnson", "Hualalai Chung", "Rose Matafeo", "David Fane", "Awhimai Fraser", "Khaleesi Lambert-Tsuda", "Temuera Morrison", "Nicole Scherzinger", "Rachel House", "Gerald Faitala", "Ramsey Tautai", "Alan Tudyk", "Jemaine Clement", "Tofiga Fepulea'i", "Jasmine Johnson", "Tiana Johnson"],
+  "productionCompanies": ["Jennifer Lee", "Yvett Merino", "Osnat Shurer", "Walt Disney Animation Studios", "Walt Disney Pictures"],
   "themesKeywords": ["wayfinding legacy", "oceanic mythology", "ancestral calling", "female leadership", "cultural heritage", "voyaging adventure", "family bonds", "musical journey", "animated sequel", "Disney princess", "Walt Disney Pictures"]
 },
 {
@@ -1230,6 +1285,7 @@
   "directors": ["Tyler Spindel"],
   "writers": ["Julie Paiva", "Amy Schumer"],
   "actors": ["Amy Schumer", "Will Forte", "Jillian Bell", "Brianne Howey", "Lizze Broadway", "Urzila Carlson", "Chris Geere", "Damon Wayans Jr.", "Alex Moffat", "Joel David Moore", "Jackie Sandler", "Molly Sims", "Chris Titone", "Duke McCloud", "Connor Robbie", "Crandall Liam", "Max Malas", "Rae Thompson", "Amber Kylie Kuioka"],
+  "productionCompanies": ["Adam Sandler", "Allen Covert", "Kevin Grady", "Julie Paiva", "Happy Madison Productions", "Netflix"],
   "themesKeywords": ["fake pregnancy", "female friendship", "cringe comedy", "farce", "emotional desperation", "modern dating", "family pressure", "identity performance", "pregnancy trope", "Netflix", "Happy Madison Productions"]
 },
 {
@@ -1244,6 +1300,7 @@
   "directors": ["Dan Berk", "Robert Olsen"],
   "writers": ["Dan Berk", "Robert Olsen"],
   "actors": ["Bill Skarsgard", "Maika Monroe", "Blake Baumgartner", "Jeffrey Donovan", "Kyra Sedgwick", "Noah Robbins", "Nikolas Kontomanolis", "Danny Johnson"],
+  "productionCompanies": ["Tim White", "Trevor White", "Dan Berk", "Robert Olsen", "BRON Studios", "The Realm", "Gunpowder & Sky", "Utopia"],
   "themesKeywords": ["home invasion", "dark comedy", "sadistic couple", "kidnapped girl", "twisted morality", "gas station robbery", "anti-heroes", "suburban nightmare", "psychological games", "criminals vs worse criminals"]
 },
 {
@@ -1258,6 +1315,7 @@
   "directors": ["Matthew Vaughn"],
   "writers": ["Jason Fuchs"],
   "actors": ["Bryce Dallas Howard", "Sam Rockwell", "Henry Cavill", "Dua Lipa", "Ariana DeBose", "John Cena", "Catherine O'Hara", "Bryan Cranston", "Samuel L. Jackson", "Sofia Boutella", "Jing Lusi", "Stanley Morgan", "Jason Fuchs"],
+  "productionCompanies": ["Matthew Vaughn", "Adam Bohling", "David Reid", "Jason Fuchs", "Marv Studios", "Apple Studios", "Universal Pictures"],
   "themesKeywords": ["spy fiction", "meta storytelling", "cat companion", "espionage parody", "author", "secret agent", "identity confusion", "stylized violence", "Apple Original"]
 },
 {
@@ -1272,6 +1330,7 @@
   "directors": ["Taika Waititi"],
   "writers": ["Taika Waititi", "Barry Crump"],
   "actors": ["Julian Dennison", "Sam Neill", "Rima Te Wiata", "Rachel House", "Oscar Kightley", "Rhys Darby", "Tioreore Ngatai-Melbourne", "Troy Kingi", "Cohen Holloway", "Mike Minogue"],
+  "productionCompanies": ["Carthew Neal", "Leanne Saunders", "Matt Noonan", "Taika Waititi", "Piki Films", "Defender Films", "NZ Film Commission", "Madman Entertainment"],
   "themesKeywords": ["foster care", "found family", "New Zealand wilderness", "grumpy mentor", "anti-authority adventure"]
 },
 {
@@ -1286,6 +1345,7 @@
   "directors": ["Chloe Okuno"],
   "writers": ["Zack Ford", "Chloe Okuno"],
   "actors": ["Maika Monroe", "Karl Glusman", "Burn Gorman", "Tudor Petrut", "Madalina Anea", "Cristina Deleanu", "Daniel Nuta", "Gabriela Butuc", "Florian Ghimpu", "Ioana Abur"],
+  "productionCompanies": ["Zack Ford", "Chloe Okuno", "Roy Lee", "Steven Schneider", "Spooky Pictures", "Image Nation Abu Dhabi", "IFC Films", "Shudder"],
   "themesKeywords": ["urban isolation", "female paranoia", "voyeurism", "gaslighting", "serial killer suspicion", "language barrier", "psychological dread", "Bucharest setting"]
 },
 {
@@ -1300,6 +1360,7 @@
   "directors": ["Ryan Murphy", "Jennifer Lynch", "Paris Barclay", "Max Winkler"],
   "writers": ["Ian Brennan", "Ryan Murphy"],
   "actors": ["Naomi Watts", "Bobby Cannavale", "Jennifer Coolidge", "Margo Martindale", "Richard Kind", "Mia Farrow", "Terry Kinney", "Christopher McDonald", "Isabel Gravitt", "Luke David Blumm", "Henry Hunter Hall"],
+  "productionCompanies": ["Ryan Murphy", "Ian Brennan", "Eric Kovtun", "Lou Eyrich", "Netflix"],
   "themesKeywords": ["suburban paranoia", "anonymous threats", "home invasion anxiety", "neighborhood secrets", "family unraveling", "creepy letters", "Netflix"]
 },
 {
@@ -1314,6 +1375,7 @@
   "directors": ["Jeff Wadlow"],
   "writers": ["Jeff Wadlow", "Mark Millar", "John Romita Jr."],
   "actors": ["Aaron Taylor-Johnson", "Chloë Grace Moretz", "Christopher Mintz-Plasse", "Jim Carrey", "Clark Duke", "Morris Chestnut", "Augustus Prew", "John Leguizamo", "Donald Faison", "Lindy Booth", "Daniel Kaluuya"],
+  "productionCompanies": ["Matthew Vaughn", "Adam Bohling", "David Reid", "Plan B Entertainment", "Universal Pictures", "Marv Films"],
   "themesKeywords": ["vigilante hero", "DIY superheroes", "revenge plot", "teen angst", "comic book adaptation", "morality of justice", "underground hero league", "ultraviolence"]
 },
 {
@@ -1328,6 +1390,7 @@
   "directors": ["Matthew Vaughn"],
   "writers": ["Jane Goldman", "Matthew Vaughn", "Mark Millar", "John Romita Jr."],
   "actors": ["Aaron Taylor-Johnson", "Chloë Grace Moretz", "Nicolas Cage", "Christopher Mintz-Plasse", "Mark Strong", "Clark Duke", "Evan Peters", "Sophie Wu", "Xander Berkeley", "Deborah Twiss"],
+  "productionCompanies": ["Matthew Vaughn", "Brad Pitt", "Adam Bohling", "David Reid", "Marv Films", "Plan B Entertainment", "Lionsgate"],
   "themesKeywords": ["DIY superhero", "vigilante justice", "comic book adaptation", "ultraviolence", "moral ambiguity", "origin story"]
 },
 {
@@ -1342,6 +1405,7 @@
   "directors": ["J.C. Chandor"],
   "writers": ["Richard Wenk", "Art Marcum", "Matt Holloway"],
   "actors": ["Aaron Taylor-Johnson", "Ariana DeBose", "Russell Crowe", "Fred Hechinger", "Alessandro Nivola", "Levi Miller", "Christopher Abbott"],
+  "productionCompanies": ["Matt Tolmach", "Avi Arad", "David Householter", "Sony Pictures Entertainment", "Columbia Pictures", "Marvel Entertainment"],
   "themesKeywords": ["antihero origin", "animalistic powers", "Spider-Man villain", "family legacy", "Sony Marvel Universe", "MCU", "moral ambiguity", "comic book adaptation"]
 },
 {
@@ -1356,6 +1420,7 @@
   "directors": ["Andy Fickman"],
   "writers": ["Ewan Leslie", "Karen McCullah", "Kristen Smith", "William Shakespeare"],
   "actors": ["Amanda Bynes", "Channing Tatum", "Laura Ramsey", "Vinnie Jones", "David Cross", "Julie Hagerty", "Robert Hoffman", "Alex Breckenridge", "Jonathan Sadowski", "Clifton MaCabe Murray"],
+  "productionCompanies": ["Lauren Shuler Donner", "Ewan Leslie", "McCullah & Smith", "DreamWorks Pictures", "Lakeshore Entertainment"],
   "themesKeywords": ["gender bending", "soccer", "boarding school", "Shakespeare adaptation", "teen romance"]
 },
 {
@@ -1370,6 +1435,7 @@
   "directors": ["Jake Scott"],
   "writers": ["Brad Ingelsby"],
   "actors": ["Sienna Miller", "Sky Ferreira", "Aaron Paul", "Christina Hendricks", "Amy Madigan", "Will Sasso", "Macon Blair", "Alex Neustaedter"],
+  "productionCompanies": ["Jake Scott", "Brad Ingelsby", "Ridley Scott", "Scott Free Productions", "Automatik Entertainment", "Elevation Pictures"],
   "themesKeywords": ["missing child", "single motherhood", "working-class struggle", "resilience", "grief and growth", "Pennsylvania setting"]
 },
 {
@@ -1384,6 +1450,7 @@
   "directors": ["Michael Spierig", "Peter Spierig"],
   "writers": ["Michael Spierig", "Peter Spierig"],
   "actors": ["Ethan Hawke", "Willem Dafoe", "Sam Neill", "Claudia Karvan", "Michael Dorman", "Isabel Lucas", "Vince Colosimo", "Jay Laga'aia"],
+  "productionCompanies": ["Chris Brown", "Bryan Furst", "Sean Furst", "Lionsgate", "Paradise Productions", "Furst Films", "Weta Workshop"],
   "themesKeywords": ["vampire", "dystopian", "blood shortage", "corporate horror", "post-apocalyptic future"]
 },
 {
@@ -1398,8 +1465,8 @@
   "directors": ["Brian Helgeland"],
   "writers": ["Brian Helgeland"],
   "actors": ["Heath Ledger", "Mark Addy", "Shannyn Sossamon", "Benno Fürmann", "Peter Weller", "Francesca Annis", "Mattia Sbragia", "Mirko Casaburo", "Richard Bremmer"],
-  "themesKeywords": ["sin eater", "religious mystery", "Vatican", "faith crisis"],
-  "productionCompanies": ["20th Century Fox", "Regency Enterprises", "Epsilon Motion Pictures"]
+  "productionCompanies": ["20th Century Fox", "Regency Enterprises", "Epsilon Motion Pictures"],
+  "themesKeywords": ["sin eater", "religious mystery", "Vatican", "faith crisis"]
 },
 {
   "hasReview": false,
@@ -1413,6 +1480,7 @@
   "directors": ["Jaume Collet-Serra"],
   "writers": ["T.J. Fixman", "Michael Green"],
   "actors": ["Taron Egerton", "Jason Bateman", "Sofia Bryant", "Danielle Deadwyler", "Logan Marshall-Green", "Dean Norris", "Sinqua Walls", "Curtiss Cook", "Gil Perez-Abraham", "Melanie J. Newby"],
+  "productionCompanies": ["Dylan Clark", "Brian Williams", "Amblin Partners", "Netflix"],
   "themesKeywords": ["airport hostage", "TSA agent dilemma", "holiday chaos", "terrorist threat", "Netflix original"]
 },
 {
@@ -1427,6 +1495,7 @@
   "directors": ["Justin P. Lange"],
   "writers": ["Simon Boyes", "Adam Mason"],
   "actors": ["Finn Jones", "Jessica McNamee", "Donna Biscoe", "Thomas Francis Murphy", "Shanna Forrestall", "Dane Rhodes", "Susan McPhail"],
+  "productionCompanies": ["Blumhouse Television", "Epix", "Paramount Home Entertainment"],
   "themesKeywords": ["identity mystery", "small town secrets", "doppelgänger horror", "creepy portraits", "Blumhouse"]
 },
 {
@@ -1441,6 +1510,7 @@
   "directors": ["Scott Beck", "Bryan Woods"],
   "writers": ["Scott Beck", "Bryan Woods"],
   "actors": ["Hugh Grant", "Sophie Thatcher", "Chloe East", "Topher Grace", "Elle Young", "Julie Lynn Mortensen", "Haylie Hansen", "Elle McKinnon", "Hanna Huffman"],
+  "productionCompanies": ["Scott Beck", "Bryan Woods", "A24", "Heretic Films"],
   "themesKeywords": ["religious horror", "psychological manipulation", "Mormon missionaries", "cat-and-mouse", "faith and doubt", "theological debate", "basement", "labyrinth", "A24 horror"]
 },
 {
@@ -1455,6 +1525,7 @@
   "directors": ["Kelly Marcel"],
   "writers": ["Kelly Marcel", "Tom Hardy"],
   "actors": ["Tom Hardy", "Chiwetel Ejiofor", "Juno Temple", "Rhys Ifans", "Peggy Lu", "Stephen Graham", "Alanna Ubach"],
+  "productionCompanies": ["Avi Arad", "Matt Tolmach", "Amy Pascal", "Columbia Pictures", "Marvel Entertainment", "Sony Pictures Entertainment"],
   "themesKeywords": ["symbiote", "antihero", "alien", "Sony Marvel Universe", "MCU", "duality struggle", "parasitic powers"]
 },
 {
@@ -1469,6 +1540,7 @@
   "directors": ["Joshua John Miller"],
   "writers": ["M.A. Fortin", "Joshua John Miller"],
   "actors": ["Russell Crowe", "Ryan Simpkins", "Sam Worthington", "Chloe Bailey", "Adam Goldberg", "David Hyde Pierce", "Adrian Pasdar", "Tracey Bonner", "Samantha Mathis"],
+  "productionCompanies": ["Kevin Williamson", "Miramax", "Outerbanks Entertainment", "Miller Fortin Productions"],
   "themesKeywords": ["possession", "film-within-a-film", "religious trauma", "father-daughter tension", "blurring fiction and reality", "on-set haunting", "Catholic symbolism"]
 },
 {
@@ -1483,6 +1555,7 @@
   "directors": ["George Nolfi"],
   "writers": ["George Nolfi", "John Glenn", "Jacob Roman"],
   "actors": ["Anthony Mackie", "Morena Baccarin", "Maddie Hasson", "Danny Boyd Jr.", "Adrian Martinez", "Bobby Naderi", "Tracy Bonner", "Paul Scheer", "Sarah Minnich"],
+  "productionCompanies": ["Anthony Mackie", "George Nolfi", "John Glenn", "Netflix", "Flying Glass Productions"],
   "themesKeywords": ["alien monster", "Colorado", "elevator sabotage"]
 },
 {
@@ -1497,6 +1570,7 @@
   "directors": ["John Lee Hancock"],
   "writers": ["John Lee Hancock", "Stephen King"],
   "actors": ["Donald Sutherland", "Jaeden Martell", "Kirby Howell-Baptiste", "Joe Tippett", "Cyrus Arnold", "Colin O'Brien", "Thomas Francis Murphy"],
+  "productionCompanies": ["Ryan Murphy", "Blumhouse Productions", "Netflix"],
   "themesKeywords": ["Stephen King adaptation", "beyond the grave phone", "digital haunting", "postmortem communication", "Blumhouse Productions", "Ryan Murphy Productions", "Netflix"]
 },
 {
@@ -1511,6 +1585,7 @@
   "directors": ["Ron Howard"],
   "writers": ["Dan Brown", "David Koepp"],
   "actors": ["Tom Hanks", "Felicity Jones", "Irrfan Khan", "Omar Sy", "Sidse Babett Knudsen", "Ben Foster", "Ana Ularu", "Ida Darvish"],
+  "productionCompanies": ["Brian Grazer", "Ron Howard", "Sony Pictures Entertainment", "Imagine Entertainment", "Columbia Pictures"],
   "themesKeywords": ["plague conspiracy", "symbolic puzzles", "amnesia thriller", "race against time", "Florence setting", "bioterrorism", "Dante's Inferno", "academic sleuthing"]
 },
 {
@@ -1525,6 +1600,7 @@
   "directors": ["Guillem Morales"],
   "writers": ["Morgan Lloyd Malcolm"],
   "actors": ["Naomie Harris", "Natalie Dormer"],
+  "productionCompanies": ["Guillem Morales", "Morgan Lloyd Malcolm", "WestEnd Films", "XYZ Films"],
   "themesKeywords": ["revenge plot", "childhood trauma", "manipulation", "female rivalry", "British suspense", "stage play adaptation"]
 },
 {
@@ -1539,6 +1615,7 @@
   "directors": ["Rebecca Halpern"],
   "writers": ["Rebecca Halpern"],
   "actors": ["Charlie Trotter", "Grant Achatz", "Wolfgang Puck", "Emeril Lagasse", "Carrie Nahabedian", "Homaro Cantu", "Gale Gand", "Rick Tramonto"],
+  "productionCompanies": ["Rebecca Halpern", "Oak Street Pictures", "Greenwich Entertainment"],
   "themesKeywords": ["celebrity chef", "Chicago culinary scene", "fine dining revolution", "personal ambition", "rise and fall narrative", "biography", "gastronomic innovation", "chef culture"]
 },
 {
@@ -1553,6 +1630,7 @@
   "directors": ["Edward Berger"],
   "writers": ["Peter Straughan", "Robert Harris"],
   "actors": ["Ralph Fiennes", "John Lithgow", "Stanley Tucci", "Isabella Rossellini", "Lucian Msamati", "Sergio Castellitto", "Carlos Cuevas", "Brían F. O'Byrne"],
+  "productionCompanies": ["Edward Berger", "Tessa Ross", "Juliette Howell", "Michael A. Jackman", "FilmNation Entertainment", "House Productions", "The New Pope Ltd."],
   "themesKeywords": ["Vatican intrigue", "papal succession", "political maneuvering", "religious drama", "cardinal alliances", "adapted from novel", "Rome setting"]
 },
 {
@@ -1567,6 +1645,7 @@
   "directors": ["Parker Finn"],
   "writers": ["Parker Finn"],
   "actors": ["Naomi Scott", "Kyle Gallner", "Rosemarie DeWitt", "Lukas Gage", "Miles Gutierrez-Riley", "Peter Jacobson"],
+  "productionCompanies": ["Parker Finn", "Temple Hill Entertainment", "Paramount Players", "Paramount Pictures"],
   "themesKeywords": ["curse", "pop star", "sequel", "mental unraveling"]
 },
 {
@@ -1581,6 +1660,7 @@
   "directors": ["Karrie Crouse", "William Joines"],
   "writers": ["Karrie Crouse"],
   "actors": ["Sarah Paulson", "Amiah Miller", "Alona Jane Robbins", "Annaleigh Ashford", "Ebon Moss-Bachrach", "Arron Shiver", "Bill Heck", "Frances Lee McCain"],
+  "productionCompanies": ["Karrie Crouse", "William Joines", "Blumhouse Productions", "Sony Pictures Worldwide Acquisitions"],
   "themesKeywords": ["dust storm", "1930s Oklahoma", "psychological unraveling", "sinister presence", "Great Depression setting", "family isolation", "period thriller"]
 },
 {
@@ -1595,6 +1675,7 @@
   "directors": ["Chris Weitz"],
   "writers": ["Chris Weitz"],
   "actors": ["John Cho", "Katherine Waterston", "Lukita Maxwell", "David Dastmalchian", "Keith Carradine", "Riki Lindhome", "Greg Hill", "Havana Rose Liu"],
+  "productionCompanies": ["Chris Weitz", "Jason Blum", "Blumhouse Productions", "Sony Pictures"],
   "themesKeywords": ["AI", "smart home gone wrong", "surveillance", "Blumhouse Productions", "Sony Pictures"]
 },
 {
@@ -1609,6 +1690,7 @@
   "directors": ["Henrik Martin Dahlsbakken"],
   "writers": ["Christian Siebenherz", "Harald Rosenløw-Eeg", "Lars Gudmestad"],
   "actors": ["Tobias Santelmann", "Anders Baasmo", "Heidi Ruud Ellingsen", "Preben Hodneland", "Adam Lundgren", "Jon Ranes", "Sigurd Olav Waastad"],
+  "productionCompanies": ["Henrik Martin Dahlsbakken", "Christian Fredrik Martin", "Nordisk Film", "Film i Väst", "Zentropa Sweden", "SF Studios"],
   "themesKeywords": ["WWII naval", "Norwegian resistance", "Murmansk route", "Arctic survival", "historical war drama"]
 },
 {
@@ -1623,6 +1705,7 @@
   "directors": ["Daniel Kokotajlo"],
   "writers": ["Daniel Kokotajlo", "Andrew Michael Hurley"],
   "actors": ["Matt Smith", "Morfydd Clark", "Robert Emms", "Erin Richards", "Sean Gilder", "Roger Barclay", "Arthur Shaw", "Jack James Ryan"],
+  "productionCompanies": ["Tessa Ross", "Juliette Howell", "Emma Duffy", "House Productions", "BFI", "BBC Film"],
   "themesKeywords": ["folk horror", "grief and loss", "rural isolation", "supernatural folklore", "parental trauma", "English countryside", "adapted from novel"]
 },
 {
@@ -1637,6 +1720,7 @@
   "directors": ["Shawn Levy"],
   "writers": ["Rhett Reese", "Paul Wernick", "Shawn Levy", "Ryan Reynolds"],
   "actors": ["Ryan Reynolds", "Hugh Jackman", "Emma Corrin", "Matthew Macfadyen", "Morena Baccarin", "Rob Delaney", "Leslie Uggams", "Karan Soni", "Stefan Kapicic", "Brianna Hildebrand", "Shioli Kutsuna"],
+  "productionCompanies": ["Kevin Feige", "Shawn Levy", "Ryan Reynolds", "Marvel Studios", "Maximum Effort", "20th Century Studios"],
   "themesKeywords": ["multiverse chaos", "meta humor", "Wolverine return", "Deadpool antics", "Marvel Studio", "MCU crossover", "fourth-wall breaking", "buddy mayhem", "time travel shenanigans", "X-Men legacy"]
 },
 {
@@ -1651,6 +1735,7 @@
   "directors": ["Fede Alvarez"],
   "writers": ["Fede alvarez", "Rodo Sayagues"],
   "actors": ["Cailee Spaeny", "David Jonsson", "Archie Renaux", "Isabela Merced", "Spike Fearn", "Aileen Wu"],
+  "productionCompanies": ["Ridley Scott", "Fede Alvarez", "Rodo Sayagues", "Scott Free Productions", "20th Century Studios"],
   "themesKeywords": ["space colonists", "derelict station", "cryostasis escape", "franchise prequel"]
 },
 {
@@ -1665,6 +1750,7 @@
   "directors": ["Vojtěch Masek"],
   "writers": ["Vojtech Masek", "Jakub Smid"],
   "actors": ["Tereza Ramba", "Martha Issova", "Martin Pechlat", "Martin Finger", "Pavla Beretova", "Petr Buchta"],
+  "productionCompanies": ["Czech Television", "Barletta Productions", "Negativ Film", "Czech Film Fund"],
   "themesKeywords": ["Czech thriller", "family secrets", "rural mystery", "psychological descent"]
 },
 {
@@ -1679,6 +1765,7 @@
   "directors": ["Indianna Bell", "Josiah Allen"],
   "writers": ["Indianna Bell"],
   "actors": ["Brendan Rock", "Jordan Cowan"],
+  "productionCompanies": ["Indianna Bell", "Josiah Allen", "Causeway Films", "Shudder"],
   "themesKeywords": ["Australian thriller", "stranger at the door", "psychological tension"]
 },
 {
@@ -1693,6 +1780,7 @@
   "directors": ["Colm McCarthy"],
   "writers": ["John Hulme"],
   "actors": ["Sam Claflin", "Antonia Thomas", "Carell Vincent Rhoden", "Will Davis", "Adelle Leonce", "William Hope", "Steven Cree", "Rosalie Craig", "Peter McDonald", "Frankie Corio"],
+  "productionCompanies": ["Colm McCarthy", "John Hulme", "StudioCanal", "The Picture Company", "Canal+"],
   "themesKeywords": ["childhood trauma", "urban legend horror", "family in peril", "mythical creature", "intergenerational fear", "PG-13 horror", "bag-snatching entity", "parental dread", "British supernatural thriller", "return of the past"]
 },
 {
@@ -1707,6 +1795,7 @@
   "directors": ["Rose Glass"],
   "writers": ["Rose Glass"],
   "actors": ["Morfydd Clark", "Jennifer Ehle", "Lily Knight", "Lily Frazer", "Turlough Convery", "Marcus Hutton", "Carl Prekopp"],
+  "productionCompanies": ["Rose Glass", "Oliver Kassman", "Escape Plan Productions", "Film4 Productions", "BFI", "A24"],
   "themesKeywords": ["religious obsession", "psychological horror", "divine delusion", "British indie horror"]
 },
 {
@@ -1721,6 +1810,7 @@
   "directors": ["Logan George", "Celine Held"],
   "writers": ["Logan George", "Celine Held"],
   "actors": ["Dylan O'Brien", "Eliza Scanlen", "Lauren Ambrose", "Eric Lange", "Sam Hennings", "Cynthia Mace", "Drew Powell", "Dale Dickey", "James Healy Jr."],
+  "productionCompanies": ["M. Night Shyamalan", "Blinding Edge Pictures", "Warner Bros. Pictures"],
   "themesKeywords": ["missing girl", "time travel", "family trauma", "lake mystery", "nonlinear storytelling"]
 },
 {
@@ -1735,6 +1825,7 @@
   "directors": ["Andy Muschietti"],
   "writers": ["Stephen King", "Gary Dauberman"],
   "actors": ["Jessica Chastain", "James McAvoy", "Bill Hader", "Isaiah Mustafa", "Jay Ryan", "James Ransone", "Andy Bean", "Bill Skarsgård", "Jaeden Martell", "Sophia Lillis", "Finn Wolfhard", "Jack Dylan Grazer", "Chosen Jacobs", "Wyatt Oleff", "Jeremy Ray Taylor", "Teach Grant", "Xavier Dolan", "Stephen King"],
+  "productionCompanies": ["Roy Lee", "Dan Lin", "Barbara Muschietti", "New Line Cinema", "Vertigo Entertainment", "Warner Bros. Pictures"],
   "themesKeywords": ["Pennywise", "childhood trauma", "return to hometown", "cosmic horror", "flashbacks", "alien clown"]
 },
 {
@@ -1749,6 +1840,7 @@
   "directors": ["Andy Muschietti"],
   "writers": ["Chase Palmer", "Cary Joji Fukunaga", "Gary Dauberman", "Stephen King"],
   "actors": ["Jaeden Martell", "Sophia Lillis", "Finn Wolfhard", "Jack Dylan Grazer", "Jeremy Ray Taylor", "Chosen Jacobs", "Wyatt Oleff", "Bill Skarsgård", "Nicholas Hamilton", "Jake Sim", "Logan Thompson", "Owen Teague", "Jackson Robert Scott", "Stephen Bogaert", "Megan Charpentier", "Stuart Hughes", "Molly Atkinson"],
+  "productionCompanies": ["Roy Lee", "Dan Lin", "Barbara Muschietti", "New Line Cinema", "Vertigo Entertainment", "Warner Bros. Pictures"],
   "themesKeywords": ["Pennywise", "childhood trauma", "misfits", "fear manifestation", "missing children", "Maine"]
 },
 {
@@ -1763,6 +1855,7 @@
   "directors": ["Damian Mc Carthy"],
   "writers": ["Damian Mc Carthy"],
   "actors": ["Ben Caplan", "Jonathan French", "Leila Sykes", "Inma Pavon", "Conor Dwane", "Siobhan Burton", "Sam White", "Charlie"],
+  "productionCompanies": ["Damian Mc Carthy", "Hyde Park Entertainment", "Shudder"],
   "themesKeywords": ["remote isolation", "secluded island", "creepy doll", "memory loss", "housebound", "chained harness", "babysitting", "Shudder"]
 },
 {
@@ -1777,6 +1870,7 @@
   "directors": ["Karyn Kusama"],
   "writers": ["Phil Hay", "Matt Manfredi"],
   "actors": ["Logan Marshall-Green", "Tammy Blanchard", "Emayatzy Corinealdi", "Michiel Huisman", "John Carroll Lynch", "Lindsay Burdge", "Mike Doyle", "Jay Larson", "Marieh Delfino", "Michelle Krusiec", "Jordi Vilasuso", "Toby Huss", "Karl Yune"],
+  "productionCompanies": ["Gamechanger Films", "XYZ Films", "Leisure Suit Media", "Petrol Pictures"],
   "themesKeywords": ["cult", "grief", "dinner party tension", "psychological unraveling", "slow burn suspense"]
 },
 {
@@ -1791,6 +1885,7 @@
   "directors": ["Damian Mc Carthy"],
   "writers": ["Damian Mc Carthy"],
   "actors": ["Carolyn Bracken", "Gwilym Lee", "Steve Wall", "Tadhg Murphy", "Caroline Menton", "Jonathan French", "Joe Rooney", "Shane Whisker", "Joshua Campbell", "Austin Lawlor", "Peter McCarthy", "Fiach McHugh", "Patrick Mullins", "Jim O'Donnell", "Inma Pavon", "Leticia Lopez Ramos", "Chris Mudrack", "Eileen McCarthy"],
+  "productionCompanies": ["Keeper Pictures", "Nowhere", "Shudder"],
   "themesKeywords": ["golem", "psychic medium", "blind", "murder mystery", "Irish horror", "supernatural revenge", "Jewish folklore"]
 },
 {
@@ -1805,6 +1900,7 @@
   "directors": ["Agnieszka Holland"],
   "writers": ["Scott Abbott", "James Wong"],
   "actors": ["Zoe Saldana", "Patrick J. Adams", "Carole Bouquet", "Jason Isaacs", "Christina Cole", "Olivier Rabourdin", "François Civil", "Rosemarie La Vaullée", "Eva Lutz", "Wojciech Pszoniak", "Hiro Uchiyama", "Joseph Malerba", "Stany Coppet", "Stefano Cassetti", "Victoire Bélèzy", "Cyril Casmèze", "Stéphane Boucher", "Franck Vincent"],
+  "productionCompanies": ["Joshua D. Maurer", "David Stern", "Alloy Entertainment", "City Entertainment", "NBCUniversal Television"],
   "themesKeywords": ["Satanic cult", "pregnancy horror", "betrayal", "Paris setting", "modern remake", "occult manipulation"]
 },
 {
@@ -1819,6 +1915,7 @@
   "directors": ["Natalie Erika James"],
   "writers": ["Natalie Erika James", "Christian White", "Skylar James"],
   "actors": ["Julia Garner", "Dianne Wiest", "Kevin McNally", "Jim Sturgess", "Marli Siu", "Rosy McEwen", "Andrew Buchan", "Anton Blake", "Raphael Sowole", "Tina Gray", "Patrick Lyster", "Rachel Atkins", "Andre Lillis", "Simon Adkins", "Lukas McFarlane", "Dylan Baldwin", "Sean Browne", "David Bardsley"],
+  "productionCompanies": ["John Krasinski", "Michael Bay", "Andrew Form", "Brad Fuller", "Platinum Dunes", "Paramount Pictures"],
   "themesKeywords": ["prequel", "Rosemary's Baby", "Satanic cult", "Broadway", "occult manipulation", "dancer", "The Dakota", "New York City", "Manhattan"]
 },
 {
@@ -1833,6 +1930,7 @@
   "directors": ["Roman Polanski"],
   "writers": ["Ira Levin", "Roman Polanski"],
   "actors": ["Mia Farrow", "John Cassavetes", "Ruth Gordon", "Sidney Blackmer", "Maurice Evans", "Ralph Bellamy", "Victoria Vetri", "Patsy Kelly", "Elisha Cook Jr.", "Emmaline Henry", "Charles Grodin", "Hanna Landy", "Phil Leeds", "D'Urville Martin", "Hope Summers", "Marianne Gordon", "Wende Wagner", "Toby Adler"],
+  "productionCompanies": ["William Castle", "Paramount Pictures"],
   "themesKeywords": ["Satanic cult", "pregnancy horror", "urban paranoia", "occult manipulation", "New York City", "1960s", "gaslighting", "The Dakota", "cult classic"]
 },
 {
@@ -1847,6 +1945,7 @@
   "directors": ["Tilman Singer"],
   "writers": ["Tilman Singer"],
   "actors": ["Hunter Schafer", "Dan Stevens", "Jessica Henwick", "Marton Csokas", "Jan Bluthardt", "Mila Lieu", "Greta Fernández", "Proschat Madani", "Àstrid Bergès-Frisbey", "Konrad Singer", "Kalin Morrow", "Johannes Benecke", "Veronika Bachfischer", "Joshua Hupfauer", "Philipp Arnold", "Conny Brandt", "Christoph Cordes", "Massimiliano Monticciollo"],
+  "productionCompanies": ["Tilman Singer", "Wayne Godfrey", "Neon", "Spacemaker Productions", "Futur3 Film", "Film- und Medienstiftung NRW"],
   "themesKeywords": ["resort", "mute sibling", "German Alps", "body horror", "selective breeding", "bird people", "surreal visions", "eugenics"]
 },
 {
@@ -1861,6 +1960,7 @@
   "directors": ["Osgood Perkins"],
   "writers": ["Osgood Perkins"],
   "actors": ["Maika Monroe", "Nicolas Cage", "Blair Underwood", "Alicia Witt", "Michelle Choi-Lee", "Dakota Daulby", "Lauren Acala", "Kiernan Shipka", "Maila Hosie", "Jason William Day", "Lisa Chandler", "Ava Kelders", "Rryla McIntosh", "Carmel Amit", "Shafin Karim", "Trey Helten", "Daniel Bacon", "Vanessa Walsh"],
+  "productionCompanies": ["Nicolas Cage", "Dan Kagan", "Brian Kavanaugh-Jones", "Fred Berger", "Neon", "Saturn Films", "Oddfellows Entertainment", "Spacemaker Productions"],
   "themesKeywords": ["serial killer", "occult clues", "FBI investigation", "psychic visions", "retro aesthetic", "parental trauma", "creepy local"]
 },
 {
@@ -1875,6 +1975,7 @@
   "directors": ["Victor Salva"],
   "writers": ["Victor Salva"],
   "actors": ["Gina Philips", "Justin Long", "Jonathan Breck", "Patricia Belcher", "Brandon Smith", "Eileen Brennan", "Peggy Sheffield", "Jeffrey William Evans", "Patrick Cherry", "Jon Beshara", "Avis-Marie Barnes", "Steve Raulerson", "Tom Tarantini", "William Haze", "Kim Kahana", "Chris Shepardson", "Noel Maree", "Tim Phoenix"],
+  "productionCompanies": ["Francis Ford Coppola", "Tom Luse", "American Zoetrope", "Myriad Pictures", "United Artists"],
   "themesKeywords": ["flesh-eating creature", "road trip", "abandoned church", "ritualistic killing", "creature feature", "monster movie"]
 },
 {
@@ -1889,6 +1990,7 @@
   "directors": ["Jan de Bont"],
   "writers": ["Graham Yost"],
   "actors": ["Keanu Reeves", "Sandra Bullock", "Dennis Hopper", "Joe Morton", "Jeff Daniels", "Alan Ruck", "Glenn Plummer", "Richard Lineback", "Beth Grant", "Hawthorne James", "Carlos Carrasco", "David Kriegel", "Natsuko Ohama", "Daniel Villarreal", "Simone Gad", "Loretta Jean", "Sherri Villanueva", "Margaret Medina"],
+  "productionCompanies": ["Mark Gordon", "Steve Perry", "The Mark Gordon Company", "20th Century Fox"],
   "themesKeywords": ["bomb on bus", "high-speed suspense", "hostage crisis", "SWAT team", "transport thriller"]
 },
 {
@@ -1903,6 +2005,7 @@
   "directors": ["Julio Torres"],
   "writers": ["Julio Torres"],
   "actors": ["Julio Torres", "Tilda Swinton", "RZA", "Isabella Rossellini", "Catalina Saavedra", "James Scully", "Laith Nakli", "Spike Einbinder", "Logan J. Alarcon-Poucel", "Greta Lee", "Larry Owens", "Glo Tavarez", "Kelly McCormack", "Ronald Peet", "Greta Titelman", "Shakina Nayfack", "Theo Maltz"],
+  "productionCompanies": ["Julio Torres", "Emma Stone", "Dave McCary", "Ali Herting", "Fruit Tree", "A24"],
   "themesKeywords": ["immigration bureaucracy", "surreal comedy", "toy design", "art world satire", "visa struggle", "FileMaker obsession", "cryogenics", "Latinx identity"]
 },
 {
@@ -1917,6 +2020,7 @@
   "directors": ["Chris Columbus"],
   "writers": ["Anne Fine", "Randi Mayem Singer", "Leslie Dixon"],
   "actors": ["Robin Williams", "Sally Field", "Pierce Brosnan", "Harvey Fierstein", "Lisa Jakub", "Matthew Lawrence", "Mara Wilson", "Robert Prosky", "Anne Haney", "Scott Capurro", "Sydney Walker", "Joe Bellan", "Martin Mull", "Karen Kahn", "Eva Gholson", "James Cunningham", "Terence McGovern"],
+  "productionCompanies": ["Robin Williams", "Marsha Garces Williams", "Mark Radcliffe", "Blue Wolf Productions", "20th Century Fox"],
   "themesKeywords": ["divorce", "custody battle", "disguise", "British nanny persona", "gender bending", "identity comedy", "cross dressing", "drag queen adjacent"]
 },
 {
@@ -1931,6 +2035,7 @@
   "directors": ["Wes Ball"],
   "writers": ["Josh Friedman", "Rick Jaffa", "Amanda Silver"],
   "actors": ["Owen Teague", "Freya Allan", "Kevin Durand", "Peter Macon", "William H. Macy", "Eka Darville", "Travis Jeffery", "Lydia Peckham", "Neil Sandilands", "Ras-Samuel Lightning", "Sara Wiseman", "Kaden Hartcher", "Andy McPhee", "Karin Konoval", "Dichen Lachman", "Virginie Laverdure"],
+  "productionCompanies": ["Wes Ball", "Rick Jaffa", "Amanda Silver", "Joe Hartwick Jr.", "Jason Reed", "20th Century Studios"],
   "themesKeywords": ["post-apocalypse", "ape society", "legacy of Caesar", "enslavement", "human extinction", "evolution", "forest reclamation", "coming-of-age"]
 },
 {
@@ -1945,6 +2050,7 @@
   "directors": ["James Ward Byrkit"],
   "writers": ["James Ward Byrkit"],
   "actors": ["Emily Baldoni", "Maury Sterling", "Nicholas Brendon", "Elizabeth Gracen", "Lorene Scafaria", "Hugo Armstrong", "Alex Manugian", "Lauren Maher", "Aqueela Zoll", "John Glover"],
+  "productionCompanies": ["Bellanova Films", "Ugly Duckling Films"],
   "themesKeywords": ["parallel realities", "comet event", "dinner party unraveling", "quantum realm", "identity confusion", "low-budget", "Schrodinger's box", "single location"]
 },
 {
@@ -1959,6 +2065,7 @@
   "directors": ["Michael Chaves"],
   "writers": ["Mikki Daughtry", "Tobias Iaconis"],
   "actors": ["Linda Cardellini", "Raymond Cruz", "Patricia Velasquez", "Marisol Ramirez", "Sean Patrick Thomas", "Tony Amendola", "Jaynee-Lynne Kinchen", "Roman Christou", "Irene Keng", "Oliver Alexander", "Aiden Lewandowski", "Madeleine McGraw", "John Marshall Jones", "Andrew Tinpo Lee", "Emily Goss"],
+  "productionCompanies": ["James Wan", "Gary Dauberman", "Emile Gladstone", "Atomic Monster", "New Line Cinema", "Warner Bros. Pictures"],
   "themesKeywords": ["Latin American folklore", "Mexican legend", "social worker", "widow", "cursed spirit", "child protective services", "Catholic exorcism", "James Wan", "Atomic Monster", "Conjuring universe"]
 },
 {
@@ -1973,6 +2080,7 @@
   "directors": ["Jon M. Chu"],
   "writers": ["Ed Solomon"],
   "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Dave Franco", "Daniel Radcliffe", "Lizzy Caplan", "Jay Chou", "Sanaa Lathan", "Michael Caine", "Morgan Freeman", "David Warshofsky", "Tsai Chin", "Henry Lloyd-Hughes", "Richard Laing", "Alison Lintott", "Justine Wachsberger", "Catherine Shu", "Ben Lamb"],
+  "productionCompanies": ["Alex Kurtzman", "Bobby Cohen", "Roberto Orci", "Secret Hideout", "Summit Entertainment", "K/O Paper Products", "Lionsgate"],
   "themesKeywords": ["illusionists", "heist", "revenge plot", "tech sabotage", "twin twist", "global stage magic", "FBI infiltration"]
 },
 {
@@ -1987,6 +2095,7 @@
   "directors": ["Louis Leterrier"],
   "writers": ["Ed Solomon", "Boaz Yakin", "Edward Ricourt"],
   "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Isla Fisher", "Dave Franco", "Mélanie Laurent", "Morgan Freeman", "Michael Caine", "Michael Kelly", "Common", "José Garcia", "Jessica Lindsey", "Caitríona Balfe", "Laura Cayouette", "Douglas M. Griffin", "Adam Shapiro"],
+  "productionCompanies": ["Alex Kurtzman", "Bobby Cohen", "Roberto Orci", "Summit Entertainment", "K/O Paper Products", "Lionsgate"],
   "themesKeywords": ["illusionists", "heist", "sleight of hand", "FBI pursuit", "magic show", "Robin Hood spectacle"]
 },
 {
@@ -2001,6 +2110,7 @@
   "directors": ["Renny Harlin"],
   "writers": ["Alan R. Cohen", "Alan Freedland", "Bryan Bertino"],
   "actors": ["Madelaine Petsch", "Froy Gutierrez", "Gabriel Basso", "Ema Horvath", "Ella Bruccoleri", "Richard Brake", "Pedro Leandro", "Rachel Shenton", "Ben Cartwright", "India Fowler", "Brooke Lena Johnson", "Miles Yekinni"],
+  "productionCompanies": ["Courtney Solomon", "Mark Canton", "Renny Harlin", "Lionsgate", "Foresight Unlimited", "Fifth Season"],
   "themesKeywords": ["masked killers", "home invasion", "cabin in the woods", "reboot"]
 },
 {
@@ -2015,6 +2125,7 @@
   "directors": ["Bryan Bertino"],
   "writers": ["Bryan Bertino"],
   "actors": ["Liv Tyler", "Scott Speedman", "Gemma Ward", "Kip Weeks", "Laura Margolis", "Glenn Howerton", "Alex Fisher", "Peter Clayton-Luce", "Nick Barghini", "Shawn McClellan", "Jordan Orr"],
+  "productionCompanies": ["Doug Davison", "Roy Lee", "Nathan Kahane", "Vertigo Entertainment", "Rogue Pictures", "Intrepid Pictures", "Universal Pictures"],
   "themesKeywords": ["home invasion", "masked killers", "cabin in the woods", "psychological torment"]
 }
 ]
