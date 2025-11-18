@@ -1891,13 +1891,76 @@
   "actors": ["Robin Williams", "Sally Field", "Pierce Brosnan", "Harvey Fierstein", "Lisa Jakub", "Matthew Lawrence", "Mara Wilson", "Robert Prosky", "Anne Haney", "Scott Capurro", "Sydney Walker", "Joe Bellan", "Martin Mull", "Karen Kahn", "Eva Gholson", "James Cunningham", "Terence McGovern"],
   "themesKeywords": ["divorce", "custody battle", "disguise", "British nanny persona", "gender bending", "identity comedy", "cross dressing", "drag queen adjacent"]
 },
-
-
-
-
-
-
-
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Kingdom of the Planet of the Apes",
+  "year": 2024,
+  "genre": ["Action", "Drama"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-03-02",
+  "directors": ["Wes Ball"],
+  "writers": ["Josh Friedman", "Rick Jaffa", "Amanda Silver"],
+  "actors": ["Owen Teague", "Freya Allan", "Kevin Durand", "Peter Macon", "William H. Macy", "Eka Darville", "Travis Jeffery", "Lydia Peckham", "Neil Sandilands", "Ras-Samuel Lightning", "Sara Wiseman", "Kaden Hartcher", "Andy McPhee", "Karin Konoval", "Dichen Lachman", "Virginie Laverdure"],
+  "themesKeywords": ["post-apocalypse", "ape society", "legacy of Caesar", "enslavement", "human extinction", "evolution", "forest reclamation", "coming-of-age"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Coherence",
+  "year": 2013,
+  "genre": ["Mystery", "Sci-Fi", "Thriller"],
+  "bearHandsRating": 9,
+  "hubbyBearRating": 9,
+  "dateWatched": "2025-03-01",
+  "directors": ["James Ward Byrkit"],
+  "writers": ["James Ward Byrkit"],
+  "actors": ["Emily Baldoni", "Maury Sterling", "Nicholas Brendon", "Elizabeth Gracen", "Lorene Scafaria", "Hugo Armstrong", "Alex Manugian", "Lauren Maher", "Aqueela Zoll", "John Glover"],
+  "themesKeywords": ["parallel realities", "comet event", "dinner party unraveling", "quantum realm", "identity confusion", "low-budget", "Schrodinger's box", "single location"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "The Curse of La Llorona",
+  "year": 2019,
+  "genre": ["Horror", "Mystery", "Thriller"],
+  "bearHandsRating": 5,
+  "hubbyBearRating": 4,
+  "dateWatched": "2025-02-23",
+  "directors": ["Michael Chaves"],
+  "writers": ["Mikki Daughtry", "Tobias Iaconis"],
+  "actors": ["Linda Cardellini", "Raymond Cruz", "Patricia Velasquez", "Marisol Ramirez", "Sean Patrick Thomas", "Tony Amendola", "Jaynee-Lynne Kinchen", "Roman Christou", "Irene Keng", "Oliver Alexander", "Aiden Lewandowski", "Madeleine McGraw", "John Marshall Jones", "Andrew Tinpo Lee", "Emily Goss"],
+  "themesKeywords": ["Latin American folklore", "Mexican legend", "social worker", "widow", "cursed spirit", "child protective services", "Catholic exorcism", "James Wan", "Atomic Monster", "Conjuring universe"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Now You See Me 2",
+  "year": 2016,
+  "genre": ["Action", "Adventure", "Comedy", "Crime", "Mystery", "Thriller"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 7,
+  "dateWatched": "2025-02-22",
+  "directors": ["Jon M. Chu"],
+  "writers": ["Ed Solomon"],
+  "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Dave Franco", "Daniel Radcliffe", "Lizzy Caplan", "Jay Chou", "Sanaa Lathan", "Michael Caine", "Morgan Freeman", "David Warshofsky", "Tsai Chin", "Henry Lloyd-Hughes", "Richard Laing", "Alison Lintott", "Justine Wachsberger", "Catherine Shu", "Ben Lamb"],
+  "themesKeywords": ["illusionists", "heist", "revenge plot", "tech sabotage", "twin twist", "global stage magic", "FBI infiltration"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Now You See Me",
+  "year": 2013,
+  "genre": ["Crime", "Mystery", "Thriller"],
+  "bearHandsRating": 8,
+  "hubbyBearRating": 6,
+  "dateWatched": "2025-04-01",
+  "directors": ["Louis Leterrier"],
+  "writers": ["Ed Solomon", "Boaz Yakin", "Edward Ricourt"],
+  "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Isla Fisher", "Dave Franco", "Mélanie Laurent", "Morgan Freeman", "Michael Caine", "Michael Kelly", "Common", "José Garcia", "Jessica Lindsey", "Caitríona Balfe", "Laura Cayouette", "Douglas M. Griffin", "Adam Shapiro"],
+  "themesKeywords": ["illusionists", "heist", "sleight of hand", "FBI pursuit", "magic show", "Robin Hood spectacle"]
+},
 {
   "hasReview": false,
   "reviewLink": null,
@@ -1925,20 +1988,5 @@
   "writers": ["Bryan Bertino"],
   "actors": ["Liv Tyler", "Scott Speedman", "Gemma Ward", "Kip Weeks", "Laura Margolis", "Glenn Howerton", "Alex Fisher", "Peter Clayton-Luce", "Nick Barghini", "Shawn McClellan", "Jordan Orr"],
   "themesKeywords": ["home invasion", "masked killers", "cabin in the woods", "psychological torment"]
-},
-{
-  "hasReview": false,
-  "reviewLink": null,
-  "title": "Now You See Me",
-  "year": 2013,
-  "genre": ["Crime", "Mystery", "Thriller"],
-  "bearHandsRating": 8,
-  "hubbyBearRating": 6,
-  "dateWatched": "2025-04-01",
-  "directors": ["Louis Leterrier"],
-  "writers": ["Ed Solomon", "Boaz Yakin", "Edward Ricourt"],
-  "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Isla Fisher", "Dave Franco", "Mélanie Laurent", "Morgan Freeman", "Michael Caine", "Michael Kelly", "Common", "José Garcia", "Jessica Lindsey", "Caitríona Balfe", "Laura Cayouette", "Douglas M. Griffin", "Adam Shapiro"],
-  "themesKeywords": ["illusionists", "heist", "sleight of hand", "FBI pursuit", "magic show", "Robin Hood spectacle"]
 }
-
 ]
