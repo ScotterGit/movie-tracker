@@ -141,11 +141,14 @@ function applyFilters() {
   filteredMovies = movies.filter(movie => {
     const matchesSearch =
       !searchQuery ||
-      movie.title.toLowerCase().includes(searchQuery) ||
-      movie.actors.some(a => a.toLowerCase().includes(searchQuery)) ||
-      movie.directors.some(d => d.toLowerCase().includes(searchQuery)) ||
-      movie.writers.some(w => w.toLowerCase().includes(searchQuery)) ||
-      movie.themesKeywords.some(t => t.toLowerCase().includes(searchQuery));
+      movie.title?.toLowerCase().includes(searchQuery) ||
+      movie.year?.toString().includes(searchQuery) ||
+      movie.genre?.some(g => g.toLowerCase().includes(searchQuery)) ||
+      movie.directors?.some(d => d.toLowerCase().includes(searchQuery)) ||
+      movie.writers?.some(w => w.toLowerCase().includes(searchQuery)) ||
+      movie.actors?.some(a => a.toLowerCase().includes(searchQuery)) ||
+      movie.productionCompanies?.some(p => p.toLowerCase().includes(searchQuery)) ||
+      movie.themesKeywords?.some(t => t.toLowerCase().includes(searchQuery));
 
     const matchesReview =
       reviewSetting === "reviewed" ? movie.hasReview === true : true;
