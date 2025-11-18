@@ -10,7 +10,7 @@
   "actors": ["Sophie Wilde", "Joe Bird", "Alexandra Jensen", "Otis Dhanji"],
   "directors": ["Danny Philippou", "Michael Philippou"],
   "writers": ["Danny Philippou", "Bill Hinzman"],
-  "production": ["Samantha Jennings", "Kristina Ceyton", "Screen Australia", "Causeway Films", "Head Gear Films", "Metrol Technology", "RackaRacka Studios"],
+  "productionCompanies": ["Samantha Jennings", "Kristina Ceyton", "Screen Australia", "Causeway Films", "Head Gear Films", "Metrol Technology", "RackaRacka Studios"],
   "dateWatched": "2025-10-12",
   "themesKeywords": ["grief", "possession", "viral challenge", "teen horror"]
 }
