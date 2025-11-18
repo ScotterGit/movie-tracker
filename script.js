@@ -230,7 +230,7 @@ function renderTable() {
   const start = (currentPage - 1) * rowsPerPage;
   const pageMovies = filteredMovies.slice(start, start + rowsPerPage);
 
-  const searchQuery = document.getElementById("search-bar").value.toLowerCase(); // ✅ Ensure this is defined here
+  const searchQuery = document.getElementById("search-bar").value.toLowerCase();
 
   pageMovies.forEach(movie => {
     const row = document.createElement("tr");
