@@ -167,7 +167,7 @@ function applyFilters() {
       (!director || movie.directors.some(d => d.toLowerCase().includes(director))) &&
       (!writer || movie.writers.some(w => w.toLowerCase().includes(writer))) &&
       (!actorQuery || movie.actors.some(a => a.toLowerCase().includes(actorQuery))) &&
-      (!productionQuery || (movie.productionCompanies && movie.productionCompanies.some(p => p.toLowerCase().includes(productionQuery)))) &&
+      (!productionQuery || movie.productionCompanies?.some(p => p.toLowerCase().includes(productionQuery))) &&
       (!themeQuery || movie.themesKeywords.some(t => t.toLowerCase().includes(themeQuery))) &&
       (!startDate || new Date(movie.dateWatched) >= new Date(startDate)) &&
       (!endDate || new Date(movie.dateWatched) <= new Date(endDate))
@@ -180,29 +180,17 @@ function applyFilters() {
       let valA = a[currentSortKey];
       let valB = b[currentSortKey];
 
-      // If values are arrays, compare their joined string representation
       if (Array.isArray(valA)) valA = valA.join(', ');
       if (Array.isArray(valB)) valB = valB.join(', ');
 
-      // Normalize null/undefined to empty string so comparisons are stable
       if (valA == null) valA = '';
       if (valB == null) valB = '';
 
-      // Boolean compare
-      if (typeof valA === 'boolean' && typeof valB === 'boolean') {
-        return currentSortOrder === 'asc' ? Number(valA) - Number(valB) : Number(valB) - Number(valA);
-      }
-
-      // Numeric compare when both are numbers (or numeric strings)
-      const na = Number(valA);
-      const nb = Number(valB);
+      const na = Number(valA), nb = Number(valB);
       if (!isNaN(na) && !isNaN(nb)) {
         return currentSortOrder === 'asc' ? na - nb : nb - na;
       }
-
-      // String compare fallback
-      const aStr = String(valA);
-      const bStr = String(valB);
+      const aStr = String(valA), bStr = String(valB);
       return currentSortOrder === 'asc' ? aStr.localeCompare(bStr) : bStr.localeCompare(aStr);
     });
   }
