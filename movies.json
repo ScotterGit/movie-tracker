@@ -144,6 +144,7 @@
   "actors": ["Theodore Pellerin", "Archie Madekwe", "Zack Fox", "Havana Rose Liu", "Wale Onayemi", "Daniel Zolghadri", "Sunny Suljic"],
   "directors": ["Alex Russell"],
   "writers": ["Alex Russell"],
+  "productionCompanies": [],
   "dateWatched": "2025-10-20",
   "themesKeywords": ["obsession", "pop star", "stalking", "meta horror"]
 },
@@ -158,9 +159,9 @@
   "actors": ["Madelaine Petsch", "Gabriel Basso", "Froy Gutierrez", "Ema Horvath", "Ella Bruccoleri"],
   "directors": ["Renny Harlin"],
   "writers": ["Alan R. Cohen", "Alan Freedland"],
+  "productionCompanies": ["Lionsgate", "Fifth Element"],
   "dateWatched": "2025-10-19",
-  "themesKeywords": ["masked killers"],
-  "productionCompanies": ["Lionsgate", "Fifth Element"]
+  "themesKeywords": ["masked killers"]
 },
 {
   "hasReview": false,
@@ -173,6 +174,7 @@
   "actors": ["Rami Malek", "Rachel Brosnahan", "Caitríona Balfe", "Michael Stuhlbarg", "Laurence Fishburne", "Jon Bernthal", "Holt McCallany", "Julianne Nicholson", "Adrian Martinez", "Danny Sapani", "Takehiro Hira"],
   "directors": ["James Hawes"],
   "writers": ["Ken Nolan", "Gary Spinelli"],
+  "productionCompanies": ["Hutch Parker", "Dan Wilson", "Rami Malek", "Joel B. Michaels", "20th Century Studios", "Hutch Parker Entertainment", "Joel B. Michaels Productions"],
   "dateWatched": "2025-10-18",
   "themesKeywords": ["CIA", "revenge", "terrorism", "London", "cover-up"]
 },
@@ -187,6 +189,7 @@
   "actors": ["Bill Skarsgard", "Anthony Hopkins"],
   "directors": ["David Yarovesky"],
   "writers": ["Michael Arlen Ross"],
+  "productionCompanies": ["Ara Keshishian", "Petr Jákl", "Sam Raimi", "Zainab Azizi", "Sean O'Reilly", "ZQ Entertainment", "R.U. Robot Studios", "Arcana Studio", "Raimi Productions", "Sillen Productions"],
   "dateWatched": "2025-10-18",
   "themesKeywords": ["trap", "psychological torment", "torture"]
 },
@@ -201,6 +204,7 @@
   "actors": ["Dakota Fanning", "Kathryn Hunter", "Mary McCormack", "Rachel Blanchard", "Devyn Nekoda"],
   "directors": ["Bryan Bertino"],
   "writers": ["Bryan Bertino"],
+  "productionCompanies": ["Richard Suckle", "Bryan Bertino", "Atlas Independent", "Paramount Pictures"],
   "dateWatched": "2025-10-12",
   "themesKeywords": ["cursed object", "doppelganger", "family trauma", "religious guilt", "supernatural torment"]
 },
@@ -215,6 +219,7 @@
   "actors": ["Keira Knightley", "Guy Pearce", "Art Malik", "Gugu Mbatha-Raw", "Kaya Scodelario", "Daniel Ings", "Hannah Waddingham", "David Ajala", "David Morrissey", "Gitte Witt", "Amanda Collin"],
   "directors": ["Simon Stone"],
   "writers": ["Joe Shrapnel", "Anna Waterhouse", "Simon Stone"],
+  "productionCompanies": ["Debra Hayward", "Ilda Diffley", "Richard Hewitt", "Cindy Holland", "Sister", "CBS Films", "The Gotham Group", "Netflix"],
   "dateWatched": "2025-10-11",
   "themesKeywords": ["cruise ship", "gaslighting", "journalist", "doppelganger", "wealthy elite", "murder cover-up", "psychological", "Netflix"]
 },
@@ -229,6 +234,7 @@
   "actors": ["Lili Reinhart", "Daniela Melchior", "Joel Fry", "Christiane Paul", "Tim Plester", "Faith Delaney", "Jeremy Ang Jones", "Max Croes", "Chris Ginesi", "Levi Mattey", "Alex Lee"],
   "directors": ["Uta Briesewitz"],
   "writers": ["Matthew Nemeth"],
+  "productionCompanies": ["Barry Levinson", "Tom Fontana", "Uta Briesewitz", "Elsani Film", "Baltimore Pictures", "MMC Movies", "RNA Pictures"],
   "dateWatched": "2025-10-11",
   "themesKeywords": ["social media", "content moderation", "digital trauma", "crime investigation"]
 },
@@ -243,6 +249,7 @@
   "actors": ["Vera Farmiga", "Patrick Wilson", "Mia Tomlinson", "Ben Hardy"],
   "directors": ["Michael Chaves"],
   "writers": ["Ian Goldberg", "Richard Naing", "David Leslie Johnson-McGoldrick"],
+  "productionCompanies": ["James Wan", "Peter Safran", "New Line Cinema", "Atomic Monster", "The Safran Company", "Warner Bros. Pictures"],
   "dateWatched": "2025-10-10",
   "themesKeywords": ["possessed object", "psychic visions", "religious horror", "demon", "Atomic Monster"]
 },
@@ -257,6 +264,7 @@
   "actors": ["Corey Hawkins", "Willem Dafoe", "Anna Diop", "Tamara Lawrance"],
   "directors": ["Nadia Latif"],
   "writers": ["Walter Mosley", "Nadia Latif"],
+  "productionCompanies": ["Diane Houslin", "John Giwa-Amu", "Dave Bishop", "Len Rowles", "Andscape", "B.O.B. Filmhouse", "Good Gate Media", "Protagonist Pictures", "Hulu"],
   "dateWatched": "2025-10-5",
   "themesKeywords": ["racial issues", "power dynamics", "psychological tension"]
 },
@@ -271,6 +279,7 @@
   "actors": ["Charlie Hunnam", "Suzanna Son", "Vicky Krieps", "Laurie Metcalf", "Tom Hollander", "Robin Weigert", "Charlie Hall", "Tyler Jacob Moore", "Alanna Darby", "Olivia Williams", "Joey Pollari", "Mimi Kennedy", "Rondi Reed", "Ethan Sandler", "Jackie Kay", "Addison Rae", "Will Brill", "Lesley Manville", "Rebecca Tilney", "Christoph Sanders", "Elliott Gould", "Linda Reiter", "Meighan Gerachis", "Golden Garnick"],
   "directors": ["Max Winkler", "Ian Brennan"],
   "writers": ["Ian Brennan"],
+  "productionCompanies": ["Ian Brennan", "Max Winkler", "Ryan Murphy Productions", "Netflix"],
   "dateWatched": "2025-10-4",
   "themesKeywords": ["biographical", "serial killer", "mother fixation", "true crime", "crossdressing", "Wisconsin", "Netflix"]
 },
@@ -285,6 +294,7 @@
   "actors": ["Pedro Pascal", "Vanessa Kirby", "Joseph Quinn", "Ebon Moss-Bachrach", "Julia Garner", "Ralph Ineson", "Paul Walter Hauser", "John Malkovich"],
   "directors": ["Matt Shakman"],
   "writers": ["Josh Friedman", "Jeff Kaplan", "Ian Springer"],
+  "productionCompanies": ["Kevin Feige", "Matt Shakman", "Marvel Studios", "20th Century Studios", "Walt Disney Studios Motion Pictures"],
   "dateWatched": "2025-10-4",
   "themesKeywords": ["Marvel Studio", "MCU", "origin story", "space mission", "1960s"]
 },
@@ -299,6 +309,7 @@
   "actors": ["Hassie Harrison", "Josh Heuston", "Rob Carlton", "Ella Newton", "Liam Greinke", "Jai Courtney"],
   "directors": ["Sean Byrne"],
   "writers": ["Nick Lepard"],
+  "productionCompanies": ["Troy Lum", "Andrew Mason", "Pete Shilaimon", "Mickey Liddell", "Chris Ferguson", "Brian Kavanaugh-Jones", "LD Entertainment", "Brouhaha Entertainment", "Range Media Partners", "Oddfellows Entertainment"],
   "dateWatched": "2025-10-3",
   "themesKeywords": ["shark attack", "serial killer", "Australia"]
 },
@@ -313,8 +324,9 @@
   "actors": ["Britt Robertson", "Anna Friel", "Rafi Gavron", "Yul Vazquez", "Freda Foh Shen", "Nicholas Campbell", "Andy McQueen", "Kenji Fitzgerald", "Paige Turco"],
   "directors": ["Brannon Braga"],
   "writers": ["Brannon Braga", "Adam Simon", "Clive Barker"],
+  "productionCompanies": ["Seth MacFarlane", "Brannon Braga", "Clive Barker", "Jason Clark", "Michael Mahoney", "Joseph Micucci", "Fuzzy Door Productions", "Seraphim Films", "Beetlecod Productions", "Touchstone Television", "Hulu"],
   "dateWatched": "2025-09-28",
-  "themesKeywords": ["haunted house","Hulu original"]
+  "themesKeywords": ["haunted house", "Hulu original"]
 },
 {
   "hasReview": false,
@@ -328,6 +340,7 @@
   "directors": ["Jennifer Kaytin Robinson"],
   "writers": ["Leah McKendrick", "Jennifer Kaytin Robinson"],
   "actors": ["Madelyn Cline", "Chase Sui Wonders", "Jonah Hauer-King", "Tyriq Withers", "Sarah Pidgeon", "Billy Campbell", "Freddie Prinze Jr.", "Jennifer Love Hewitt", "Gabbriette Bechtel", "Austin Nichols", "Joshua Orpin", "Georgia Flood"],
+  "productionCompanies": ["Neal H. Moritz", "Karina Rahardja", "Jennifer Kaytin Robinson", "Jackie Shenoo", "Columbia Pictures", "Screen Gems", "Original Film"],
   "themesKeywords": ["revenge", "summer pact", "returning cast", "slasher revival", "coastal town"]
 },
 {
@@ -342,6 +355,7 @@
   "directors": ["Zach Cregger"],
   "writers": ["Zach Cregger"],
   "actors": ["Josh Brolin", "Julia Garner", "Alden Ehrenreich", "Austin Abrams", "Cary Christopher", "Toby Huss", "Benedict Wong", "Amy Madigan", "Sara Paxton", "Justin Long", "June Diane Raphael", "Whitmer Thomas", "Callie Schuttera", "Scarlett Sher", "Luke Speakman", "Clayton Farris"],
+  "productionCompanies": ["Zach Cregger", "Roy Lee", "J.D. Lifshitz", "Raphael Margules", "Vertigo Entertainment", "BoulderLight Pictures", "New Line Cinema", "Warner Bros. Pictures"],
   "themesKeywords": ["mysterious disappearance", "kidnapping", "multi-perspective narrative", "witch", "New Line Cinema", "mind control"]
 },
 {
@@ -356,6 +370,7 @@
   "directors": ["Akiva Schaffer"],
   "writers": ["Dan Gregor", "Doug Mand", "Akiva Schaffer"],
   "actors": ["Liam Neeson", "Pamela Anderson", "Paul Walter Hauser", "Danny Huston", "CCH Pounder", "Kevin Durand", "Liza Koshy", "Eddie Yu", "Michael Beasley", "Moses Jones", "Chase Steven Anderson", "Cody Rhodes", "Busta Rhymes", "Eddie DuPriest", "Carl Gilliard", "Elliott Grey", "Wilbur Fitzgerald", "Jon Anik"],
+  "productionCompanies": ["Seth MacFarlane", "Erica Huggins", "Akiva Schaffer", "Dan Gregor", "Doug Mand", "Fuzzy Door Productions", "Paramount Pictures"],
   "themesKeywords": ["spoof", "bumbling detective", "Police Squad", "slapstick", "parody", "nostalgia reboot", "deadpan humor"]
 },
 {
@@ -370,6 +385,7 @@
   "directors": ["Mariska Hargitay"],
   "writers": ["n/a"],
   "actors": ["Jayne Mansfield", "Mariska Hargitay", "Zoltan Hargitay", "Mickey Hargitay Jr.", "Jayne Marie Mansfield", "Ellen Hargitay", "Raymond Strait", "Tony Cimber", "Nelson Sardelli", "Giovanna Sardelli", "Pietra Sardelli", "Peter Hermann", "Sam Brody", "Matt Cimber", "Joyce Davidson", "Sabin Gray", "Merv Griffin"],
+  "productionCompanies": ["Mariska Hargitay", "Trish Adlesic", "Lauran Bromley", "Melissa Robyn Glassman", "Steven Bennett", "J.D. Marlow", "Mighty Entertainment", "HBO Documentary Films"],
   "themesKeywords": ["Hollywood icon", "family tragedy", "tragic death", "1960s", "family legacy", "celebrity biography"]
 },
 {
@@ -384,6 +400,7 @@
   "directors": ["Len Wiseman"],
   "writers": ["Shay Hatten", "Derek Kolstad"],
   "actors": ["Ana de Armas", "Keanu Reeves", "Ian McShane", "Anjelica Huston", "Gabriel Byrne", "Catalina Sandino Moreno", "Norman Reedus", "Lance Reddick", "Sharon Duncan-Brewster", "David Castaneda", "Victoria Comte", "Robert Maaser", "Sooyoung Choi", "Park Jung Doo-hong", "Anne Parillaud", "Marc Cram"],
+  "productionCompanies": ["Basil Iwanyk", "Erica Lee", "Chad Stahelski", "Thunder Road Films", "87Eleven Entertainment", "Summit Entertainment", "Lionsgate"],
   "themesKeywords": ["John Wick", "revenge", "assassin", "gun fu", "fight choreography"]
 },
 {
@@ -398,6 +415,7 @@
   "directors": ["James Gunn"],
   "writers": ["James Gunn", "Jerry Siegel", "Joe Shuster"],
   "actors": ["David Corenswet", "Alan Tudyk", "Grace Chan", "Bradley Cooper", "Angela Sarafyan", "Michael Rooker", "Pom Klementieff", "María Gabriela de Faría", "Sara Sampaio", "Tatiana Piper", "Stephen Blackehart", "Giovannie Cruz", "Bonnie Discepolo", "Terence Rosemore", "Natasha Halevi", "Adriana Leonard", "Paul Kim", "Larry Chin", "Jonah Lees"],
+  "productionCompanies": ["James Gunn", "Peter Safran", "DC Studios", "Troll Court Entertainment", "The Safran Company", "Warner Bros. Pictures"],
   "themesKeywords": ["DC Universe", "reboot", "social commentary", "media warfare", "institutional distrust"]
 },
 {
@@ -412,6 +430,7 @@
   "directors": ["James Madigan"],
   "writers": ["Brooks McLaren", "D.J. Cotrona"],
   "actors": ["Josh Hartnett", "Charithra Chandran", "Katee Sackhoff", "Julian Kostov", "Marko Zaror", "JuJu Chan Szeto", "Danny Ashok", "Garrett Jyuddah Jaymes", "Willem van der Vegt", "Sanjeev Kohli", "Declan Baxter", "Sarah Lam", "Iren Bordan", "Attila arpa", "Nóra Trokan", "Balint Adorjani", "Katrina Anne Ward"],
+  "productionCompanies": ["Basil Iwanyk", "Erica Lee", "Chris Milburn", "Tai Duncan", "Thunder Road Films", "Asbury Park Productions", "Sky Cinema", "Vertical Entertainment"],
   "themesKeywords": ["single location", "airplane", "rogue agent", "stylized violence", "campy", "over-the-top"]
 },
 {
@@ -426,6 +445,7 @@
   "directors": ["Danny Boyle"],
   "writers": ["Alex Garland"],
   "actors": ["Jodie Comer", "Aaron Taylor-Johnson", "Jack O'Connell", "Alfie Williams", "Ralph Fiennes", "Rocco Haynes", "Haley Flaherty", "Harriet Taylor", "Hannah Allan-Robertson", "Annabelle Graham", "Olivia Morley", "Theadora Rawlings", "Darcie Smith", "Isla Vickers"],
+  "productionCompanies": ["Danny Boyle", "Alex Garland", "Andrew Macdonald", "Peter Rice", "Bernie Bellew", "Cillian Murphy", "DNA Films", "Decibel Films", "Columbia Pictures", "TSG Entertainment"],
   "themesKeywords": ["rage virus", "zombies", "British Isles"]
 },
 {
