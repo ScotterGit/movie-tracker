@@ -1,304 +1,286 @@
 let movies = [];
 let currentPage = 1;
-let itemsPerPage = 100;
-let sortColumn = null;
-let sortDirection = 'asc';
+let rowsPerPage = 100;
+let currentSortKey = null;
+let currentSortOrder = "asc";
 
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('movies.json')
+function debounce(func, delay) {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("movies.json")
     .then(res => res.json())
     .then(data => {
       movies = data;
-      populateDropdowns(data);
-      renderTable();
-      setupFilters();
-      setupSorting();
-      setupReset();
-      setupGlobalSearch();
-      setupPageSize();
-    })
-    .catch(err => {
-      console.error('Failed to load movies.json', err);
+      const searchInput = document.getElementById("search-bar");
+      searchInput.addEventListener("input", debounce(() => {
+        currentPage = 1;
+        applyFilters();
+      }, 300));
+
+      populateFilters(data);
+      applyFilters();
     });
+
+  document.querySelectorAll("th").forEach(th => {
+    const key = th.dataset.key;
+    if (!key) return; // Skip unsortable headers
+
+    th.addEventListener("click", () => {
+      if (currentSortKey === key) {
+        currentSortOrder = currentSortOrder === "asc" ? "desc" : "asc";
+      } else {
+        currentSortKey = key;
+        currentSortOrder = "asc";
+      }
+      applyFilters();
+    });
+  });
+
+  document.querySelectorAll("#controls input, #controls select").forEach(el => {
+    el.addEventListener("input", () => {
+      currentPage = 1;
+      applyFilters();
+    });
+  });
+
+  document.getElementById("reset-filters").addEventListener("click", () => {
+    document.querySelectorAll("#controls input, #controls select").forEach(el => {
+      el.value = "";
+    });
+    currentPage = 1;
+    applyFilters();
+  });
+
+  document.getElementById("prevPage").addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      applyFilters();
+    }
+  });
+
+  document.getElementById("nextPage").addEventListener("click", () => {
+    const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
+    if (currentPage < totalPages) {
+      currentPage++;
+      applyFilters();
+    }
+  });
+
+  document.getElementById("rows-select").addEventListener("change", e => {
+    rowsPerPage = parseInt(e.target.value);
+    currentPage = 1;
+    applyFilters();
+  });
 });
 
-function populateDropdowns(data) {
-  const yearSet = new Set();
+function populateFilters(data) {
   const genreSet = new Set();
+  const yearSet = new Set();
   const bearSet = new Set();
   const hubbySet = new Set();
 
   data.forEach(movie => {
-    if (movie.year != null) yearSet.add(movie.year);
-    if (Array.isArray(movie.genre)) movie.genre.forEach(g => { if (g != null) genreSet.add(g); });
-    if (movie.bearHandsRating != null) bearSet.add(movie.bearHandsRating);
-    if (movie.hubbyBearRating != null) hubbySet.add(movie.hubbyBearRating);
+    movie.genre.forEach(g => genreSet.add(g));
+    yearSet.add(movie.year);
+    bearSet.add(movie.bearHandsRating);
+    hubbySet.add(movie.hubbyBearRating);
   });
 
-  populateSelect('year-select', [...yearSet].sort((a, b) => {
-    // numeric sort when possible
-    const na = Number(a), nb = Number(b);
-    if (!isNaN(na) && !isNaN(nb)) return nb - na;
-    return String(b).localeCompare(String(a));
-  }));
-
-  populateSelect('genre-select', [...genreSet].sort((a, b) => String(a).localeCompare(String(b))));
-
-  populateSelect('bear-rating-select', [...bearSet].sort((a, b) => {
-    const na = Number(a), nb = Number(b);
-    if (!isNaN(na) && !isNaN(nb)) return nb - na;
-    return String(a).localeCompare(String(b));
-  }));
-
-  populateSelect('hubby-rating-select', [...hubbySet].sort((a, b) => {
-    const na = Number(a), nb = Number(b);
-    if (!isNaN(na) && !isNaN(nb)) return nb - na;
-    return String(a).localeCompare(String(b));
-  }));
+  populateSelect("genre-select", [...genreSet], "alpha");
+  populateSelect("year-select", [...yearSet], "numeric");
+  populateSelect("bear-rating-select", [...bearSet], "numeric");
+  populateSelect("hubby-rating-select", [...hubbySet], "numeric");
 }
 
-function populateSelect(id, values) {
+function populateSelect(id, values, sortType = "numeric") {
   const select = document.getElementById(id);
-  if (!select) return;
-  // clear existing options but keep the default "All" at top
-  select.innerHTML = '';
-  const defaultOption = document.createElement('option');
-  defaultOption.value = '';
-  defaultOption.textContent = 'All';
-  select.appendChild(defaultOption);
 
+  // Clear existing options
+  select.innerHTML = '<option value="">All</option>';
+
+  // Sort values
+  if (sortType === "alpha") {
+    values.sort((a, b) => a.localeCompare(b));
+  } else {
+    values.sort((a, b) => a - b);
+  }
+
+  // Populate options
   values.forEach(val => {
-    const option = document.createElement('option');
+    const option = document.createElement("option");
     option.value = val;
     option.textContent = val;
     select.appendChild(option);
   });
 }
 
-function renderTable() {
-  const tableBody = document.getElementById('table-body');
-  tableBody.innerHTML = '';
+let filteredMovies = [];
 
-  const filtered = applyFilters(movies);
-  const sorted = applySorting(filtered);
-  const paginated = paginate(sorted);
+function applyFilters() {
+  const reviewerSetting = document.getElementById("reviewer-filter").value;
+  const genre = document.getElementById("genre-select").value;
+  const year = document.getElementById("year-select").value;
+  const director = document.getElementById("director-filter").value.toLowerCase();
+  const writer = document.getElementById("writer-filter").value.toLowerCase();
+  const bearRating = document.getElementById("bear-rating-select").value;
+  const hubbyRating = document.getElementById("hubby-rating-select").value;
+  const actorQuery = document.getElementById("actor-filter").value.toLowerCase();
+  const productionQuery = document.getElementById("production-filter").value.toLowerCase();
+  const themeQuery = document.getElementById("theme-filter").value.toLowerCase();
+  const startDate = document.getElementById("start-date").value;
+  const endDate = document.getElementById("end-date").value;
+  const searchQuery = document.getElementById("search-bar").value.toLowerCase();
+  const reviewSetting = document.getElementById("review-filter").value;
 
-  paginated.forEach(movie => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${escapeHtml(movie.title)}</td>
-      <td>${escapeHtml(movie.year)}</td>
-      <td>${escapeHtmlArray(movie.genre)}</td>
-      <td>${escapeHtml(movie.bearHandsRating)}</td>
-      <td>${escapeHtml(movie.hubbyBearRating)}</td>
-      <td>${formatExpandable(movie.actors)}</td>
-      <td>${escapeHtmlArray(movie.directors)}</td>
-      <td>${escapeHtmlArray(movie.writers)}</td>
-      <td>${formatExpandable(movie.production)}</td>
-      <td>${escapeHtml(movie.dateWatched)}</td>
-      <td>${escapeHtmlArray(movie.themesKeywords)}</td>
-    `;
-    tableBody.appendChild(row);
+  filteredMovies = movies.filter(movie => {
+    const matchesSearch =
+      !searchQuery ||
+      movie.title.toLowerCase().includes(searchQuery) ||
+      movie.actors.some(a => a.toLowerCase().includes(searchQuery)) ||
+      movie.directors.some(d => d.toLowerCase().includes(searchQuery)) ||
+      movie.writers.some(w => w.toLowerCase().includes(searchQuery)) ||
+      movie.themesKeywords.some(t => t.toLowerCase().includes(searchQuery));
+
+    const matchesReview =
+      reviewSetting === "reviewed" ? movie.hasReview === true : true;
+    
+    const matchesReviewer =
+      reviewerSetting === ""
+        ? true
+        : movie.hasReview &&
+          movie.reviews.some(r => r.reviewedBy === reviewerSetting);
+    
+    return (
+      matchesSearch &&
+      matchesReview &&
+      matchesReviewer &&
+      (!genre || movie.genre.includes(genre)) &&
+      (!year || movie.year == year) &&
+      (!bearRating || movie.bearHandsRating == bearRating) &&
+      (!hubbyRating || movie.hubbyBearRating == hubbyRating) &&
+      (!director || movie.directors.some(d => d.toLowerCase().includes(director))) &&
+      (!writer || movie.writers.some(w => w.toLowerCase().includes(writer))) &&
+      (!actorQuery || movie.actors.some(a => a.toLowerCase().includes(actorQuery))) &&
+      (!productionQuery || (movie.productionCompanies && movie.productionCompanies.some(p => p.toLowerCase().includes(productionQuery)))) &&
+      (!themeQuery || movie.themesKeywords.some(t => t.toLowerCase().includes(themeQuery))) &&
+      (!startDate || new Date(movie.dateWatched) >= new Date(startDate)) &&
+      (!endDate || new Date(movie.dateWatched) <= new Date(endDate))
+    );
   });
 
-  renderPagination(filtered.length);
+
+  if (currentSortKey) {
+    filteredMovies.sort((a, b) => {
+      let valA = a[currentSortKey];
+      let valB = b[currentSortKey];
+
+      // If values are arrays, compare their joined string representation
+      if (Array.isArray(valA)) valA = valA.join(', ');
+      if (Array.isArray(valB)) valB = valB.join(', ');
+
+      // Normalize null/undefined to empty string so comparisons are stable
+      if (valA == null) valA = '';
+      if (valB == null) valB = '';
+
+      // Boolean compare
+      if (typeof valA === 'boolean' && typeof valB === 'boolean') {
+        return currentSortOrder === 'asc' ? Number(valA) - Number(valB) : Number(valB) - Number(valA);
+      }
+
+      // Numeric compare when both are numbers (or numeric strings)
+      const na = Number(valA);
+      const nb = Number(valB);
+      if (!isNaN(na) && !isNaN(nb)) {
+        return currentSortOrder === 'asc' ? na - nb : nb - na;
+      }
+
+      // String compare fallback
+      const aStr = String(valA);
+      const bStr = String(valB);
+      return currentSortOrder === 'asc' ? aStr.localeCompare(bStr) : bStr.localeCompare(aStr);
+    });
+  }
+
+  renderTable();
 }
 
-function escapeHtml(val) {
-  if (val == null) return '';
-  return String(val)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+function formatDate(dateStr) {
+  const date = new Date(dateStr);
+  const year = date.getFullYear();
+  const month = date.toLocaleString("en-US", { month: "short" });
+  const day = date.getDate();
+
+  const suffix =
+    day >= 11 && day <= 13
+      ? "th"
+      : ["st", "nd", "rd"][((day % 10) - 1)] || "th";
+
+  return `${year} ${month} ${day}${suffix}`;
 }
 
-function escapeHtmlArray(arr) {
-  if (!Array.isArray(arr)) return '';
-  return arr.map(escapeHtml).join(', ');
+function renderTable() {
+  const tbody = document.querySelector("#movie-table tbody");
+  tbody.innerHTML = "";
+
+  const start = (currentPage - 1) * rowsPerPage;
+  const pageMovies = filteredMovies.slice(start, start + rowsPerPage);
+
+  pageMovies.forEach(movie => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>
+        ${movie.hasReview
+          ? movie.reviews.map(r =>
+              `<a href="${r.reviewLink}" target="_blank">${r.reviewedBy}</a>`
+            ).join(" | ")
+          : `<span class="review-pending">—</span>`}
+      </td>
+      <td>${movie.title}</td>
+      <td>${movie.year}</td>
+      <td>${movie.genre.join(", ")}</td>
+      <td>${movie.bearHandsRating}</td>
+      <td>${movie.hubbyBearRating}</td>
+      <td>${renderExpandableCell(movie.actors)}</td>
+      <td>${renderExpandableCell(movie.directors)}</td>
+      <td>${renderExpandableCell(movie.writers)}</td>
+      <td>${formatDate(movie.dateWatched)}</td>
+      <td>${movie.themesKeywords.join(", ")}</td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
+  document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
 }
 
-function formatExpandable(list) {
-  if (!list || list.length === 0) return '';
-  const visible = list.slice(0, 3).map(escapeHtml).join(', ');
-  const hidden = list.slice(3).map(escapeHtml).join(', ');
-  if (list.length <= 3) return visible;
+function renderExpandableCell(items) {
+  if (!items || items.length === 0) return "";
+
+  const preview = items.slice(0, 3).join(", ");
+  const full = items.join(", ");
+  const moreCount = items.length - 3;
+
   return `
-    ${visible}
-    <span class="more-toggle" onclick="this.nextElementSibling.style.display='inline'; this.style.display='none';"> +more</span>
-    <span class="hidden-items" style="display:none;">, ${hidden}</span>
+    <div class="toggle-wrapper">
+      <div class="preview">${preview}${moreCount > 0 ? ` <a href="#" onclick="toggleField(event, this)">+${moreCount} more</a>` : ""}</div>
+      <div class="full" style="display:none;">${full} <a href="#" onclick="toggleField(event, this)">Show less</a></div>
+    </div>
   `;
 }
 
-function applyFilters(data) {
-  const watchedAfter = document.getElementById('watched-after')?.value;
-  const watchedBefore = document.getElementById('watched-before')?.value;
+function toggleField(event, el) {
+  event.preventDefault();
+  const wrapper = el.closest(".toggle-wrapper");
+  const preview = wrapper.querySelector(".preview");
+  const full = wrapper.querySelector(".full");
 
-  return data.filter(movie => {
-    return (
-      match(movie.title, 'search-title') &&
-      matchSelect(movie.year, 'year-select') &&
-      matchSelectArray(movie.genre, 'genre-select') &&
-      matchSelect(movie.bearHandsRating, 'bear-rating-select') &&
-      matchSelect(movie.hubbyBearRating, 'hubby-rating-select') &&
-      matchArray(movie.actors, 'search-actors') &&
-      matchArray(movie.directors, 'search-directors') &&
-      matchArray(movie.writers, 'search-writers') &&
-      matchArray(movie.production, 'search-production') &&
-      matchArray(movie.themesKeywords, 'search-themes') &&
-      matchDateRange(movie.dateWatched, watchedAfter, watchedBefore)
-    );
-  });
-}
-
-function match(value, inputId) {
-  const input = document.getElementById(inputId);
-  if (!input || !input.value.trim()) return true;
-  return String(value || '').toLowerCase().includes(input.value.trim().toLowerCase());
-}
-
-function matchArray(arr, inputId) {
-  const input = document.getElementById(inputId);
-  if (!input || !input.value.trim()) return true;
-  if (!Array.isArray(arr)) return false;
-  return arr.some(item => String(item || '').toLowerCase().includes(input.value.trim().toLowerCase()));
-}
-
-function matchSelect(value, selectId) {
-  const select = document.getElementById(selectId);
-  if (!select || !select.value) return true;
-  return String(value) === select.value;
-}
-
-function matchSelectArray(arr, selectId) {
-  const select = document.getElementById(selectId);
-  if (!select || !select.value) return true;
-  if (!Array.isArray(arr)) return false;
-  return arr.includes(select.value);
-}
-
-function matchDateRange(dateStr, after, before) {
-  if (!dateStr) return true;
-  const date = new Date(dateStr);
-  if (after) {
-    const a = new Date(after);
-    if (date < a) return false;
-  }
-  if (before) {
-    const b = new Date(before);
-    if (date > b) return false;
-  }
-  return true;
-}
-
-function applySorting(data) {
-  if (!sortColumn) return data;
-  return [...data].sort((a, b) => {
-    const valA = a[sortColumn];
-    const valB = b[sortColumn];
-    const aVal = Array.isArray(valA) ? valA.join(', ') : (valA == null ? '' : String(valA));
-    const bVal = Array.isArray(valB) ? valB.join(', ') : (valB == null ? '' : String(valB));
-    // try numeric compare first
-    const na = Number(aVal), nb = Number(bVal);
-    if (!isNaN(na) && !isNaN(nb)) {
-      return sortDirection === 'asc' ? na - nb : nb - na;
-    }
-    if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
-    if (aVal > bVal) return sortDirection === 'asc' ? 1 : -1;
-    return 0;
-  });
-}
-
-function setupSorting() {
-  document.querySelectorAll('.header-row th').forEach(th => {
-    th.addEventListener('click', () => {
-      const column = th.getAttribute('data-sort');
-      if (sortColumn === column) {
-        sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-      } else {
-        sortColumn = column;
-        sortDirection = 'asc';
-      }
-      renderTable();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  });
-}
-
-function setupFilters() {
-  document.querySelectorAll('.search-row input, .search-row select').forEach(el => {
-    el.addEventListener('input', () => {
-      currentPage = 1;
-      renderTable();
-    });
-    el.addEventListener('change', () => {
-      currentPage = 1;
-      renderTable();
-    });
-  });
-}
-
-function setupReset() {
-  const resetBtn = document.getElementById('reset-filters');
-  if (!resetBtn) return;
-  resetBtn.addEventListener('click', () => {
-    document.querySelectorAll('.search-row input, .search-row select, #global-search').forEach(el => {
-      el.value = '';
-    });
-    currentPage = 1;
-    renderTable();
-    document.getElementById('global-search')?.focus();
-  });
-}
-
-function setupGlobalSearch() {
-  const globalInput = document.getElementById('global-search');
-  if (!globalInput) return;
-  globalInput.addEventListener('input', () => {
-    const query = globalInput.value.trim().toLowerCase();
-    document.querySelectorAll('.search-row input').forEach(input => {
-      input.value = query;
-    });
-    currentPage = 1;
-    renderTable();
-  });
-}
-
-function setupPageSize() {
-  const selector = document.getElementById('page-size');
-  if (!selector) return;
-  selector.addEventListener('change', () => {
-    itemsPerPage = parseInt(selector.value, 10) || 100;
-    currentPage = 1;
-    renderTable();
-  });
-}
-
-function paginate(data) {
-  const start = (currentPage - 1) * itemsPerPage;
-  return data.slice(start, start + itemsPerPage);
-}
-
-function renderPagination(totalItems) {
-  const pagination = document.getElementById('pagination');
-  const pageDisplay = document.getElementById('page-display');
-  if (!pagination || !pageDisplay) return;
-
-  pagination.innerHTML = '';
-
-  const totalPages = Math.max(1, Math.ceil(totalItems / itemsPerPage));
-  if (currentPage > totalPages) currentPage = totalPages;
-
-  pageDisplay.textContent = `Page ${currentPage} of ${totalPages}`;
-
-  for (let i = 1; i <= totalPages; i++) {
-    const btn = document.createElement('button');
-    btn.textContent = i;
-    btn.className = i === currentPage ? 'active' : '';
-    btn.addEventListener('click', () => {
-      currentPage = i;
-      renderTable();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    pagination.appendChild(btn);
-  }
+  const isExpanding = preview.style.display !== "none";
+  preview.style.display = isExpanding ? "none" : "inline";
+  full.style.display = isExpanding ? "inline" : "none";
 }
