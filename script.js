@@ -98,13 +98,6 @@ function populateFilters(data) {
   populateSelect("hubby-rating-select", [...hubbySet], "numeric");
 }
 
-function highlightMatch(text, query) {
-  if (!query) return text;
-  const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const regex = new RegExp(`(${escapedQuery})`, "gi");
-  return text.replace(regex, '<mark>$1</mark>');
-}
-
 function populateSelect(id, values, sortType = "numeric") {
   const select = document.getElementById(id);
 
@@ -230,49 +223,40 @@ function renderTable() {
   const start = (currentPage - 1) * rowsPerPage;
   const pageMovies = filteredMovies.slice(start, start + rowsPerPage);
 
-  const searchQuery = document.getElementById("search-bar").value.toLowerCase();
-
-pageMovies.forEach(movie => {
-  const searchQuery = document.getElementById("search-bar").value.toLowerCase();
-
-  // 🔍 Debug logs — insert here
-  console.log("Search Query:", searchQuery);
-  console.log("Writer Raw:", movie.writers.join(", "));
-  console.log("Writer Highlighted:", highlightMatch(movie.writers.join(", "), searchQuery));
-
-  const row = document.createElement("tr");
-  row.innerHTML = `
-    <td>
-      ${movie.hasReview
-        ? movie.reviews.map(r =>
-            `<a href="${r.reviewLink}" target="_blank">${r.reviewedBy}</a>`
-          ).join(" | ")
-        : `<span class="review-pending">—</span>`}
-    </td>
-    <td>${highlightMatch(movie.title, searchQuery)}</td>
-    <td>${highlightMatch(movie.year.toString(), searchQuery)}</td>
-    <td>${highlightMatch(movie.genre.join(", "), searchQuery)}</td>
-    <td>${movie.bearHandsRating}</td>
-    <td>${movie.hubbyBearRating}</td>
-    <td>${renderExpandableCell(movie.actors, searchQuery)}</td>
-    <td>${renderExpandableCell(movie.directors, searchQuery)}</td>
-    <td>${renderExpandableCell(movie.writers, searchQuery)}</td>
-    <td>${renderExpandableCell(movie.productionCompanies, searchQuery)}</td>
-    <td>${formatDate(movie.dateWatched)}</td>
-    <td>${highlightMatch(movie.themesKeywords.join(", "), searchQuery)}</td>
-  `;
-  tbody.appendChild(row);
-});
+  pageMovies.forEach(movie => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>
+        ${movie.hasReview
+          ? movie.reviews.map(r =>
+              `<a href="${r.reviewLink}" target="_blank">${r.reviewedBy}</a>`
+            ).join(" | ")
+          : `<span class="review-pending">—</span>`}
+      </td>
+      <td>${movie.title}</td>
+      <td>${movie.year}</td>
+      <td>${movie.genre.join(", ")}</td>
+      <td>${movie.bearHandsRating}</td>
+      <td>${movie.hubbyBearRating}</td>
+      <td>${renderExpandableCell(movie.actors)}</td>
+      <td>${renderExpandableCell(movie.directors)}</td>
+      <td>${renderExpandableCell(movie.writers)}</td>
+      <td>${renderExpandableCell(movie.productionCompanies)}</td>
+      <td>${formatDate(movie.dateWatched)}</td>
+      <td>${movie.themesKeywords.join(", ")}</td>
+    `;
+    tbody.appendChild(row);
+  });
 
   const totalPages = Math.ceil(filteredMovies.length / rowsPerPage);
   document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
 }
 
-function renderExpandableCell(items, query) {
+function renderExpandableCell(items) {
   if (!items || items.length === 0) return "";
 
-  const preview = items.slice(0, 3).map(i => highlightMatch(i, query)).join(", ");
-  const full = items.map(i => highlightMatch(i, query)).join(", ");
+  const preview = items.slice(0, 3).join(", ");
+  const full = items.join(", ");
   const moreCount = items.length - 3;
 
   return `
@@ -293,4 +277,3 @@ function toggleField(event, el) {
   preview.style.display = isExpanding ? "none" : "inline";
   full.style.display = isExpanding ? "inline" : "none";
 }
-
