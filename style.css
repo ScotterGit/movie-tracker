@@ -164,3 +164,27 @@ thead th {
   z-index: 2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* optional polish */
 }
+
+#movie-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#movie-table th, #movie-table td {
+  padding: 6px;
+  font-size: 0.9em;
+  word-wrap: break-word;
+}
+@media (max-width: 768px) {
+  #movie-table th, #movie-table td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  #movie-table thead {
+    display: none;
+  }
+  #movie-table tr {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+}
