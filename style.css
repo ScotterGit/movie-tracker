@@ -166,20 +166,6 @@ thead th {
 }
 
 
-#movie-table {
-  width: 100%;
-  table-layout: auto; /* Let columns size naturally */
-  border-collapse: collapse;
-}
-
-#movie-table th, #movie-table td {
-  padding: 6px 8px;
-  font-size: 0.95em;
-  vertical-align: top;
-  word-break: break-word; /* Prevent overflow but allow natural wrapping */
-}
-
-
 /* Mobile-friendly column hiding */
 @media (max-width: 768px) {
     /* Hide Director column */
