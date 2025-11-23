@@ -165,14 +165,6 @@ thead th {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* optional polish */
 }
 
-#movie-table {
-  table-layout: fixed;
-  width: 100%;
-}
-#movie-table th, #movie-table td {
-  word-wrap: break-word;
-}
-
 #movie-table th[data-key="actors"],
 #movie-table td:nth-child(7) {
   width: 18%;
