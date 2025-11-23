@@ -165,6 +165,32 @@ thead th {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* optional polish */
 }
 
+#movie-table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+#movie-table th, #movie-table td {
+  padding: 6px 8px;
+  font-size: 0.95em;
+  vertical-align: top;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* Give Actor column a minimum width */
+#movie-table th:nth-child(7),
+#movie-table td:nth-child(7) {
+  min-width: 160px;
+}
+
+/* Prevent breaking actor names mid-word */
+.toggle-wrapper .preview,
+.toggle-wrapper .full {
+  word-break: keep-all;
+  white-space: normal;
+}
 
 /* Mobile-friendly column hiding */
 @media (max-width: 768px) {
