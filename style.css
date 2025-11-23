@@ -167,6 +167,12 @@ thead th {
 
 /* Mobile-friendly column hiding */
 @media (max-width: 768px) {
+    /* Hide Director column */
+  #movie-table th:nth-child(8),
+  #movie-table td:nth-child(8) {
+    display: none;
+  }
+
   /* Hide Writer column */
   #movie-table th:nth-child(9),
   #movie-table td:nth-child(9) {
@@ -178,4 +184,6 @@ thead th {
   #movie-table td:nth-child(10) {
     display: none;
   }
+
+  
 }
