@@ -182,7 +182,7 @@ thead th {
 /* Give Actor column a minimum width */
 #movie-table th:nth-child(7),
 #movie-table td:nth-child(7) {
-  min-width: 160px;
+  min-width: 100px;
 }
 
 /* Prevent breaking actor names mid-word */
