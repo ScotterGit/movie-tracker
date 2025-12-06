@@ -45,8 +45,13 @@
     "themesKeywords": ["podcaster", "Canada", "eccentric sailor", "walrus obsession", "body transformation", "dark comedy", "cult horror", "True North trilogy", "absurd"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "Roofman",
     "year": 2025,
     "genre": ["True Crime", "Drama", "Comedy"],
@@ -90,8 +95,13 @@
     "themesKeywords": ["aliens", "CEO abduction", "Andromedans", "corporate capitalism", "psychological manipulation", "hostage", "conspiracy theory"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "Bunny",
     "year": 2025,
     "genre": ["Comedy", "Drama"],
@@ -125,8 +135,13 @@
   "themesKeywords": ["too real", "toxic workplace", "abuse of power", "whistleblower", "quiet horror", "moral dilemma", "New York office", "captivatively boring"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "Playdate",
     "year": 2025,
     "genre": ["Action", "Comedy"],
@@ -214,8 +229,13 @@
     "themesKeywords": ["coming of age", "authoritarian", "state-sponsored violence as entertainment"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "The Toxic Avenger",
     "year": 2023,
     "genre": ["Comedy", "Action", "Superhero"],
@@ -274,8 +294,13 @@
     "themesKeywords": ["serial killer", "Chicago", "investigation"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "Lurker",
     "year": 2025,
     "genre": ["Drama"],
@@ -329,7 +354,7 @@
     "actors": ["Bill Skarsgard", "Anthony Hopkins"],
     "directors": ["David Yarovesky"],
     "writers": ["Michael Arlen Ross"],
-    "productionCompanies": ["Ara Keshishian", "Petr Jákl", "Sam Raimi", "Zainab Azizi", "Sean O'Reilly", "ZQ Entertainment", "R.U. Robot Studios", "Arcana Studio", "Raimi Productions", "Sillen Productions"],
+    "productionCompanies": ["Ara Keshishian", "Petr Jakl", "Sam Raimi", "Zainab Azizi", "Sean O'Reilly", "ZQ Entertainment", "R.U. Robot Studios", "Arcana Studio", "Raimi Productions", "Sillen Productions"],
     "dateWatched": "2025-10-18",
     "themesKeywords": ["trap", "psychological torment", "torture"]
   },
@@ -349,8 +374,13 @@
     "themesKeywords": ["cursed object", "doppelganger", "family trauma", "religious guilt", "supernatural torment"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "The Woman in Cabin 10",
     "year": 2025,
     "genre": ["Thriller", "Mystery"],
@@ -379,8 +409,13 @@
     "themesKeywords": ["social media", "content moderation", "digital trauma", "crime investigation"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "The Conjuring: Last Rites",
     "year": 2025,
     "genre": ["Horror"],
@@ -439,8 +474,13 @@
     "themesKeywords": ["Marvel Studio", "MCU", "origin story", "space mission", "1960s"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "Dangerous Animals",
     "year": 2025,
     "genre": ["Thriller"],
@@ -544,8 +584,13 @@
     "themesKeywords": ["John Wick", "revenge", "assassin", "gun fu", "fight choreography"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "Superman",
     "year": 2025,
     "genre": ["Action", "Superhero"],
@@ -574,23 +619,33 @@
     "themesKeywords": ["single location", "airplane", "rogue agent", "stylized violence", "campy", "over-the-top"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
-    "title": "28 Years Later",
-    "year": 2025,
-    "genre": ["Post-Apocalyptic"],
-    "bearHandsRating": 5,
-    "hubbyBearRating": 3,
-    "dateWatched": "2025-09-18",
-    "directors": ["Danny Boyle"],
-    "writers": ["Alex Garland"],
-    "actors": ["Jodie Comer", "Aaron Taylor-Johnson", "Jack O'Connell", "Alfie Williams", "Ralph Fiennes", "Rocco Haynes", "Haley Flaherty", "Harriet Taylor", "Hannah Allan-Robertson", "Annabelle Graham", "Olivia Morley", "Theadora Rawlings", "Darcie Smith", "Isla Vickers"],
-    "productionCompanies": ["Danny Boyle", "Alex Garland", "Andrew Macdonald", "Peter Rice", "Bernie Bellew", "Cillian Murphy", "DNA Films", "Decibel Films", "Columbia Pictures", "TSG Entertainment"],
-    "themesKeywords": ["rage virus", "zombies", "British Isles"]
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
+      "title": "28 Years Later",
+      "year": 2025,
+      "genre": ["Post-Apocalyptic"],
+      "bearHandsRating": 5,
+      "hubbyBearRating": 3,
+      "dateWatched": "2025-09-18",
+      "directors": ["Danny Boyle"],
+      "writers": ["Alex Garland"],
+      "actors": ["Jodie Comer", "Aaron Taylor-Johnson", "Jack O'Connell", "Alfie Williams", "Ralph Fiennes", "Rocco Haynes", "Haley Flaherty", "Harriet Taylor", "Hannah Allan-Robertson", "Annabelle Graham", "Olivia Morley", "Theadora Rawlings", "Darcie Smith", "Isla Vickers"],
+      "productionCompanies": ["Danny Boyle", "Alex Garland", "Andrew Macdonald", "Peter Rice", "Bernie Bellew", "Cillian Murphy", "DNA Films", "Decibel Films", "Columbia Pictures", "TSG Entertainment"],
+      "themesKeywords": ["rage virus", "zombies", "British Isles"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "Jurassic World: Rebirth",
     "year": 2025,
     "genre": ["Adventure", "Sci-Fi"],
@@ -694,8 +749,13 @@
     "themesKeywords": ["age-gap relationship", "tabloid scandal", "emotional trauma", "family dynamics", "Savannah setting"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "The Front Room",
     "year": 2024,
     "genre": ["Horror"],
@@ -1219,8 +1279,13 @@
     "themesKeywords": ["video game adaptation", "Mars", "genetic mutation", "space marines", "first-person shooter", "monster outbreak", "military sci-fi", "bioengineering", "corporate greed", "corporate negligence"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "The Rule of Jenny Pen",
     "year": 2024,
     "genre": ["Horror", "Thriller"],
@@ -1939,8 +2004,13 @@
     "themesKeywords": ["religious obsession", "psychological horror", "divine delusion", "British indie horror"]
   },
   {
-    "hasReview": false,
-    "reviewLink": null,
+    "hasReview": true,
+    "reviews": [
+      {
+      "reviewedBy": "BH",
+      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      }
+    ],
     "title": "Caddo Lake",
     "year": 2024,
     "genre": ["Mystery", "Drama", "Sci-Fi", "Thriller"],
@@ -2039,7 +2109,7 @@
     "dateWatched": "2025-03-30",
     "directors": ["Agnieszka Holland"],
     "writers": ["Scott Abbott", "James Wong"],
-    "actors": ["Zoe Saldana", "Patrick J. Adams", "Carole Bouquet", "Jason Isaacs", "Christina Cole", "Olivier Rabourdin", "François Civil", "Rosemarie La Vaullee", "Eva Lutz", "Wojciech Pszoniak", "Hiro Uchiyama", "Joseph Malerba", "Stany Coppet", "Stefano Cassetti", "Victoire Belèzy", "Cyril Casmèze", "Stephane Boucher", "Franck Vincent"],
+    "actors": ["Zoe Saldana", "Patrick J. Adams", "Carole Bouquet", "Jason Isaacs", "Christina Cole", "Olivier Rabourdin", "François Civil", "Rosemarie La Vaullee", "Eva Lutz", "Wojciech Pszoniak", "Hiro Uchiyama", "Joseph Malerba", "Stany Coppet", "Stefano Cassetti", "Victoire Belezy", "Cyril Casmeze", "Stephane Boucher", "Franck Vincent"],
     "productionCompanies": ["Joshua D. Maurer", "David Stern", "Alloy Entertainment", "City Entertainment", "NBCUniversal Television"],
     "themesKeywords": ["Satanic cult", "pregnancy horror", "betrayal", "Paris setting", "modern remake", "occult manipulation"]
   },
@@ -2084,7 +2154,7 @@
     "dateWatched": "2025-03-23",
     "directors": ["Tilman Singer"],
     "writers": ["Tilman Singer"],
-    "actors": ["Hunter Schafer", "Dan Stevens", "Jessica Henwick", "Marton Csokas", "Jan Bluthardt", "Mila Lieu", "Greta Fernández", "Proschat Madani", "Àstrid Bergès-Frisbey", "Konrad Singer", "Kalin Morrow", "Johannes Benecke", "Veronika Bachfischer", "Joshua Hupfauer", "Philipp Arnold", "Conny Brandt", "Christoph Cordes", "Massimiliano Monticciollo"],
+    "actors": ["Hunter Schafer", "Dan Stevens", "Jessica Henwick", "Marton Csokas", "Jan Bluthardt", "Mila Lieu", "Greta Fernandez", "Proschat Madani", "Astrid Berges-Frisbey", "Konrad Singer", "Kalin Morrow", "Johannes Benecke", "Veronika Bachfischer", "Joshua Hupfauer", "Philipp Arnold", "Conny Brandt", "Christoph Cordes", "Massimiliano Monticciollo"],
     "productionCompanies": ["Tilman Singer", "Wayne Godfrey", "Neon", "Spacemaker Productions", "Futur3 Film", "Film- und Medienstiftung NRW"],
     "themesKeywords": ["resort", "mute sibling", "German Alps", "body horror", "selective breeding", "bird people", "surreal visions", "eugenics"]
   },
