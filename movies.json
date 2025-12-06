@@ -2,6 +2,21 @@
   {
     "hasReview": false,
     "reviewLink": null,
+    "title": "The Motel Life",
+    "year": 2012,
+    "genre": ["Drama", "Thriller"],
+    "bearHandsRating": 5,
+    "hubbyBearRating": 4,
+    "actors": ["Emile Hirsch", "Stephen Dorff", "Dakota Fanning", "Kris Kristofferson", "Doc Divecchio", "Nancy Youngblut", "Jenica Bergere", "Joshua Leonard", "Garrett Backstrom", "Andrew Lee", "Oren Skoog", "Hayes MacArthur", "Scott MacArthur", "Jim Gray", "Pat Foley", "G. Brian Benson"],
+    "directors": ["Alan Polsky", "Gabe Polsky"],
+    "writers": ["Micah Fitzerman-Blue", "Noah Harpster", "Willy Vlautin"],
+    "productionCompanies": ["Polsky Films"],
+    "dateWatched": "2025-12-05",
+    "themesKeywords": ["brotherly tension", "hit-and-run accident", "Reno Nevada", "leg amputation", "gambling", "poverty", "Mike Tyson", "1990", "bleak winter landscape"]
+  },
+  {
+    "hasReview": false,
+    "reviewLink": null,
     "title": "Old Guy",
     "year": 2024,
     "genre": ["Action", "Comedy", "Crime"],
