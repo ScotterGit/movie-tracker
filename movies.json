@@ -95,13 +95,7 @@
     "themesKeywords": ["aliens", "CEO abduction", "Andromedans", "corporate capitalism", "psychological manipulation", "hostage", "conspiracy theory"]
   },
   {
-    "hasReview": true,
-    "reviews": [
-      {
-      "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
-      }
-    ],
+    "hasReview": false,
     "title": "Bunny",
     "year": 2025,
     "genre": ["Comedy", "Drama"],
@@ -115,13 +109,7 @@
     "themesKeywords": ["East Village", "New York City", "cover up", "dead body", "eccentric characters", "indie film", "directorial debut", "gay for pay"]
   },
   {
-    "hasReview": true,
-    "reviews": [
-      {
-      "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
-      }
-    ],
+    "hasReview": false,
   "title": "The Assistant",
   "year": 2019,
   "genre": ["Drama", "Arthouse"],
@@ -135,13 +123,7 @@
   "themesKeywords": ["too real", "toxic workplace", "abuse of power", "whistleblower", "quiet horror", "moral dilemma", "New York office", "captivatively boring"]
   },
   {
-    "hasReview": true,
-    "reviews": [
-      {
-      "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
-      }
-    ],
+    "hasReview": false,
     "title": "Playdate",
     "year": 2025,
     "genre": ["Action", "Comedy"],
@@ -185,13 +167,7 @@
     "themesKeywords": ["Magnolia Pictures", "family", "poverty", "chosen family", "shoplifting", "social invisibility", "japanese"]
   },
   {
-    "hasReview": true,
-    "reviews": [
-      {
-      "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
-      }
-    ],
+    "hasReview": false,
     "title": "The Black Phone 2",
     "year": 2025,
     "genre": ["Horror", "Slasher"],
@@ -205,17 +181,7 @@
     "themesKeywords": ["Blumhouse", "psychic", "haunted camp", "serial killer", "child abuse"]
   },
   {
-    "hasReview": true,
-    "reviews": [
-      {
-        "reviewedBy": "BH",
-        "reviewLink": "https://www.imdb.com/title/tt13652286/"
-      },
-      {
-        "reviewedBy": "HB",
-        "reviewLink": "https://www.imdb.com/title/tt7181546/"
-      }
-    ],
+    "hasReview": false,
     "title": "The Long Walk",
     "year": 2025,
     "genre": ["Drama", "Dystopian", "Coming-of-Age"],
@@ -229,13 +195,7 @@
     "themesKeywords": ["coming of age", "authoritarian", "state-sponsored violence as entertainment"]
   },
   {
-    "hasReview": true,
-    "reviews": [
-      {
-      "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
-      }
-    ],
+    "hasReview": false,
     "title": "The Toxic Avenger",
     "year": 2023,
     "genre": ["Comedy", "Action", "Superhero"],
@@ -294,13 +254,7 @@
     "themesKeywords": ["serial killer", "Chicago", "investigation"]
   },
   {
-    "hasReview": true,
-    "reviews": [
-      {
-      "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
-      }
-    ],
+    "hasReview": false,
     "title": "Lurker",
     "year": 2025,
     "genre": ["Drama"],
@@ -336,7 +290,7 @@
     "genre": ["Action", "Thriller"],
     "bearHandsRating": 8,
     "hubbyBearRating": 6,
-    "actors": ["Rami Malek", "Rachel Brosnahan", "Caitríona Balfe", "Michael Stuhlbarg", "Laurence Fishburne", "Jon Bernthal", "Holt McCallany", "Julianne Nicholson", "Adrian Martinez", "Danny Sapani", "Takehiro Hira"],
+    "actors": ["Rami Malek", "Rachel Brosnahan", "Caitriona Balfe", "Michael Stuhlbarg", "Laurence Fishburne", "Jon Bernthal", "Holt McCallany", "Julianne Nicholson", "Adrian Martinez", "Danny Sapani", "Takehiro Hira"],
     "directors": ["James Hawes"],
     "writers": ["Ken Nolan", "Gary Spinelli"],
     "productionCompanies": ["Hutch Parker", "Dan Wilson", "Rami Malek", "Joel B. Michaels", "20th Century Studios", "Hutch Parker Entertainment", "Joel B. Michaels Productions"],
@@ -374,13 +328,7 @@
     "themesKeywords": ["cursed object", "doppelganger", "family trauma", "religious guilt", "supernatural torment"]
   },
   {
-    "hasReview": true,
-    "reviews": [
-      {
-      "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
-      }
-    ],
+    "hasReview": false,
     "title": "The Woman in Cabin 10",
     "year": 2025,
     "genre": ["Thriller", "Mystery"],
@@ -413,7 +361,7 @@
     "reviews": [
       {
       "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      "reviewLink": "https://www.iambearhands.com/movie-reviews/the-conjuring-last-rites-2025-bh"
       }
     ],
     "title": "The Conjuring: Last Rites",
@@ -478,7 +426,7 @@
     "reviews": [
       {
       "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      "reviewLink": "https://www.iambearhands.com/movie-reviews/dangerous-animals-2025-bh"
       }
     ],
     "title": "Dangerous Animals",
@@ -599,7 +547,7 @@
     "dateWatched": "2025-09-19",
     "directors": ["James Gunn"],
     "writers": ["James Gunn", "Jerry Siegel", "Joe Shuster"],
-    "actors": ["David Corenswet", "Alan Tudyk", "Grace Chan", "Bradley Cooper", "Angela Sarafyan", "Michael Rooker", "Pom Klementieff", "María Gabriela de Faría", "Sara Sampaio", "Tatiana Piper", "Stephen Blackehart", "Giovannie Cruz", "Bonnie Discepolo", "Terence Rosemore", "Natasha Halevi", "Adriana Leonard", "Paul Kim", "Larry Chin", "Jonah Lees"],
+    "actors": ["David Corenswet", "Alan Tudyk", "Grace Chan", "Bradley Cooper", "Angela Sarafyan", "Michael Rooker", "Pom Klementieff", "Maria Gabriela de Faria", "Sara Sampaio", "Tatiana Piper", "Stephen Blackehart", "Giovannie Cruz", "Bonnie Discepolo", "Terence Rosemore", "Natasha Halevi", "Adriana Leonard", "Paul Kim", "Larry Chin", "Jonah Lees"],
     "productionCompanies": ["James Gunn", "Peter Safran", "DC Studios", "Troll Court Entertainment", "The Safran Company", "Warner Bros. Pictures"],
     "themesKeywords": ["DC Universe", "reboot", "social commentary", "media warfare", "institutional distrust"]
   },
@@ -623,12 +571,12 @@
     "reviews": [
       {
       "reviewedBy": "BH",
-      "reviewLink": "https://www.imdb.com/title/tt13652286/"
+      "reviewLink": "https://www.iambearhands.com/movie-reviews/28-years-later-2025-bh"
       }
     ],
       "title": "28 Years Later",
       "year": 2025,
-      "genre": ["Post-Apocalyptic"],
+      "genre": ["Post-Apocalyptic", "Horror"],
       "bearHandsRating": 5,
       "hubbyBearRating": 3,
       "dateWatched": "2025-09-18",
@@ -646,7 +594,7 @@
       "reviewLink": "https://www.imdb.com/title/tt13652286/"
       }
     ],
-    "title": "Jurassic World: Rebirth",
+    "title": "Jurassic World Rebirth",
     "year": 2025,
     "genre": ["Adventure", "Sci-Fi"],
     "bearHandsRating": 6,
@@ -1834,7 +1782,7 @@
     "dateWatched": "2025-04-20",
     "directors": ["Edward Berger"],
     "writers": ["Peter Straughan", "Robert Harris"],
-    "actors": ["Ralph Fiennes", "John Lithgow", "Stanley Tucci", "Isabella Rossellini", "Lucian Msamati", "Sergio Castellitto", "Carlos Cuevas", "Brían F. O'Byrne"],
+    "actors": ["Ralph Fiennes", "John Lithgow", "Stanley Tucci", "Isabella Rossellini", "Lucian Msamati", "Sergio Castellitto", "Carlos Cuevas", "Brian F. O'Byrne"],
     "productionCompanies": ["Edward Berger", "Tessa Ross", "Juliette Howell", "Michael A. Jackman", "FilmNation Entertainment", "House Productions", "The New Pope Ltd."],
     "themesKeywords": ["Vatican intrigue", "papal succession", "political maneuvering", "religious drama", "cardinal alliances", "adapted from novel", "Rome setting"]
   },
@@ -2304,7 +2252,7 @@
     "dateWatched": "2025-04-01",
     "directors": ["Louis Leterrier"],
     "writers": ["Ed Solomon", "Boaz Yakin", "Edward Ricourt"],
-    "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Isla Fisher", "Dave Franco", "Melanie Laurent", "Morgan Freeman", "Michael Caine", "Michael Kelly", "Common", "Jose Garcia", "Jessica Lindsey", "Caitríona Balfe", "Laura Cayouette", "Douglas M. Griffin", "Adam Shapiro"],
+    "actors": ["Jesse Eisenberg", "Mark Ruffalo", "Woody Harrelson", "Isla Fisher", "Dave Franco", "Melanie Laurent", "Morgan Freeman", "Michael Caine", "Michael Kelly", "Common", "Jose Garcia", "Jessica Lindsey", "Caitriona Balfe", "Laura Cayouette", "Douglas M. Griffin", "Adam Shapiro"],
     "productionCompanies": ["Alex Kurtzman", "Bobby Cohen", "Roberto Orci", "Summit Entertainment", "K/O Paper Products", "Lionsgate"],
     "themesKeywords": ["illusionists", "heist", "sleight of hand", "FBI pursuit", "magic show", "Robin Hood spectacle"]
   },
