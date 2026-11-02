@@ -1,6 +1,65 @@
 [
 
-
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "The Thursday Murder Club",
+  "year": 2025,
+  "genre": ["Comedy","Crime","Murder Mystery"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 7,
+  "actors": ["Helen Mirren","Pierce Brosnan","Ben Kingsley","Celia Imrie","David Tennant","Naomi Ackie","Jonathan Pryce","Daniel Mays","Henry Lloyd-Hughes","Richard E. Grant"],
+  "directors": ["Chris Columbus"],
+  "writers": ["Katy Brand","Suzanne Heathcote","Chris Columbus","Richard Osman"],
+  "productionCompanies": ["Amblin Partners","Netflix","Twenty First City","Amblin Entertainment"],
+  "dateWatched": "2026-01-25",
+  "themesKeywords": ["MI6","retired detectives","secret service","amateur sleuths","murder investigation","retirement community","friendship","cold cases","crime solving"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Nobody",
+  "year": 2021,
+  "genre": ["Action","Thriller","Crime"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 5,
+  "actors": ["Bob Odenkirk","Connie Nielsen","Aleksei Serebryakov","RZA","Christopher Lloyd","Michael Ironside","Colin Salmon","Billy MacLellan","Araya Mengesha","Gage Munroe"],
+  "directors": ["Ilya Naishuller"],
+  "writers": ["Derek Kolstad"],
+  "productionCompanies": ["87North Productions","Eighty Two Films","Odenkirk Provissiero Entertainment","Perfect World Pictures"],
+  "dateWatched": "2026-01-25",
+  "themesKeywords": ["assassin","revenge","hidden past","organized crime","vigilante justice","family protection","violence","redemption","underestimated hero"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "A Nice Indian Boy",
+  "year": 2024,
+  "genre": ["Rom-Com","Comedy","LGBT"],
+  "bearHandsRating": 10,
+  "hubbyBearRating": 10,
+  "actors": ["Karan Soni","Jonathan Groff","Sunita Mani","Zarna Garg","Harish Patel","Peter S. Kim","Sas Goldberg","Sean Amsing"],
+  "directors": ["Roshan Sethi"],
+  "writers": ["Eric Randall","Madhuri Shekar"],
+  "productionCompanies": ["Levantine Films","Wayfarer Studios","Kaling International","Scythia Films"],
+  "dateWatched": "2026-01-24",
+  "themesKeywords": ["LGBT","Indian culture","family acceptance","same-sex relationship","wedding planning","cultural identity","interracial romance","family expectations","self-discovery"]
+},
+{
+  "hasReview": false,
+  "reviewLink": null,
+  "title": "Sisu: Road to Revenge",
+  "year": 2025,
+  "genre": ["Action","War"],
+  "bearHandsRating": 7,
+  "hubbyBearRating": 7,
+  "actors": ["Jorma Tommila","Stephen Lang","Richard Brake","Tommi Korpela","Kaspar Velberg","Paaru Oja","Erki Laur","Maksim Demidov"],
+  "directors": ["Jalmari Helander"],
+  "writers": ["Jalmari Helander"],
+  "productionCompanies": ["Stage 6 Films","Screen Gems","Subzero Film Entertainment","Good Chaos"],
+  "dateWatched": "2026-01-07",
+  "themesKeywords": ["war","revenge","survival","veteran soldier","relentless pursuit","justice","violence","perseverance","post-war trauma","one-man army"]
+},
 {
   "hasReview": false,
   "reviewLink": null,
